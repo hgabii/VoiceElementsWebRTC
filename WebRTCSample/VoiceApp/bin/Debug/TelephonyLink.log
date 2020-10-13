@@ -334,3 +334,322 @@
 16/04/22 - 18:24:57.628 000E GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
 16/04/22 - 18:24:57.756 000B TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
 16/04/22 - 18:24:57.759 000B TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/04 - 17:12:28.876 000C TelephonyServer      Initializing Logging Class
+16/05/04 - 17:12:28.883 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/04 - 17:12:28.949 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,8014158d-c5c7-45bc-b9ba-1b8eb879c8e6,,******)
+16/05/04 - 17:12:31.548 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,4c35d9cd-fc02-427e-baab-ecff606f920c,,******)
+16/05/04 - 17:12:33.661 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,cdd86a61-774f-4080-9b28-14d7a78cd1af,,******)
+16/05/04 - 17:12:35.766 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,a5d760c2-ced3-4b06-a2ea-9a046b1a5092,,******)
+16/05/04 - 17:12:37.873 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,9c10ddef-396b-49a3-be2a-f6173f4cde35,,******)
+16/05/04 - 17:12:39.980 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,3c2305c2-9987-40d3-a3c3-ea0437b35109,,******)
+16/05/04 - 17:12:42.089 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,8e2e6369-b17a-4b2e-b11a-c364d803e1ee,,******)
+16/05/04 - 17:13:08.180 000D TelephonyServer      Initializing Logging Class
+16/05/04 - 17:13:08.180 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/04 - 17:13:08.243 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,d9325a4a-197f-4bc3-80e7-e8ca1e655ae1,heymattman@hotmail.com,******)
+16/05/04 - 17:13:09.432 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease d9325a4a-197f-4bc3-80e7-e8ca1e655ae1
+16/05/04 - 17:13:09.434 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease d9325a4a-197f-4bc3-80e7-e8ca1e655ae1
+16/05/04 - 17:13:09.476 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/04 - 17:13:09.602 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/04 - 17:13:09.605 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/04 - 17:14:15.990 000B TelephonyServer      Initializing Logging Class
+16/05/04 - 17:14:15.991 000B TelephonyServer      Log Name: TelephonyLink.log
+16/05/04 - 17:14:16.056 000B TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,b0d1290c-bc67-400e-ab94-bb1f31dcbba9,heymattman@hotmail.com,******)
+16/05/04 - 17:14:17.857 000E GC.GTP.#1            ClientCallbackProxy Obtaining Lease b0d1290c-bc67-400e-ab94-bb1f31dcbba9
+16/05/04 - 17:14:17.858 000E GC.GTP.#1            ClientCallbackProxy Registering Lease b0d1290c-bc67-400e-ab94-bb1f31dcbba9
+16/05/04 - 17:14:17.899 000E GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/04 - 17:14:18.450 000B TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/04 - 17:14:18.453 000B TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/04 - 17:15:04.119 000B TelephonyServer      Initializing Logging Class
+16/05/04 - 17:15:04.120 000B TelephonyServer      Log Name: TelephonyLink.log
+16/05/04 - 17:15:04.184 000B TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,4d6467af-93da-437b-b77a-c725c93e8edc,heymattman@hotmail.com,******)
+16/05/04 - 17:15:04.825 000E GC.GTP.#1            ClientCallbackProxy Obtaining Lease 4d6467af-93da-437b-b77a-c725c93e8edc
+16/05/04 - 17:15:04.825 000E GC.GTP.#1            ClientCallbackProxy Registering Lease 4d6467af-93da-437b-b77a-c725c93e8edc
+16/05/04 - 17:15:04.865 000E GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/04 - 17:15:04.988 000B TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/04 - 17:15:05.297 000B TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/04 - 17:16:04.996 000C TelephonyServer      Initializing Logging Class
+16/05/04 - 17:16:04.996 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/04 - 17:16:05.061 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,a19b37c2-64f5-49ab-acc4-adffed9df7d2,heymattman@hotmail.com,******)
+16/05/04 - 17:16:05.657 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease a19b37c2-64f5-49ab-acc4-adffed9df7d2
+16/05/04 - 17:16:05.658 000F GC.GTP.#1            ClientCallbackProxy Registering Lease a19b37c2-64f5-49ab-acc4-adffed9df7d2
+16/05/04 - 17:16:05.702 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/04 - 17:16:05.825 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/04 - 17:16:05.827 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/04 - 17:17:20.675 000A IvrApplication       TelephonyLink::Dispose() TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,a19b37c2-64f5-49ab-acc4-adffed9df7d2,heymattman@hotmail.com,******)
+16/05/04 - 17:17:20.730 000F GC.GTP.#1            ClientCallbackProxy::Dispose() a19b37c2-64f5-49ab-acc4-adffed9df7d2
+16/05/04 - 17:18:01.178 000C TelephonyServer      Initializing Logging Class
+16/05/04 - 17:18:01.179 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/04 - 17:18:01.246 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,e987f640-e289-4afd-951a-8867e067adbb,heymattman@hotmail.com,******)
+16/05/04 - 17:18:01.833 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease e987f640-e289-4afd-951a-8867e067adbb
+16/05/04 - 17:18:01.834 000F GC.GTP.#1            ClientCallbackProxy Registering Lease e987f640-e289-4afd-951a-8867e067adbb
+16/05/04 - 17:18:01.874 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/04 - 17:18:01.997 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/04 - 17:18:02.000 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/04 - 17:18:24.013 000D TelephonyServer      Initializing Logging Class
+16/05/04 - 17:18:24.013 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/04 - 17:18:24.087 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,98d1772c-e946-4064-bf72-ad84ce7121ea,heymattman@hotmail.com,******)
+16/05/04 - 17:18:24.657 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 98d1772c-e946-4064-bf72-ad84ce7121ea
+16/05/04 - 17:18:24.658 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease 98d1772c-e946-4064-bf72-ad84ce7121ea
+16/05/04 - 17:18:24.699 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/04 - 17:18:24.828 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/04 - 17:18:24.831 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/04 - 17:21:57.917 000B IvrApplication       TelephonyLink::Dispose() TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,98d1772c-e946-4064-bf72-ad84ce7121ea,heymattman@hotmail.com,******)
+16/05/04 - 17:21:57.959 0010 GC.GTP.#1            ClientCallbackProxy::Dispose() 98d1772c-e946-4064-bf72-ad84ce7121ea
+16/05/04 - 17:22:09.372 000C TelephonyServer      Initializing Logging Class
+16/05/04 - 17:22:09.373 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/04 - 17:22:09.445 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,d0d56d82-79cf-493c-8e63-3e6781635089,heymattman@hotmail.com,******)
+16/05/04 - 17:22:10.039 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease d0d56d82-79cf-493c-8e63-3e6781635089
+16/05/04 - 17:22:10.040 000F GC.GTP.#1            ClientCallbackProxy Registering Lease d0d56d82-79cf-493c-8e63-3e6781635089
+16/05/04 - 17:22:10.081 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/04 - 17:22:10.208 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/04 - 17:22:10.210 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/05 - 22:16:34.100 000C TelephonyServer      Initializing Logging Class
+16/05/05 - 22:16:34.101 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/05 - 22:16:34.168 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,35448587-494c-495e-9292-b763ea2550a9,heymattman@hotmail.com,******)
+16/05/05 - 22:16:34.760 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease 35448587-494c-495e-9292-b763ea2550a9
+16/05/05 - 22:16:34.760 000F GC.GTP.#1            ClientCallbackProxy Registering Lease 35448587-494c-495e-9292-b763ea2550a9
+16/05/05 - 22:16:34.802 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/05 - 22:16:34.930 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/05 - 22:16:34.932 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/05 - 22:22:31.421 000D TelephonyServer      Initializing Logging Class
+16/05/05 - 22:22:31.422 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/05 - 22:22:31.517 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,788cf0ce-b657-4610-bf6c-5ad6f20af7a1,heymattman@hotmail.com,******)
+16/05/05 - 22:22:32.081 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 788cf0ce-b657-4610-bf6c-5ad6f20af7a1
+16/05/05 - 22:22:32.082 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease 788cf0ce-b657-4610-bf6c-5ad6f20af7a1
+16/05/05 - 22:22:32.122 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/05 - 22:22:32.246 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/05 - 22:22:32.248 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/05 - 22:25:34.593 000B TelephonyServer      Initializing Logging Class
+16/05/05 - 22:25:34.594 000B TelephonyServer      Log Name: TelephonyLink.log
+16/05/05 - 22:25:34.681 000B TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,716faed7-6288-49a1-99a3-68979e896be6,heymattman@hotmail.com,******)
+16/05/05 - 22:25:35.256 000E GC.GTP.#1            ClientCallbackProxy Obtaining Lease 716faed7-6288-49a1-99a3-68979e896be6
+16/05/05 - 22:25:35.257 000E GC.GTP.#1            ClientCallbackProxy Registering Lease 716faed7-6288-49a1-99a3-68979e896be6
+16/05/05 - 22:25:35.297 000E GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/05 - 22:25:35.422 000B TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/05 - 22:25:35.424 000B TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/05 - 22:30:41.981 000D TelephonyServer      Initializing Logging Class
+16/05/05 - 22:30:41.981 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/05 - 22:30:42.045 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,013fdd97-85fe-4088-b6ca-b64402298cc5,heymattman@hotmail.com,******)
+16/05/05 - 22:30:42.610 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 013fdd97-85fe-4088-b6ca-b64402298cc5
+16/05/05 - 22:30:42.611 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease 013fdd97-85fe-4088-b6ca-b64402298cc5
+16/05/05 - 22:30:42.651 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/05 - 22:30:42.783 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/05 - 22:30:42.785 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/05 - 22:33:19.481 000C TelephonyServer      Initializing Logging Class
+16/05/05 - 22:33:19.482 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/05 - 22:33:19.549 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,71e2e4c1-790e-4c8f-9f68-66930b73464b,heymattman@hotmail.com,******)
+16/05/05 - 22:33:20.120 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease 71e2e4c1-790e-4c8f-9f68-66930b73464b
+16/05/05 - 22:33:20.121 000F GC.GTP.#1            ClientCallbackProxy Registering Lease 71e2e4c1-790e-4c8f-9f68-66930b73464b
+16/05/05 - 22:33:20.162 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/05 - 22:33:20.290 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/05 - 22:33:20.292 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/05 - 22:37:00.843 000C TelephonyServer      Initializing Logging Class
+16/05/05 - 22:37:00.844 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/05 - 22:37:00.911 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,3f63ddcb-9a50-4563-bbd9-1ccd3063d0cd,heymattman@hotmail.com,******)
+16/05/05 - 22:37:01.485 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease 3f63ddcb-9a50-4563-bbd9-1ccd3063d0cd
+16/05/05 - 22:37:01.486 000F GC.GTP.#1            ClientCallbackProxy Registering Lease 3f63ddcb-9a50-4563-bbd9-1ccd3063d0cd
+16/05/05 - 22:37:01.526 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/05 - 22:37:01.649 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/05 - 22:37:01.652 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/05 - 23:03:43.719 000D TelephonyServer      Initializing Logging Class
+16/05/05 - 23:03:43.720 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/05 - 23:03:43.788 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,de7597af-d958-42ce-928e-6cd14490fce4,heymattman@hotmail.com,******)
+16/05/05 - 23:03:44.371 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease de7597af-d958-42ce-928e-6cd14490fce4
+16/05/05 - 23:03:44.372 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease de7597af-d958-42ce-928e-6cd14490fce4
+16/05/05 - 23:03:44.413 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/05 - 23:03:44.538 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/05 - 23:03:44.541 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 07:39:49.368 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 07:39:49.369 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 07:39:49.436 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,663f5ebb-560d-4874-8ca8-6146e0bcd0a1,heymattman@hotmail.com,******)
+16/05/06 - 07:39:50.012 0003 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 663f5ebb-560d-4874-8ca8-6146e0bcd0a1
+16/05/06 - 07:39:50.013 0003 GC.GTP.#1            ClientCallbackProxy Registering Lease 663f5ebb-560d-4874-8ca8-6146e0bcd0a1
+16/05/06 - 07:39:50.055 0003 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 07:39:50.181 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 07:39:50.183 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 08:36:23.796 000D TelephonyServer      Initializing Logging Class
+16/05/06 - 08:36:23.797 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 08:36:23.860 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,8f89960b-effe-4c51-9d21-3872dca83580,heymattman@hotmail.com,******)
+16/05/06 - 08:36:24.440 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 8f89960b-effe-4c51-9d21-3872dca83580
+16/05/06 - 08:36:24.440 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease 8f89960b-effe-4c51-9d21-3872dca83580
+16/05/06 - 08:36:24.480 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 08:36:24.605 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 08:36:24.607 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 08:42:45.495 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 08:42:45.496 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 08:42:45.565 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,ca3d44ef-c7dd-4101-9a81-e52e669fa61b,heymattman@hotmail.com,******)
+16/05/06 - 08:42:46.138 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease ca3d44ef-c7dd-4101-9a81-e52e669fa61b
+16/05/06 - 08:42:46.138 000F GC.GTP.#1            ClientCallbackProxy Registering Lease ca3d44ef-c7dd-4101-9a81-e52e669fa61b
+16/05/06 - 08:42:46.182 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 08:42:46.308 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 08:42:46.311 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 08:50:37.348 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 08:50:37.348 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 08:50:37.415 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,449f09d6-c588-4fa2-8269-1dfd5a4fcc7b,heymattman@hotmail.com,******)
+16/05/06 - 08:50:37.984 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease 449f09d6-c588-4fa2-8269-1dfd5a4fcc7b
+16/05/06 - 08:50:37.985 000F GC.GTP.#1            ClientCallbackProxy Registering Lease 449f09d6-c588-4fa2-8269-1dfd5a4fcc7b
+16/05/06 - 08:50:38.025 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 08:50:38.148 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 08:50:38.151 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 08:53:06.630 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 08:53:06.650 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 08:53:06.718 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,aa669007-77f3-4ac1-8c5f-0fddd9bb17af,heymattman@hotmail.com,******)
+16/05/06 - 08:53:07.290 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease aa669007-77f3-4ac1-8c5f-0fddd9bb17af
+16/05/06 - 08:53:07.291 000F GC.GTP.#1            ClientCallbackProxy Registering Lease aa669007-77f3-4ac1-8c5f-0fddd9bb17af
+16/05/06 - 08:53:07.330 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 08:53:07.453 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 08:53:07.455 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 09:03:49.606 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 09:03:49.606 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 09:03:49.675 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,c0c0a546-fee9-47b3-9854-8afaebbd69ac,heymattman@hotmail.com,******)
+16/05/06 - 09:03:50.241 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease c0c0a546-fee9-47b3-9854-8afaebbd69ac
+16/05/06 - 09:03:50.242 000F GC.GTP.#1            ClientCallbackProxy Registering Lease c0c0a546-fee9-47b3-9854-8afaebbd69ac
+16/05/06 - 09:03:50.281 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 09:03:50.406 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 09:03:50.409 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 15:50:46.001 000D TelephonyServer      Initializing Logging Class
+16/05/06 - 15:50:46.001 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 15:50:46.070 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,8108c49b-db9f-4ca8-b1e4-d30285530b69,heymattman@hotmail.com,******)
+16/05/06 - 15:50:46.648 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 8108c49b-db9f-4ca8-b1e4-d30285530b69
+16/05/06 - 15:50:46.649 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease 8108c49b-db9f-4ca8-b1e4-d30285530b69
+16/05/06 - 15:50:46.689 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 15:50:46.813 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 15:50:46.815 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 16:13:54.333 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 16:13:54.334 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 16:13:54.402 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,5a958ca0-cafe-4cb7-a078-b659dcf42990,heymattman@hotmail.com,******)
+16/05/06 - 16:13:54.979 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease 5a958ca0-cafe-4cb7-a078-b659dcf42990
+16/05/06 - 16:13:54.980 000F GC.GTP.#1            ClientCallbackProxy Registering Lease 5a958ca0-cafe-4cb7-a078-b659dcf42990
+16/05/06 - 16:13:55.020 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 16:13:55.143 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 16:13:55.147 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 16:15:23.079 000D TelephonyServer      Initializing Logging Class
+16/05/06 - 16:15:23.080 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 16:15:23.148 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,3834fbeb-2455-4ca8-ac00-d9f1d441da03,heymattman@hotmail.com,******)
+16/05/06 - 16:15:23.718 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 3834fbeb-2455-4ca8-ac00-d9f1d441da03
+16/05/06 - 16:15:23.719 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease 3834fbeb-2455-4ca8-ac00-d9f1d441da03
+16/05/06 - 16:15:23.759 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 16:15:23.883 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 16:15:23.885 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 16:17:10.000 000D TelephonyServer      Initializing Logging Class
+16/05/06 - 16:17:10.001 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 16:17:10.064 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,300fdc96-9046-4e96-90ee-10b58f209fcc,heymattman@hotmail.com,******)
+16/05/06 - 16:17:10.637 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 300fdc96-9046-4e96-90ee-10b58f209fcc
+16/05/06 - 16:17:10.638 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease 300fdc96-9046-4e96-90ee-10b58f209fcc
+16/05/06 - 16:17:10.679 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 16:17:10.802 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 16:17:10.805 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 16:20:11.196 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 16:20:11.196 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 16:20:11.288 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,d84fc8ed-4dc4-4e11-a371-8d803c5600b1,heymattman@hotmail.com,******)
+16/05/06 - 16:20:11.861 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease d84fc8ed-4dc4-4e11-a371-8d803c5600b1
+16/05/06 - 16:20:11.862 000F GC.GTP.#1            ClientCallbackProxy Registering Lease d84fc8ed-4dc4-4e11-a371-8d803c5600b1
+16/05/06 - 16:20:11.902 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 16:20:12.026 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 16:20:12.029 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 16:23:52.741 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 16:23:52.742 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 16:23:52.811 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,0a2e2b78-949e-44e6-b3c7-bc99d9d5dcd4,heymattman@hotmail.com,******)
+16/05/06 - 16:23:53.385 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease 0a2e2b78-949e-44e6-b3c7-bc99d9d5dcd4
+16/05/06 - 16:23:53.386 000F GC.GTP.#1            ClientCallbackProxy Registering Lease 0a2e2b78-949e-44e6-b3c7-bc99d9d5dcd4
+16/05/06 - 16:23:53.427 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 16:23:53.554 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 16:23:53.556 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 16:27:01.201 000D TelephonyServer      Initializing Logging Class
+16/05/06 - 16:27:01.201 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 16:27:01.270 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,2447927a-a642-4927-985b-65e536779945,heymattman@hotmail.com,******)
+16/05/06 - 16:27:01.842 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 2447927a-a642-4927-985b-65e536779945
+16/05/06 - 16:27:01.843 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease 2447927a-a642-4927-985b-65e536779945
+16/05/06 - 16:27:01.886 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 16:27:02.010 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 16:27:02.012 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 16:28:30.537 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 16:28:30.538 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 16:28:30.609 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,1871414c-0607-4255-bc15-043f1ea8f3de,heymattman@hotmail.com,******)
+16/05/06 - 16:28:31.183 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease 1871414c-0607-4255-bc15-043f1ea8f3de
+16/05/06 - 16:28:31.190 000F GC.GTP.#1            ClientCallbackProxy Registering Lease 1871414c-0607-4255-bc15-043f1ea8f3de
+16/05/06 - 16:28:31.232 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 16:28:31.396 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 16:28:31.424 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 16:39:42.841 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 16:39:42.842 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 16:39:42.914 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,952bbbca-da97-4d14-9f6c-288e4960fd3f,heymattman@hotmail.com,******)
+16/05/06 - 16:39:43.484 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease 952bbbca-da97-4d14-9f6c-288e4960fd3f
+16/05/06 - 16:39:43.485 000F GC.GTP.#1            ClientCallbackProxy Registering Lease 952bbbca-da97-4d14-9f6c-288e4960fd3f
+16/05/06 - 16:39:43.525 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 16:39:43.649 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 16:39:43.651 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 16:41:34.481 000B TelephonyServer      Initializing Logging Class
+16/05/06 - 16:41:34.481 000B TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 16:41:34.548 000B TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,1c0f79b6-976b-4d99-a9ca-00703e45044b,heymattman@hotmail.com,******)
+16/05/06 - 16:41:35.118 000E GC.GTP.#1            ClientCallbackProxy Obtaining Lease 1c0f79b6-976b-4d99-a9ca-00703e45044b
+16/05/06 - 16:41:35.119 000E GC.GTP.#1            ClientCallbackProxy Registering Lease 1c0f79b6-976b-4d99-a9ca-00703e45044b
+16/05/06 - 16:41:35.159 000E GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 16:41:35.283 000B TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 16:41:35.285 000B TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 21:04:31.990 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 21:04:31.991 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 21:04:32.060 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,daf997c5-14f6-4006-a915-2f0ab413794e,heymattman@hotmail.com,******)
+16/05/06 - 21:04:32.632 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease daf997c5-14f6-4006-a915-2f0ab413794e
+16/05/06 - 21:04:32.633 000F GC.GTP.#1            ClientCallbackProxy Registering Lease daf997c5-14f6-4006-a915-2f0ab413794e
+16/05/06 - 21:04:32.675 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 21:04:32.802 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 21:04:32.804 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 21:11:46.142 000B TelephonyServer      Initializing Logging Class
+16/05/06 - 21:11:46.142 000B TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 21:11:46.211 000B TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,23f8752e-9a3a-43c3-b670-f3d7d83f8cf6,heymattman@hotmail.com,******)
+16/05/06 - 21:11:46.777 000E GC.GTP.#1            ClientCallbackProxy Obtaining Lease 23f8752e-9a3a-43c3-b670-f3d7d83f8cf6
+16/05/06 - 21:11:46.778 000E GC.GTP.#1            ClientCallbackProxy Registering Lease 23f8752e-9a3a-43c3-b670-f3d7d83f8cf6
+16/05/06 - 21:11:46.818 000E GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 21:11:46.941 000B TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 21:11:46.943 000B TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 21:16:58.098 000C TelephonyServer      Initializing Logging Class
+16/05/06 - 21:16:58.099 000C TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 21:16:58.169 000C TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,96270e86-1f99-451c-a242-d35f508a6f20,heymattman@hotmail.com,******)
+16/05/06 - 21:16:58.740 000F GC.GTP.#1            ClientCallbackProxy Obtaining Lease 96270e86-1f99-451c-a242-d35f508a6f20
+16/05/06 - 21:16:58.740 000F GC.GTP.#1            ClientCallbackProxy Registering Lease 96270e86-1f99-451c-a242-d35f508a6f20
+16/05/06 - 21:16:58.781 000F GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 21:16:58.908 000C TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 21:16:58.911 000C TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 21:30:52.810 000B TelephonyServer      Initializing Logging Class
+16/05/06 - 21:30:52.811 000B TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 21:30:52.877 000B TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,91f171a2-84a3-44e3-a4d7-3dd136a16064,heymattman@hotmail.com,******)
+16/05/06 - 21:30:53.441 000E GC.GTP.#1            ClientCallbackProxy Obtaining Lease 91f171a2-84a3-44e3-a4d7-3dd136a16064
+16/05/06 - 21:30:53.443 000E GC.GTP.#1            ClientCallbackProxy Registering Lease 91f171a2-84a3-44e3-a4d7-3dd136a16064
+16/05/06 - 21:30:53.483 000E GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 21:30:53.608 000B TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 21:30:53.610 000B TelephonyServer      Genuine: , 209.105.253.154:54331
+16/05/06 - 21:32:21.526 000D TelephonyServer      Initializing Logging Class
+16/05/06 - 21:32:21.527 000D TelephonyServer      Log Name: TelephonyLink.log
+16/05/06 - 21:32:21.595 000D TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://209.105.253.154:54331,46040f88-ac66-4d25-a798-d24809b3cb8e,heymattman@hotmail.com,******)
+16/05/06 - 21:32:22.158 0010 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 46040f88-ac66-4d25-a798-d24809b3cb8e
+16/05/06 - 21:32:22.159 0010 GC.GTP.#1            ClientCallbackProxy Registering Lease 46040f88-ac66-4d25-a798-d24809b3cb8e
+16/05/06 - 21:32:22.200 0010 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+16/05/06 - 21:32:22.328 000D TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+16/05/06 - 21:32:22.330 000D TelephonyServer      Genuine: , 209.105.253.154:54331
+20-10-13 - 15:11:06.789 0006 TelephonyServer      Initializing Logging Class
+20-10-13 - 15:11:06.789 0006 TelephonyServer      Log Name: TelephonyLink.log
+20-10-13 - 15:11:06.851 0006 TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://10.168.3.209:54331,6bd0ad74-1342-4a53-8ed0-8a102d383136,ghorvath,******)
+20-10-13 - 15:11:09.051 0006 TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://10.168.3.209:54331,0a19c702-9d26-4ff8-9d77-a18c3952ef42,ghorvath,******)
+20-10-13 - 15:11:11.124 0006 TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://10.168.3.209:54331,d5aba4a3-e0cf-4a57-8054-5c0ecd69e356,ghorvath,******)
+20-10-13 - 15:11:13.204 0006 TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://10.168.3.209:54331,f89d0eff-4571-40a4-bebd-4c6f28512dd7,ghorvath,******)
+20-10-13 - 15:11:15.280 0006 TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://10.168.3.209:54331,808e39ca-0364-43c6-9de8-b45bf5ce018b,ghorvath,******)
+20-10-13 - 15:11:17.361 0006 TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://10.168.3.209:54331,7d489b03-65ba-4d81-9e68-08b713b20f2b,ghorvath,******)
+20-10-13 - 15:11:19.433 0006 TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://10.168.3.209:54331,2df26828-15a7-4e2d-b23e-c26f0606b0e6,ghorvath,******)
+20-10-13 - 15:11:21.512 0006 TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://10.168.3.209:54331,0606f0d0-36e8-456c-bcff-8c96856910ae,ghorvath,******)
+20-10-13 - 15:13:00.640 0006 TelephonyServer      Initializing Logging Class
+20-10-13 - 15:13:00.640 0006 TelephonyServer      Log Name: TelephonyLink.log
+20-10-13 - 15:13:00.699 0006 TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://10.168.3.209:54331,457e3c2f-7a75-47e1-b23b-89092dc49628,ghorvath,******)
+20-10-13 - 15:13:00.944 0009 GC.GTP.#1            ClientCallbackProxy Obtaining Lease 457e3c2f-7a75-47e1-b23b-89092dc49628
+20-10-13 - 15:13:00.945 0009 GC.GTP.#1            ClientCallbackProxy Registering Lease 457e3c2f-7a75-47e1-b23b-89092dc49628
+20-10-13 - 15:13:00.948 0009 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+20-10-13 - 15:13:00.991 0006 TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+20-10-13 - 15:13:00.993 0006 TelephonyServer      Genuine: , 10.168.3.209:54331
+20-10-13 - 15:14:15.775 0006 TelephonyServer      Initializing Logging Class
+20-10-13 - 15:14:15.776 0006 TelephonyServer      Log Name: TelephonyLink.log
+20-10-13 - 15:14:15.829 0006 TelephonyServer      TelephonyLink::TelephonyLink() Constructing TLSI(VoiceElements.Interface.TelephonyServerProxy,gtcp://10.168.3.209:54331,c7628512-0409-4e30-9125-2f0db780aaba,test2,******)
+20-10-13 - 15:14:16.104 0009 GC.GTP.#1            ClientCallbackProxy Obtaining Lease c7628512-0409-4e30-9125-2f0db780aaba
+20-10-13 - 15:14:16.105 0009 GC.GTP.#1            ClientCallbackProxy Registering Lease c7628512-0409-4e30-9125-2f0db780aaba
+20-10-13 - 15:14:16.157 0009 GC.GTP.#1            ClientCallbackProxy: Bi-Directional Communication Initialized!
+20-10-13 - 15:14:16.274 0006 TelephonyServer      Genuine: VoiceElements.Interface.TelephonyServerProxy
+20-10-13 - 15:14:16.276 0006 TelephonyServer      Genuine: , 10.168.3.209:54331

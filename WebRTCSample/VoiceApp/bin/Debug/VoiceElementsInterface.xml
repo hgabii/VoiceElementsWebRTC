@@ -4,6 +4,11 @@
         <name>VoiceElementsInterface</name>
     </assembly>
     <members>
+        <member name="T:VoiceElements.Interface.TelephonyServerLink">
+            <summary>
+            The Telephony Server Link.  This object exists on the Client, but creates the proxy that lives on the server.
+            </summary>
+        </member>
         <member name="T:VoiceElements.Interface.TelephonyLink">
             <summary>
             This is a Class that Creates the link between the client and the server.
@@ -22,11 +27,6 @@
         <member name="P:VoiceElements.Interface.TelephonyLink.HostName">
             <summary>
             The HostName
-            </summary>
-        </member>
-        <member name="T:VoiceElements.Interface.TelephonyServerLink">
-            <summary>
-            The Telephony Server Link.  This object exists on the Client, but creates the proxy that lives on the server.
             </summary>
         </member>
         <member name="T:VoiceElements.Interface.TelephonyServerLinkShim">
@@ -49,19 +49,9 @@
             This is the Client Callback proxy.  It gets created through remoting on the Client.
             </summary>
         </member>
-        <member name="T:VoiceElements.Interface.VoiceResourceLinkShim">
-            <summary>
-            This is a VoiceResourceLink Link Shim for Dealing With Events
-            </summary>
-        </member>
         <member name="T:VoiceElements.Interface.TelephonyLinkShim">
             <summary>
             This is a Telephony Link Shim for Dealing With Events
-            </summary>
-        </member>
-        <member name="T:VoiceElements.Interface.ChannelResourceLinkShim">
-            <summary>
-            This is a ChannelResource Link Shim for Dealing With Events
             </summary>
         </member>
         <member name="P:VoiceElements.Interface.NewCallEventArgs.OK">

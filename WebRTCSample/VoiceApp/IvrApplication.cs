@@ -68,6 +68,164 @@ namespace VoiceApp
             get { return s_WorkingFolder; }
         }
 
+        /// <summary>
+        /// We are storing the inbound calls in a dictionary. This allows us to uniquely identify each one.
+        /// </summary>
+        public static Dictionary<string, InboundCall> s_InboundCalls = new Dictionary<string, InboundCall>();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Dictionary<string, BasicIvr> s_WebRtc = new Dictionary<string, BasicIvr>();
+
+        public static void NotifyCall(string callId, string phoneNumber)
+        {
+            List<BasicIvr> webRtcToNotify = new List<BasicIvr>();
+            // we don't want to notify in the lock, otherwise it holds up the lock from releasing.
+            lock(IvrApplication.SyncVar)
+            {
+                foreach(BasicIvr webRtc in s_WebRtc.Values)
+                {
+                    webRtcToNotify.Add(webRtc);
+                }
+            }
+
+            foreach(BasicIvr webRtc in webRtcToNotify)
+            {
+                // You may also consider sending new notifications on separate threads. Sometimes the send can be slowed down
+                try
+                {
+                    webRtc.NotifyCall(callId, phoneNumber);
+                }
+                catch(Exception ex)
+                {
+                    IvrApplication.Log.WriteException(ex, "Error in IvrApplication::NotifyCall");
+                }
+            }
+        }
+
+        public static void CancelCall(string callId)
+        {
+            List<BasicIvr> webRtcToNotify = new List<BasicIvr>();
+            // we don't want to notify in the lock, otherwise it holds up the lock from releasing.
+            lock (IvrApplication.SyncVar)
+            {
+                foreach (BasicIvr webRtc in s_WebRtc.Values)
+                {
+                    webRtcToNotify.Add(webRtc);
+                }
+            }
+
+            foreach (BasicIvr webRtc in webRtcToNotify)
+            {
+                // You may also consider sending new notifications on separate threads. Sometimes the send can be slowed down
+                try
+                {
+                    webRtc.NotifyHangup();
+                }
+                catch (Exception ex)
+                {
+                    IvrApplication.Log.WriteException(ex, "Error in IvrApplication::NotifyCall");
+                }
+            }
+        }
+
+        public static void NotifyHangup(string webRtcId)
+        {
+            BasicIvr webRtc;
+            s_WebRtc.TryGetValue(webRtcId, out webRtc);
+
+            if(webRtc != null)
+            {
+                webRtc.NotifyHangup();
+            }
+        }
+
+        public static void RouteCall(string callId, BasicIvr webRtcLeg)
+        {
+            try
+            {
+                InboundCall call;
+                lock (IvrApplication.s_SyncVar)
+                {
+                    s_InboundCalls.TryGetValue(callId, out call);
+                }
+
+                if (call != null)
+                {
+                    // Set which WebRTC leg it is attached to that way we can notify it when the call terminates.
+                    call.CurrentWebRTCId = webRtcLeg.UniqueId;
+                    call.WaitEvent.Set();
+                }
+
+                webRtcLeg.ChannelResource.RouteFull(call.ChannelResource);
+            }
+            catch { }
+
+            //throw new NotImplementedException();
+        }
+
+        public static void RejectCall(string callId)
+        {
+            InboundCall call;
+            lock(IvrApplication.s_SyncVar)
+            {
+                s_InboundCalls.TryGetValue(callId, out call);
+            }
+
+            if(call != null)
+            {
+                // Signal that the call has been responded to
+                call.WaitEvent.Set();
+
+                // Hangup the call, since the call was rejected
+                call.HangupEvent.Set();
+            }
+        }
+
+
+
+
+        public static void DialCall(string phoneNumber, BasicIvr webRtc)
+        {
+            try
+            {
+                ChannelResource channelResource = s_TelephonyServer.GetChannel();
+                InboundCall inbound = new InboundCall(channelResource, channelResource.VoiceResource);
+                lock(s_SyncVar)
+                {
+                    s_InboundCalls.Add(inbound.UniqueId, inbound);
+                }
+                webRtc.CurrentCallId = inbound.UniqueId;
+                inbound.CurrentWebRTCId = webRtc.UniqueId;
+                inbound.PhoneNumber = phoneNumber;
+                webRtc.ChannelResource.StopListening(); // stop listening to any other routable resources
+                webRtc.ChannelResource.RouteFull(inbound.ChannelResource);
+                webRtc.SendDialStart();
+                System.Threading.Thread dialCall = new Thread(inbound.RunOutboundScript);
+                dialCall.Start();
+            }
+            catch (Exception ex)
+            {
+
+            }
+            //throw new NotImplementedException();
+        }
+
+        public static void HangupCall(string callId)
+        {
+            InboundCall call;
+            lock(IvrApplication.s_SyncVar)
+            {
+                s_InboundCalls.TryGetValue(callId, out call);
+            }
+
+            if(call != null)
+            {
+                call.HangupEvent.Set();
+            }
+        }
+
         static IvrApplication()
         {
             // Constructor
@@ -189,8 +347,8 @@ namespace VoiceApp
 
                     // SUBSCRIBE to the new call event.
                     s_TelephonyServer.NewCall += new VoiceElements.Client.NewCall(s_TelephonyServer_NewCall);
-                    s_TelephonyServer.RegisterDNIS();
-                    s_TelephonyServer.RegisterWebRtcUrl();
+                    s_TelephonyServer.RegisterDNIS(Properties.Settings.Default.RegisterDNIS);
+                    s_TelephonyServer.RegisterWebRtcUrl(Properties.Settings.Default.RegisterWebRTCURL);
 
                     // Subscribe to the connection events to allow you to reconnect if something happens to the internet connection.
                     // If you are running your own VE server, this is less likely to happen except when you restart your VE server.
@@ -310,15 +468,24 @@ namespace VoiceApp
                 {
                     Log.Write("Answering...");
 
-                    e.ChannelResource.Answer();
-                    e.ChannelResource.VoiceResource.PlayTTS("Hello.  Please call back using WEB R. T. C.  Good bye.");
-                    e.ChannelResource.Disconnect();
+                    InboundCall inboundCall = new InboundCall(e.ChannelResource, e.ChannelResource.VoiceResource);
+                    // Add the new call to the dictionary
+                    lock (IvrApplication.SyncVar)
+                    {
+                        IvrApplication.s_InboundCalls.Add(inboundCall.UniqueId, inboundCall);
+                    }
+                    inboundCall.RunScript();
+
                     return;
                 }
 
                 if (e.ChannelResource.Dnis.ToLower().EndsWith("basicivr.html"))
                 {
                     BasicIvr basicIvr = new BasicIvr(e.ChannelResource);
+                    lock(IvrApplication.SyncVar)
+                    {
+                        IvrApplication.s_WebRtc.Add(basicIvr.UniqueId, basicIvr);
+                    }
                     basicIvr.RunScript();
                     return;
                 }
@@ -356,6 +523,8 @@ namespace VoiceApp
 
             }
         }
+
+
 
 
     }

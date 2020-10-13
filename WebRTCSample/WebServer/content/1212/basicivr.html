@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/toastr.min.css" />
+    <link rel="stylesheet" href="css/Site.css" />
+
+    <!-- Jquery -->
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/toastr.min.js"></script>
+    <meta charset="utf-8" />
+    <title>WebRTC Basic IVR</title>
+</head>
+<body>
+    <div class="modal fade" id="incomingCallModal" tabindex="-1" role="dialog" aria-labelledby="incomingCallModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="incomingCallModalLabel">Incoming Call</h4>
+                </div>
+                <div class="modal-body">
+                    Would you like to answer this call?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="rejectCall();">Disconnect</button>
+                    <button type="button" class="btn btn-primary" onclick="answerCall();">Accept Call</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="container-fluid" id="content">
+
+                <h1 class="hborder">Basic Ivr</h1>
+                <input type="hidden" id="hdnCallId" />
+                <audio id="sourceAudio" autoplay="" muted="true"></audio>
+                <audio id="remoteAudio" autoplay="true"></audio>
+                <audio id="1" src="audio/1.mp3"></audio>
+                <audio id="2" src="audio/2.mp3"></audio>
+                <audio id="3" src="audio/3.mp3"></audio>
+                <audio id="4" src="audio/4.mp3"></audio>
+                <audio id="5" src="audio/5.mp3"></audio>
+                <audio id="6" src="audio/6.mp3"></audio>
+                <audio id="7" src="audio/7.mp3"></audio>
+                <audio id="8" src="audio/8.mp3"></audio>
+                <audio id="9" src="audio/9.mp3"></audio>
+                <audio id="0" src="audio/0.mp3"></audio>
+                <audio id="*" src="audio/star.mp3"></audio>
+                <audio id="#" src="audio/pound.mp3"></audio>
+                <div id="soft-phone">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('1');" id="btnOne" disabled>1</button>
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('2');" id="btnTwo" disabled>2</button>
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('3');" id="btnThree" disabled>3</button>
+                            </div>
+                            <br>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('4');" id="btnFour" disabled>4</button>
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('5');" id="btnFive" disabled>5</button>
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('6');" id="btnSix" disabled>6</button>
+                            </div>
+                            <br>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('7');" id="btnSeven" disabled>7</button>
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('8');" id="btnEight" disabled>8</button>
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('9');" id="btnNine" disabled>9</button>
+                            </div>
+                            <br>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('*');" id="btnStar" disabled>*</button>
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('0');" id="btnZero" disabled>0</button>
+                                <button type="button" class="btn btn-default btn-phone" onclick="touchTone('#');" id="btnPound" disabled>#</button>
+                            </div>
+                            <div class="btn-group" role="group" style="padding-top:10px;">
+                                <form class="navbar-form navbar-left" role="search">
+                                    <input type="text" id="phoneNumber" class="form-control" />
+                                    <button type="button" id="btnDial" class="btn btn-default form-control" disabled onclick="dialCall();"><strong>Dial</strong></button>
+                                </form>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <form class="navbar-form navbar-left" role="search">
+                                    <div class="input-group input-group phone-control" role="group">
+                                        <button type="button" class="btn btn-default form-control" id="btnConnect" onclick="btnConnectClick();">Connect</button>
+                                    </div>
+                                    <div class="input-group input-group phone-control">
+                                        <button type="button" class="btn btn-default form-control" id="btnHangup" onclick="hangup();" disabled>Hangup</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-8">
+                            <form class="form-inline" onsubmit="return false;">
+                                <div style="text-align: left;">
+                                    <button class="form-control" onclick="btnRecordMessageClick();" id="btnRecordMessage" disabled="disabled">Record Message</button>
+                                    <button class="form-control" onclick="btnPlayMessageClick();" id="btnPlayMessage" disabled="disabled">Play Message</button>
+                                    <button class="form-control" onclick="btnStreamMusicClick();" id="btnStreamMusic" disabled="disabled">Stream Music</button>
+                                    <button class="form-control" onclick="btnStopClick();" id="btnStop" disabled="disabled">Stop</button>
+                                    <button class="form-control" onclick="btnDialPadTestClick();" id="btnDialPadTest" disabled="disabled">Dial Pad Test</button>
+                                    <button class="form-control" onclick="btnGoodbyeClick();" id="btnGoodbye" disabled="disabled">Goodbye</button>
+                                </div>
+
+                                <div style="text-align: left;">
+                                    <button class="form-control" onclick="btnTextToSpeechClick();" id="btnTextToSpeech" disabled="disabled">Text-to-Speech</button>
+                                    <label>Enter Text:</label> <input id="TTSText" disabled="disabled" placeholder="Key in some text here and it will be read back to you." type='text' size="50" />
+                                </div>
+                                <div style="text-align: left;">
+                                    <button class="form-control" onclick="btnSpeechRecognitionClick();" id="btnSpeechRecognition" disabled="disabled">Speech Recognition</button>
+                                    <label>Speak your favorite color!</label>
+                                </div>
+                                <label>(Note: While connected you will hear a periodic beep to remind you that you are connected to the Voice Elements Platform.)</label>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+
+                            <div>
+                                <strong>Your Status</strong><br />
+                                <span id="lblStatus">Disconnected</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <!--<div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="input-group input-group phone-control">
+                                <button type="button" class="btn btn-default form-control">Connect</button>
+                                <br>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Phone Number" aria-describedby="Phone Number">
+                                <input type="text" class="form-control" placeholder="Caller ID" aria-describedby="Caller ID">
+                                <br>
+                                <br>
+                                <button type="button" class="btn btn-default form-control">Dial</button>
+                                <br>
+                                <br>
+                                <button type="button" class="btn btn-default form-control">Hang Up</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h1>Instructions</h1>
+                            <p>
+                                Please press connect after you have started the Soft Phone Service
+                            </p>
+                            <p>
+                                To send calls to the soft phone, you will need to dial 9999 from your Voice Elements Application.
+                            </p>
+                            <p>
+                                To place a call, enter a phone number along with the phone number you would like to show up on your caller id and click "Send Call"
+                            </p>
+                        </div>
+                    </div>-->
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <pre id="evtLog">Event information log (Shown to demonstrate the data channel.)
+--------------------------------------------------------------
+                            </pre> 
+                        </div>
+                    </div>
+                </div>
+                <script src="scripts/InventiveWebRTC.js"></script>
+
+                <script type="text/javascript">
+                    var evtLog = document.getElementById("evtLog");                    var btnConnect = document.getElementById("btnConnect");                    var lblStatus = document.getElementById("lblStatus");                    var btnTextToSpeech = document.getElementById("btnTextToSpeech");                    var btnPlayMessage = document.getElementById("btnPlayMessage");                    var btnRecordMessage = document.getElementById("btnRecordMessage");                    var btnStreamMusic = document.getElementById("btnStreamMusic");                    var btnStop = document.getElementById("btnStop");                    var btnGoodbye = document.getElementById("btnGoodbye");                    var btnDialPadTest = document.getElementById("btnDialPadTest");                    var ttsText = document.getElementById("TTSText");                    var btnSpeechRecognition = document.getElementById("btnSpeechRecognition");                    var btnOne = document.getElementById("btnOne");
+                    var btnTwo = document.getElementById("btnTwo");
+                    var btnThree = document.getElementById("btnThree");
+                    var btnFour = document.getElementById("btnFour");
+                    var btnFive = document.getElementById("btnFive");
+                    var btnSix = document.getElementById("btnSix");
+                    var btnSeven = document.getElementById("btnSeven");
+                    var btnEight = document.getElementById("btnEight");
+                    var btnNine = document.getElementById("btnNine");
+                    var btnStar = document.getElementById("btnStar");
+                    var btnZero = document.getElementById("btnZero");
+                    var btnPound = document.getElementById("btnPound");
+                    var btnHangup = document.getElementById('btnHangup');
+                    var btnDial = document.getElementById('btnDial');
+
+                    document.addEventListener("messageEvent", messageEventHandler, false);
+                    document.addEventListener("socketStatusEvent", socketStatusEventHandler, false);
+                    document.addEventListener("mediaStatusEvent", mediaStatusEventHandler, false);
+                    document.addEventListener("authenticationEvent", authenticationEventHandler, false);
+                    document.addEventListener("applicationMessageEvent", applicationMessageEventHandler, false);
+
+                    function messageEventHandler(e) {
+                        LogMessage(e.detail.time.toLocaleString() + ": " + e.detail.message);
+                    }
+
+                    function authenticationEventHandler(e) {
+                    }
+
+                    function socketStatusEventHandler(e) {
+                        switch (e.detail.status) {
+                            case IVLSocketState.Disconnected:
+                                LogMessage("IVLSocketState.Disconnected");
+                                lblStatus.innerText = "Disconnected";
+                                btnConnect.innerText = 'Connect';
+                                btnConnect.disabled = false;
+                                lockUI();
+                                btnStop.disabled = true;
+                                break;
+                            case IVLSocketState.Permissions:
+                                LogMessage("Asking User For Permission To Use Microphone.");
+                                lblStatus.innerText = "Permissions";
+                                btnConnect.innerText = 'Permissions';
+                                btnConnect.disabled = true;
+                                break;
+                            case IVLSocketState.Connecting:
+                                LogMessage("IVLSocketState.Connecting");
+                                btnConnect.disabled = true;
+                                lblStatus.innerText = "Connecting";
+                                btnConnect.innerText = 'Connecting...';
+                                break;
+                            case IVLSocketState.Connected:
+                                LogMessage("IVLSocketState.Connected");
+                                lblStatus.innerText = "Connected";
+                                btnConnect.innerText = 'Disconnect';
+                                btnConnect.disabled = false;
+                                break;
+                            default:
+                                LogMessage("Unknown Socket State");
+                                LogMessage(e.detail.status);
+                        }
+                    }
+
+                    function mediaStatusEventHandler(e) {
+                    }
+
+                    function applicationMessageEventHandler(e) {
+                        LogMessage('Received: ' + e.detail.message);
+                        var msg = JSON.parse(e.detail.message);
+                        switch (msg.__type) {
+                            case "VoiceApp.BasicIvr+UnlockUI":
+                                unlockUI();
+                                break;
+                            case "VoiceApp.BasicIvr+IncomingCall":
+                                $('#incomingCallModalLabel').text("Incoming Call " + msg.phonenumber);
+                                $('#hdnCallId').val(msg.callid);
+                                $('#incomingCallModal').modal('show');
+                                break;
+                            case "VoiceApp.BasicIvr+HangupCall":
+                                $('#incomingCallModal').modal('hide');
+                                $('#hdnCallId').val('');
+                                unlockUI();
+                                break;
+                            case "VoiceApp.BasicIvr+DialStart":
+                                $('#hdnCallId').val(msg.callid);
+                                btnHangup.disabled = false;
+                                btnDial.disabled = true;
+                                break;
+                            default:
+                                LogMessage('Unreconized Message Received: ' + e.message);
+                                break;
+                        }
+                    }
+
+                    function unlockUI() {
+                        btnTextToSpeech.disabled = false;
+                        btnRecordMessage.disabled = false;
+                        btnPlayMessage.disabled = false;
+                        btnStreamMusic.disabled = false;
+                        ttsText.disabled = false;
+                        btnDialPadTest.disabled = false;
+                        btnStop.disabled = true;
+                        btnGoodbye.disabled = false;
+                        btnSpeechRecognition.disabled = false;
+                        btnDial.disabled = false;
+                    }
+
+                    function lockUI() {
+                        ttsText.disabled = true;
+                        btnTextToSpeech.disabled = true;
+                        btnRecordMessage.disabled = true;
+                        btnPlayMessage.disabled = true;
+                        btnStreamMusic.disabled = true;
+                        btnGoodbye.disabled = true;
+                        btnDialPadTest.disabled = true;
+                        btnStop.disabled = false;
+                        btnSpeechRecognition.disabled = true;
+
+                        btnOne.disabled = true;
+                        btnTwo.disabled = true;
+                        btnThree.disabled = true;
+                        btnFour.disabled = true;
+                        btnFive.disabled = true;
+                        btnSix.disabled = true;
+                        btnSeven.disabled = true;
+                        btnEight.disabled = true;
+                        btnNine.disabled = true;
+                        btnStar.disabled = true;
+                        btnZero.disabled = true;
+                        btnPound.disabled = true;
+
+                        btnDial.disabled = true;
+                        btnHangup.disabled = true;
+                    }
+
+                    // log event in console
+                    function LogMessage(msg) {
+                        evtLog.textContent += msg + "\n";
+                        var ot = evtLog.scrollHeight - evtLog.clientHeight;
+                        if (ot > 0) evtLog.scrollTop = ot;
+                    }
+
+                    function btnConnectClick() {
+
+                        var serverAddress = "sdudev_ve1.sdudev.local";
+
+                        switch (btnConnect.innerText) {
+                            case 'Connect':
+                                if (location.protocol == 'https:') {
+                                    IVLConnect('wss://' + serverAddress + ':61053/');
+                                }
+                                else {
+                                    IVLConnect('ws://' + serverAddress + ':61052/');
+                                }
+                                //IVLConnect('ws://172.18.13.145:1337/');
+                                break;
+                            case 'Disconnect':
+                                IVLDisconnect();
+                                lblStatus.innerText = "Disconnected";
+                                btnConnect.innerText = 'Connect';
+                                btnConnect.disabled = false;
+                                break;
+                        }
+                    }
+
+                    function btnTextToSpeechClick() {
+                        lockUI();
+                        LogMessage('Send PlayTextToSpeech.');
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+PlayTextToSpeech', version: 1, ttsdata: ttsText.value });
+                    }
+
+                    function btnStopClick() {
+                        LogMessage('Send Stop.');
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+Stop', version: 1, data: 'data' });
+                    }
+
+                    function btnRecordMessageClick() {
+                        lockUI();
+                        LogMessage('Send RecordMessage.');
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+RecordMessage', version: 1, data: 'data' });
+                    }
+
+                    function btnPlayMessageClick() {
+                        lockUI();
+                        LogMessage('Send PlayMessage.');
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+PlayMessage', version: 1, data: 'data' });
+                    }
+
+                    function btnStreamMusicClick() {
+                        lockUI();
+                        LogMessage('Send StreamMusic.');
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+StreamMusic', version: 1, data: 'data' });
+                    }
+
+                    function btnGoodbyeClick() {
+                        lockUI();
+                        LogMessage('Send Goodbye.');
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+Goodbye', version: 1, data: 'data' });
+                    }
+
+                    function btnDialPadTestClick() {
+                        lockUI();
+
+                        btnOne.disabled = false;
+                        btnTwo.disabled = false;
+                        btnThree.disabled = false;
+                        btnFour.disabled = false;
+                        btnFive.disabled = false;
+                        btnSix.disabled = false;
+                        btnSeven.disabled = false;
+                        btnEight.disabled = false;
+                        btnNine.disabled = false;
+                        btnStar.disabled = false;
+                        btnZero.disabled = false;
+                        btnPound.disabled = false;
+
+                        LogMessage('Send DialPadTest.');
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+DialPadTest', version: 1, data: 'data' });
+                    }
+
+                    function btnSpeechRecognitionClick() {
+                        lockUI();
+                        LogMessage('Send Speech Recognition.');
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+SpeechRecognition', version: 1, data: 'data' });
+                    }
+
+                    function btnDtmfClick(val) {
+                        sendTone(val);
+                    }
+
+                    function touchTone(tones){
+                        var sound = document.getElementById(tones);
+                        if (sound)
+                            sound.play();
+
+                        sendTone(tones);
+                    }
+
+                    function answerCall() {
+                        lockUI();
+                        btnHangup.disabled = false;
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+AnswerCall', version: 1, callid: $('#hdnCallId').val() });
+                        $('#btnDial').disabled = true;
+                        $('#incomingCallModal').modal('hide');
+                    }
+
+                    function rejectCall() {
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+RejectCall', version: 1, callid: $('#hdnCallId').val() })
+                        $('#hdnCallId').val();
+                        $('#incomingCallModal').modal('hide');
+                    }
+
+                    function hangup() {
+                        btnHangup.disabled = true;
+                        IVLSocketSendApplicationMessage({ __type: 'VoiceApp.BasicIvr+HangupCall', version: 1, callid: $('#hdnCallId').val() });
+                        
+                        // reset the call id
+                        $('#hdnCallId').val(''); 
+                    }
+
+                    function dialCall() {
+                        if ($('#hdnCallId').val() != '') {
+                            alert('Please hangup the current call to place a  new call.');
+                            return;
+                        }
+                        var phoneNumber = $('#phoneNumber').val();
+                        if(phoneNumber.length == ''){
+                            alert('Please enter a phone number');
+                            return;
+                        }
+                        lockUI();
+                        btnHangup.disabled = true;
+                        IVLSocketSendApplicationMessage({__type:'VoiceApp.BasicIvr+DialCall', version: 1,phonenumber:phoneNumber})
+                    }
+
+                </script>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="container-fluid" id="footer">
+                <div id="inner-footer">
+                    © 2016 Inventive Labs
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -516,6 +516,11 @@
             Fast Busy.
             </summary>
         </member>
+        <member name="F:VoiceElements.Common.DialResult.DestinationGroupExhausted">
+            <summary>
+            The Destination Group was used and no route was found for the call.
+            </summary>
+        </member>
         <member name="T:VoiceElements.Common.FormatSpoken">
             // Documentation file reference
             <summary>
@@ -616,6 +621,11 @@
         <member name="F:VoiceElements.Common.QosEventType.RtpTimeout">
             <summary>
             Indicates Rtp Timeout
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Record.RR">
+            <summary>
+            The Resource Record this RDATA record belongs to
             </summary>
         </member>
         <member name="T:VoiceElements.Common.DialReturnType">
@@ -1162,12 +1172,169 @@
             </summary>
             <param name="message"></param>
         </member>
+        <member name="M:VoiceElements.Common.AuthorizationException.#ctor(System.String,System.Exception)">
+            <summary>
+            A constructor setting the message text and inner exception
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
         <member name="M:VoiceElements.Common.AuthorizationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
             <summary>
             A constuctor used in serailization.
             </summary>
             <param name="si"></param>
             <param name="context"></param>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Response.Questions">
+            <summary>
+            List of Question records
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Response.Answers">
+            <summary>
+            List of AnswerRR records
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Response.Authorities">
+            <summary>
+            List of AuthorityRR records
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Response.Additionals">
+            <summary>
+            List of AdditionalRR records
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Response.Error">
+            <summary>
+            Error message, empty when no error
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Response.MessageSize">
+            <summary>
+            The Size of the message
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Response.TimeStamp">
+            <summary>
+            TimeStamp when cached
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Response.Server">
+            <summary>
+            Server which delivered this response
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Response.RecordsMX">
+            <summary>
+            List of RecordMX in Response.Answers
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Response.RecordsTXT">
+            <summary>
+            List of RecordTXT in Response.Answers
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Response.RecordsA">
+            <summary>
+            List of RecordA in Response.Answers
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Response.RecordsPTR">
+            <summary>
+            List of RecordPTR in Response.Answers
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Response.RecordsCNAME">
+            <summary>
+            List of RecordCNAME in Response.Answers
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Response.RecordsAAAA">
+            <summary>
+            List of RecordAAAA in Response.Answers
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Response.RecordsNS">
+            <summary>
+            List of RecordNS in Response.Answers
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Response.RecordsSOA">
+            <summary>
+            List of RecordSOA in Response.Answers
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Header.ID">
+            <summary>
+            An identifier assigned by the program
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Header.QDCOUNT">
+            <summary>
+            the number of entries in the question section
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Header.ANCOUNT">
+            <summary>
+            the number of resource records in the answer section
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Header.NSCOUNT">
+            <summary>
+            the number of name server resource records in the authority records section
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Header.ARCOUNT">
+            <summary>
+            the number of resource records in the additional records section
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Header.Data">
+            <summary>
+            Represents the header as a byte array
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Header.QR">
+            <summary>
+            query (false), or a response (true)
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Header.OPCODE">
+            <summary>
+            Specifies kind of query
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Header.AA">
+            <summary>
+            Authoritative Answer
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Header.TC">
+            <summary>
+            TrunCation
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Header.RD">
+            <summary>
+            Recursion Desired
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Header.RA">
+            <summary>
+            Recursion Available
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Header.Z">
+            <summary>
+            Reserved for future use
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Header.RCODE">
+            <summary>
+            Response code
+            </summary>
         </member>
         <member name="T:VoiceElements.Common.CallProgress">
             <summary>
@@ -1210,6 +1377,41 @@
         <member name="F:VoiceElements.Common.CallProgress.AnalyzeCall">
             <summary>
             Attempts to determine if the called party is a human or machine.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.DNS.RR">
+            <summary>
+            Resource Record (rfc1034 3.6.)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.RR.NAME">
+            <summary>
+            The name of the node to which this resource record pertains
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.RR.Type">
+            <summary>
+            Specifies type of resource record
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.RR.Class">
+            <summary>
+            Specifies type class of resource record, mostly IN but can be CS, CH or HS 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.RR.RDLENGTH">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.RR.RECORD">
+            <summary>
+            One of the Record* classes
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.RR.TTL">
+            <summary>
+            Time to live, the time interval that the resource record may be cached
             </summary>
         </member>
         <member name="T:VoiceElements.Common.Digest">
@@ -1871,6 +2073,57 @@
             <param name="offset"></param>
             <param name="count"></param>
             <returns></returns>
+        </member>
+        <member name="T:VoiceElements.Common.ChannelEventType">
+            <summary>
+            Events fired by a Channel
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ChannelEventType.DialComplete">
+            <summary>
+            The DialCompete Event
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ChannelEventType.Disconnected">
+            <summary>
+            The Disconnected Event
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ChannelEventType.NewCall">
+            <summary>
+            The NewCall Event
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.DNS.VoiceElementsLocator">
+            <summary>
+            Locates the VoiceElements Main Login Servers
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.VoiceElementsLocator.Locate(VoiceElements.Common.Log)">
+            <summary>
+            Use the Locate function to supply the location of the VoiceElements Main Login Servers
+            </summary>
+            <param name="log"></param>
+        </member>
+        <member name="T:VoiceElements.Common.DNS.VoiceElementsLocatorService">
+            <summary>
+            A class returned from the VoiceElementsLocator::Locate() function.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.VoiceElementsLocatorService.Target">
+            <summary>
+            The Target URL
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.VoiceElementsLocatorService.IpAddress">
+            <summary>
+            The Resolved IP Address
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.VoiceElementsLocatorService.Port">
+            <summary>
+            The Service Port
+            </summary>
         </member>
         <member name="T:VoiceElements.Common.IObjectMonitor">
             <summary>
@@ -3053,6 +3306,314 @@
           <para></para>
           Thank you for your continued support of Voice Elements.
         </remarks>
+        </member>
+        <member name="T:VoiceElements.Common.DNS.Resolver">
+            <summary>
+            Resolver is the main class to do DNS query lookups
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Resolver.DefaultPort">
+            <summary>
+            Default DNS port
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DNS.Resolver.DefaultDnsServers">
+            <summary>
+            Gets list of OPENDNS servers
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.#ctor(System.Net.IPEndPoint[])">
+            <summary>
+            Constructor of Resolver using DNS servers specified.
+            </summary>
+            <param name="DnsServers">Set of DNS servers</param>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.#ctor(System.Net.IPEndPoint)">
+            <summary>
+            Constructor of Resolver using DNS server specified.
+            </summary>
+            <param name="DnsServer">DNS server to use</param>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.#ctor(System.Net.IPAddress,System.Int32)">
+            <summary>
+            Constructor of Resolver using DNS server and port specified.
+            </summary>
+            <param name="ServerIpAddress">DNS server to use</param>
+            <param name="ServerPortNumber">DNS port to use</param>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructor of Resolver using DNS address and port specified.
+            </summary>
+            <param name="ServerIpAddress">DNS server address to use</param>
+            <param name="ServerPortNumber">DNS port to use</param>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.#ctor(System.String)">
+            <summary>
+            Constructor of Resolver using DNS address.
+            </summary>
+            <param name="ServerIpAddress">DNS server address to use</param>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.#ctor">
+            <summary>
+            Resolver constructor, using DNS servers specified by Windows
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.ClearCache">
+            <summary>
+            Clear the resolver cache
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.Query(System.String,VoiceElements.Common.DNS.QType,VoiceElements.Common.DNS.QClass)">
+            <summary>
+            Do Query on specified DNS servers
+            </summary>
+            <param name="name">Name to query</param>
+            <param name="qtype">Question type</param>
+            <param name="qclass">Class type</param>
+            <returns>Response of the query</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.Query(System.String,VoiceElements.Common.DNS.QType)">
+            <summary>
+            Do an QClass=IN Query on specified DNS servers
+            </summary>
+            <param name="name">Name to query</param>
+            <param name="qtype">Question type</param>
+            <returns>Response of the query</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.GetDnsServers">
+            <summary>
+            Gets a list of default DNS servers used on the Windows machine.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.GetArpaFromIp(System.Net.IPAddress)">
+            <summary>
+            Translates the IPV4 or IPV6 address into an arpa address
+            </summary>
+            <param name="ip">IP address to get the arpa address form</param>
+            <returns>The 'mirrored' IPV4 or IPV6 arpa address</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.GetHostAddresses(System.String)">
+             <summary>
+            		Returns the Internet Protocol (IP) addresses for the specified host.
+             </summary>
+             <param name="hostNameOrAddress">The host name or IP address to resolve.</param>
+             <returns>
+            		An array of type System.Net.IPAddress that holds the IP addresses for the
+            		host that is specified by the hostNameOrAddress parameter. 
+            </returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.BeginGetHostAddresses(System.String,System.AsyncCallback,System.Object)">
+             <summary>
+            		Asynchronously returns the Internet Protocol (IP) addresses for the specified
+                 host.
+             </summary>
+             <param name="hostNameOrAddress">The host name or IP address to resolve.</param>
+             <param name="requestCallback">
+            		An System.AsyncCallback delegate that references the method to invoke when
+                 the operation is complete.
+             </param>
+             <param name="stateObject">
+            		A user-defined object that contains information about the operation. This
+                 object is passed to the requestCallback delegate when the operation is complete.
+            </param>
+             <returns>An System.IAsyncResult instance that references the asynchronous request.</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.EndGetHostAddresses(System.IAsyncResult)">
+            <summary>
+            	Ends an asynchronous request for DNS information.
+            </summary>
+            <param name="AsyncResult">
+            	An System.IAsyncResult instance returned by a call to the VoiceElements.Common.DNS.Resolver.BeginGetHostAddresses(System.String,System.AsyncCallback,System.Object)
+            	method.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.GetHostByAddress(System.Net.IPAddress)">
+            <summary>
+            	Creates an System.Net.IPHostEntry instance from the specified System.Net.IPAddress.
+            </summary>
+            <param name="ip">An System.Net.IPAddress.</param>
+            <returns>An System.Net.IPHostEntry.</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.GetHostByAddress(System.String)">
+            <summary>
+            	Creates an System.Net.IPHostEntry instance from an IP address.
+            </summary>
+            <param name="address">An IP address.</param>
+            <returns>An System.Net.IPHostEntry instance.</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.GetHostByName(System.String)">
+            <summary>
+            	Gets the DNS information for the specified DNS host name.
+            </summary>
+            <param name="hostName">The DNS name of the host</param>
+            <returns>An System.Net.IPHostEntry object that contains host information for the address specified in hostName.</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.BeginGetHostByName(System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            	Asynchronously resolves an IP address to an System.Net.IPHostEntry instance.
+            </summary>
+            <param name="hostName">The DNS name of the host</param>
+            <param name="requestCallback">An System.AsyncCallback delegate that references the method to invoke when the operation is complete.</param>
+            <param name="stateObject">
+            	A user-defined object that contains information about the operation. This
+            	object is passed to the requestCallback delegate when the operation is complete.
+            </param>
+            <returns>An System.IAsyncResult instance that references the asynchronous request.</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.EndGetHostByName(System.IAsyncResult)">
+            <summary>
+            	Ends an asynchronous request for DNS information.
+            </summary>
+            <param name="AsyncResult">
+            	An System.IAsyncResult instance returned by a call to an 
+            	VoiceElements.Common.DNS.Resolver.BeginGetHostByName method.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.Resolve(System.String)">
+            <summary>
+            	Resolves a host name or IP address to an System.Net.IPHostEntry instance.
+            </summary>
+            <param name="hostName">A DNS-style host name or IP address.</param>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.BeginResolve(System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            	Begins an asynchronous request to resolve a DNS host name or IP address to
+                an System.Net.IPAddress instance.
+            </summary>
+            <param name="hostName">The DNS name of the host.</param>
+            <param name="requestCallback">
+            	An System.AsyncCallback delegate that references the method to invoke when
+                the operation is complete.
+            </param>
+            <param name="stateObject">
+            	A user-defined object that contains information about the operation. This
+                object is passed to the requestCallback delegate when the operation is complete.
+            </param>
+            <returns>An System.IAsyncResult instance that references the asynchronous request.</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.EndResolve(System.IAsyncResult)">
+            <summary>
+            	Ends an asynchronous request for DNS information.
+            </summary>
+            <param name="AsyncResult">
+            	An System.IAsyncResult instance that is returned by a call to the System.Net.Dns.BeginResolve(System.String,System.AsyncCallback,System.Object)
+                method.
+            </param>
+            <returns>An System.Net.IPHostEntry object that contains DNS information about a host.</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.GetHostEntry(System.Net.IPAddress)">
+             <summary>
+            		Resolves an IP address to an System.Net.IPHostEntry instance.
+             </summary>
+             <param name="ip">An IP address.</param>
+             <returns>
+            		An System.Net.IPHostEntry instance that contains address information about
+            		the host specified in address.
+            </returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.GetHostEntry(System.String)">
+             <summary>
+            		Resolves a host name or IP address to an System.Net.IPHostEntry instance.
+             </summary>
+             <param name="hostNameOrAddress">The host name or IP address to resolve.</param>
+             <returns>
+            		An System.Net.IPHostEntry instance that contains address information about
+            		the host specified in hostNameOrAddress. 
+            </returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.BeginGetHostEntry(System.String,System.AsyncCallback,System.Object)">
+             <summary>
+             Asynchronously resolves a host name or IP address to an System.Net.IPHostEntry instance.
+             </summary>
+             <param name="hostNameOrAddress">The host name or IP address to resolve.</param>
+             <param name="requestCallback">
+            		An System.AsyncCallback delegate that references the method to invoke when
+            		the operation is complete.
+            </param>
+             <param name="stateObject">
+            		A user-defined object that contains information about the operation. This
+            		object is passed to the requestCallback delegate when the operation is complete.
+             </param>
+             <returns>An System.IAsyncResult instance that references the asynchronous request.</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.BeginGetHostEntry(System.Net.IPAddress,System.AsyncCallback,System.Object)">
+            <summary>
+            Asynchronously resolves an IP address to an System.Net.IPHostEntry instance.
+            </summary>
+            <param name="ip">The IP address to resolve.</param>
+            <param name="requestCallback">
+            	An System.AsyncCallback delegate that references the method to invoke when
+            	the operation is complete.
+            </param>
+            <param name="stateObject">
+            	A user-defined object that contains information about the operation. This
+                object is passed to the requestCallback delegate when the operation is complete.
+            </param>
+            <returns>An System.IAsyncResult instance that references the asynchronous request.</returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.EndGetHostEntry(System.IAsyncResult)">
+             <summary>
+             Ends an asynchronous request for DNS information.
+             </summary>
+             <param name="AsyncResult">
+            		An System.IAsyncResult instance returned by a call to an 
+            		Overload:VoiceElements.Common.DNS.Resolver.BeginGetHostEntry method.
+             </param>
+             <returns>
+            		An System.Net.IPHostEntry instance that contains address information about
+            		the host. 
+            </returns>
+        </member>
+        <member name="M:VoiceElements.Common.DNS.Resolver.LoadRootFile(System.String)">
+            <summary>
+            Not implemented yet!!!!!
+            </summary>
+            <param name="strPath"></param>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Resolver.Version">
+            <summary>
+            Version of this set of routines, when not in a library
+            </summary>
+        </member>
+        <member name="E:VoiceElements.Common.DNS.Resolver.OnVerbose">
+            <summary>
+            Verbose messages from internal operations
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Resolver.TimeOut">
+            <summary>
+            Gets or sets timeout in milliseconds
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Resolver.Retries">
+            <summary>
+            Gets or sets number of retries before giving up
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Resolver.Recursion">
+            <summary>
+            Gets or set recursion for doing queries
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Resolver.TransportType">
+            <summary>
+            Gets or sets protocol to use
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Resolver.DnsServers">
+            <summary>
+            Gets or sets list of DNS servers to use
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Common.DNS.Resolver.DnsServer">
+            <summary>
+            Gets first DNS server address or sets single DNS server to use
+            </summary>
         </member>
         <member name="T:VoiceElements.Common.ThreadPoolConfig">
             <summary>

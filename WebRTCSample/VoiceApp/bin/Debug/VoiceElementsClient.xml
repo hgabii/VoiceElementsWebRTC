@@ -4,6 +4,16 @@
         <name>VoiceElementsClient</name>
     </assembly>
     <members>
+        <member name="M:VoiceElements.Client.SipMessage.SipFragment.GetFirstHeader(System.String)">
+            <summary>
+            Removes Any NatAssist RecordRoute Entry
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Client.SipMessage.SipHeader">
+            <summary>
+            An abstract class for any SipHeader
+            </summary>
+        </member>
         <member name="T:VoiceElements.Client.ConferenceChangedEventArgs">
             <summary>
             Event Args for the Conference Changed Event
@@ -86,6 +96,11 @@
             <returns>True if client object is connected.</returns>
         </member>
         <member name="M:VoiceElements.Client.ClientObject.WaitForConnection">
+            <summary>
+            Waits up to 15 seconds for a connection to be established.
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Client.ClientObject.WaitForConnection(System.Boolean,System.Int32)">
             <summary>
             Waits up to 15 seconds for a connection to be established.
             </summary>
@@ -3656,6 +3671,55 @@
         Thank you for your continued support of Voice Elements.
       </remarks><seealso href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate TelephonyServer.Dispose">Email Inventive Labs to Request Elaboration on this Feature</seealso>
         </member>
+        <member name="M:VoiceElements.Client.TelephonyServer.SmsSendMessage(System.String,System.String,System.String,System.String,System.Guid@,System.String[]@,System.String[]@)">
+            <summary>
+            Allows you to send encrypted SMS messages to a BorderElements server for delivery.
+            </summary>
+            <param name="message"></param>
+            <param name="toSmsNumber"></param>
+            <param name="fromSmsNumber"></param>
+            <param name="customerTag"></param>
+            <param name="messageGuid"></param>
+            <param name="headers"></param>
+            <param name="sdp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Client.TelephonyServer.SmsSendMessage(System.String,System.String,System.String,System.String,System.String,System.Guid@,System.String[]@,System.String[]@)">
+            <summary>
+            Allows you to send encrypted SMS messages to a BorderElements server for delivery.
+            </summary>
+            <param name="message"></param>
+            <param name="toSmsNumber"></param>
+            <param name="mmsUrl"></param>
+            <param name="fromSmsNumber"></param>
+            <param name="customerTag"></param>
+            <param name="messageGuid"></param>
+            <param name="headers"></param>
+            <param name="sdp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Client.TelephonyServer.SmsSendMessage(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.String,System.String,System.Guid@,System.String[]@,System.String[]@)">
+            <summary>
+            Allows you to send encrypted SMS messages to a BorderElements server for delivery.
+            </summary>
+            <param name="message"></param>
+            <param name="toSmsNumbers"></param>
+            <param name="mmsUrls"></param>
+            <param name="fromSmsNumber"></param>
+            <param name="customerTag"></param>
+            <param name="messageGuid"></param>
+            <param name="headers"></param>
+            <param name="sdp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Client.TelephonyServer.SmsRequestUndeliveredMessages(System.String[]@,System.String[]@)">
+            <summary>
+            Have the server send any undelivered messages that may have accumulated while you were offline.  Use this after connecting to the Telephony Server and after you have subsribed to the SmsMessage event.
+            </summary>
+            <param name="headers"></param>
+            <param name="sdp"></param>
+            <returns></returns>
+        </member>
         <member name="M:VoiceElements.Client.TelephonyServer.ProcessCommand(VoiceElements.Interface.VPacket)">
             <summary>
             This internal method processes command events from the server.
@@ -4605,6 +4669,16 @@
             Fired when a pending Message Request needs a client response.
             </summary>
         </member>
+        <member name="E:VoiceElements.Client.TelephonyServer.SmsMessage">
+            <summary>
+            Fired when an SMS message is received.
+            </summary>
+        </member>
+        <member name="E:VoiceElements.Client.TelephonyServer.SmsDeliveryReport">
+            <summary>
+            Fired when an SMS delivery report is received.
+            </summary>
+        </member>
         <member name="E:VoiceElements.Client.TelephonyServer.PortStateChange">
             <summary>
         This event fires when your lost connection to the Telephony Server is restored.
@@ -4781,6 +4855,16 @@
         <member name="P:VoiceElements.Client.TelephonyServer.TelephonyLinkInfo">
             <summary>
             The Link Information that ties this object ot the server.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.TelephonyServer.SmsBorderElementsPublicKeyXml">
+            <summary>
+            The RSA key that will allow you to send messages to the BorderElements server.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.TelephonyServer.SmsMyPrivateKeyXml">
+            <summary>
+            Your RSA key that will allow you to recieve messages from the BorderElements server.
             </summary>
         </member>
         <member name="P:VoiceElements.Client.TelephonyServer.AutoAssignVoiceResources">
@@ -5050,16 +5134,28 @@
             The data stream.
             </summary>
         </member>
-        <member name="T:VoiceElements.Client.MessageRequest">
+        <member name="T:VoiceElements.Client.SmsMessage">
             <summary>
-            An event to provide notification of pending SUBSCRIBE, NOTIFY and REGISTER messages.
+            An event to provide notification of an incoming SMS message.
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="T:VoiceElements.Client.SmsDeliveryReport">
+            <summary>
+            An event to provide a delivery report of an sent message.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:VoiceElements.Client.SmsMessageEventArgs">
+            <summary>
+            Event aguments for the SmsMessage event
+            </summary>
+        </member>
         <member name="T:VoiceElements.Client.MessageRequestEventArgs">
             <summary>
-            Event aguments for the OnSessionStatsData event
+            Event aguments for the MessageRequest event
             </summary>
         </member>
         <member name="M:VoiceElements.Client.MessageRequestEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.String[],System.String[],VoiceElements.Interface.TransportProtocol,System.String,System.Int32,System.String,System.Int32)">
@@ -5138,6 +5234,73 @@
             <summary>
             The Local Port the message arrived on.
             </summary>
+        </member>
+        <member name="M:VoiceElements.Client.SmsMessageEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String[],VoiceElements.Interface.TransportProtocol,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            The SmsMessageEventArgs Constructor
+            </summary>
+            <param name="smsTo"></param>
+            <param name="smsFrom"></param>
+            <param name="smsMessage"></param>
+            <param name="requestId"></param>
+            <param name="sessionId"></param>
+            <param name="dialogId"></param>
+            <param name="sipMethod"></param>
+            <param name="requestLine"></param>
+            <param name="headers"></param>
+            <param name="sdp"></param>
+            <param name="transportProtocol"></param>
+            <param name="remoteHost"></param>
+            <param name="remotePort"></param>
+            <param name="localHost"></param>
+            <param name="localPort"></param>
+        </member>
+        <member name="P:VoiceElements.Client.SmsMessageEventArgs.SmsTo">
+            <summary>
+            The SMS To 
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.SmsMessageEventArgs.SmsFrom">
+            <summary>
+            The SMS From
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.SmsMessageEventArgs.SmsMessage">
+            <summary>
+            The SMS Message
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Client.SmsDeliveryReportEventArgs">
+            <summary>
+            Event aguments for the SmsDeliveryReport event
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Client.SmsDeliveryReportEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String[],VoiceElements.Interface.TransportProtocol,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            The SmsDeliveryReportEventArgs Constructor
+            </summary>
+            <param name="smsTo"></param>
+            <param name="smsFrom"></param>
+            <param name="smsMessage"></param>
+            <param name="requestId"></param>
+            <param name="sessionId"></param>
+            <param name="dialogId"></param>
+            <param name="sipMethod"></param>
+            <param name="requestLine"></param>
+            <param name="headers"></param>
+            <param name="sdp"></param>
+            <param name="transportProtocol"></param>
+            <param name="remoteHost"></param>
+            <param name="remotePort"></param>
+            <param name="localHost"></param>
+            <param name="localPort"></param>
+        </member>
+        <member name="T:VoiceElements.Client.MessageRequest">
+            <summary>
+            An event to provide notification of pending SUBSCRIBE, NOTIFY and REGISTER messages.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="T:VoiceElements.Client.PortStateChangeEventArgs">
             <summary>
@@ -5892,6 +6055,14 @@
             <param name="outputSdp"></param>
             <returns></returns>
         </member>
+        <member name="M:VoiceElements.Client.SipChannel.Dial(System.String,VoiceElements.Client.DestinationGroup)">
+            <summary>
+            Dials out using the specified DestinationGroup
+            </summary>
+            <param name="phonenumber"></param>
+            <param name="destinationGroup"></param>
+            <returns></returns>
+        </member>
         <member name="E:VoiceElements.Client.SipChannel.QosEvent">
             <summary>
         Triggered when QOS(Quiality of Service) Events occur on an ongoing Sip call.
@@ -6514,6 +6685,11 @@
         <member name="F:VoiceElements.Client.RemoteObjectState.Connected">
             <summary>
             Indicates the Connected State.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.RemoteObjectState.Redirected">
+            <summary>
+            Indicates the Redirected State.
             </summary>
         </member>
         <member name="T:VoiceElements.Client.MediaType">
@@ -8712,6 +8888,257 @@
 			</code>
 
 		</remarks>
+        </member>
+        <member name="T:VoiceElements.Client.Destination">
+            <summary>
+            A class that encapsulates the definition of a SIP Destination
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Client.Destination.#ctor(System.String,VoiceElements.Interface.HmpUri,VoiceElements.Interface.HmpUri,VoiceElements.Client.DestinationMonitorMode)">
+            <summary>
+            A Constructor for creating a new Destination
+            </summary>
+            <param name="name">The Name associated with the Destination</param>
+            <param name="destinationUri">The Destination Uri</param>
+            <param name="sourceUri">The Souce Uri</param>
+            <param name="destinationMonitorMode">The mode you wish to use for monitoring the destination</param>
+        </member>
+        <member name="P:VoiceElements.Client.Destination.Name">
+            <summary>
+            The Name associated with the Destination
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.Destination.DestinationUri">
+            <summary>
+            The Destination Uri
+            This is the IP address or url of the endpoint you are monitoring.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.Destination.SourceUri">
+            <summary>
+            The Source Uri
+            This is the IP address or url of your machine.  If all your traffic is local use your internal IP, otherwise use your external IP.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.Destination.DestinationMonitorMode">
+            <summary>
+            This is the mode you wish to use for monitoring the destination.
+            The defauly is to use SIP Options requests.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.Destination.DestinationState">
+            <summary>
+            Reports current state of the Destination.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.Destination.OptionsOkList">
+            <summary>
+            A list of SipStatusCodes in addition to a 200 Ok that will be interpreted as Ok when received from the destination.
+            The default list contains C405_MethodNotAllowed
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.Destination.OptionsBusyList">
+            <summary>
+            A list of SipStatusCodes that will place the destination into a BUSY state when received from the destination.
+            The default list contains C480_TemporarilyNotAvailable and SipStatusCode.C486_BusyHere
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.Destination.DialingRollForwardList">
+            <summary>
+            A list of SipStatusCodes that will cause the system to try the next destination.
+            The default list contains SipStatusCode.C403_Forbidden, C480_TemporarilyNotAvailable, C486_BusyHere, C488_NotAcceptableHere, C500_InternalServerError,
+                C501_NotImplemented, C502_BadGateway, C503_ServiceUnavailable, C504_ServerTimeOut,
+                C505_SipVersionNotSupported, C513_MessageTooLarge, C600_BusyEverywhere, C603_Decline,
+                C604_DoesNotExistAnywhere, and C606_NotAcceptable
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Client.DestinationGroup">
+            <summary>
+            A class that groups Destinations together for Monitoring and Dailing SIP endpoints.
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Client.DestinationGroup.#ctor(System.String,VoiceElements.Client.TelephonyServer,VoiceElements.Common.Log,System.Collections.Generic.List{VoiceElements.Client.Destination},VoiceElements.Client.DestinationHuntMode)">
+            <summary>
+            The Constructor for the DestinationGroup
+            </summary>
+            <param name="name"></param>
+            <param name="telephonyServer"></param>
+            <param name="log"></param>
+            <param name="destinations"></param>
+            <param name="destinationHuntMode"></param>
+        </member>
+        <member name="M:VoiceElements.Client.DestinationGroup.AddDestination(VoiceElements.Client.Destination)">
+            <summary>
+            Adds a destination to the Group
+            </summary>
+            <param name="destination"></param>
+        </member>
+        <member name="M:VoiceElements.Client.DestinationGroup.RemoveDestination(System.String)">
+            <summary>
+            Removes a destination from the Group
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:VoiceElements.Client.DestinationGroup.StartMonitoring">
+            <summary>
+            Start Monitoring the Group
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Client.DestinationGroup.StopMonitoring">
+            <summary>
+            Stops Monitoring The Group
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:VoiceElements.Client.DestinationGroup.Name">
+            <summary>
+            The Name of the DestinationGroup
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.DestinationGroup.TelephonyServer">
+            <summary>
+            A reference to the Telephony Server 
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.DestinationGroup.Log">
+            <summary>
+            The Log used by the DestinationGroup
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.DestinationGroup.LogLevel">
+            <summary>
+            The Log Level
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.DestinationGroup.Destinations">
+            <summary>
+            Retrieves a list of the current destination in the Group
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.DestinationGroup.DestinationHuntMode">
+            <summary>
+            The Hunt Mode used when dialing.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.DestinationGroup.DestinationGroupMonitorThreadState">
+            <summary>
+            Returns the current state of the Monitoring Thread.
+            </summary>
+        </member>
+        <member name="E:VoiceElements.Client.DestinationGroup.DestinationEvent">
+            <summary>
+            An event that is fired when a Destination Group Member changes its state.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Client.DestinationEvent">
+            <summary>
+            A delegate for the event that is fired when a Destination Group Member changes its state.
+            </summary>
+            <param name="destinationEventArgs"></param>
+        </member>
+        <member name="T:VoiceElements.Client.DestinationEventArgs">
+            <summary>
+            Event Arguements for reporting Destination Events
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Client.DestinationEventArgs.#ctor">
+            <summary>
+            Constructor for the Event Arguments.
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Client.DestinationEventArgs.#ctor(VoiceElements.Client.DestinationGroup,VoiceElements.Client.Destination,VoiceElements.Client.DestinationState)">
+            <summary>
+            Constructor for the Event Arguments
+            </summary>
+            <param name="destinationGroup"></param>
+            <param name="destination"></param>
+            <param name="destinationState"></param>
+        </member>
+        <member name="P:VoiceElements.Client.DestinationEventArgs.DestinationGroup">
+            <summary>
+            The Destination Group
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.DestinationEventArgs.Destination">
+            <summary>
+            The Destination that is Reporting its state.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Client.DestinationEventArgs.DestinationState">
+            <summary>
+            The Reported State
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Client.DestinationState">
+            <summary>
+            The State of a Destination
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.DestinationState.InService">
+            <summary>
+            The Destination is In Service and can take calls.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.DestinationState.OutOfService">
+            <summary>
+            The Destination is Out of Service and cannnot take calls.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.DestinationState.Busy">
+            <summary>
+            The Destination is Busy and cannnot take calls.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Client.DestinationHuntMode">
+            <summary>
+            The Hunting mode to use when dialing.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.DestinationHuntMode.Sequential">
+            <summary>
+            Each Destination is checked from first to last
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.DestinationHuntMode.RoundRobin">
+            <summary>
+            Each Destination is used in sequence.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Client.DestinationMonitorMode">
+            <summary>
+            The Monitoring Mode for a destination.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.DestinationMonitorMode.Off">
+            <summary>
+            Do not monitor this endpoint.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.DestinationMonitorMode.SipOptions">
+            <summary>
+            Use Sip Options to monitor this endpoint.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Client.DestinationGroupMonitorThreadState">
+            <summary>
+            The current state of the DestinationGroup's Monitor Thread
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.DestinationGroupMonitorThreadState.Stopped">
+            <summary>
+            Monitor Thread is not running.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.DestinationGroupMonitorThreadState.Running">
+            <summary>
+            Monitor Thread is running.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Client.DestinationGroupMonitorThreadState.Stopping">
+            <summary>
+            Monitor Thread is stopping.
+            </summary>
         </member>
         <member name="T:VoiceElements.Client.AnalogChannel">
             <summary>
@@ -11346,6 +11773,12 @@
             <param name="toneId"></param>
             <returns></returns>
         </member>
+        <member name="M:VoiceElements.Client.VoiceResource.SetMonitorStream(System.String,System.Int32,System.String)">
+            <!-- No matching elements were found for the following include tag --><include file="Documentation\VoiceResource.xml" path="VoiceResource/Methods/SetMonitorStream/*"/>
+        </member>
+        <member name="M:VoiceElements.Client.VoiceResource.BotEngage(System.String,System.String,System.Byte[])">
+            <!-- No matching elements were found for the following include tag --><include file="Documentation\VoiceResource.xml" path="VoiceResource/Methods/BotEngage/*"/>
+        </member>
         <member name="E:VoiceElements.Client.VoiceResource.Digit">
             <summary>
          This event fires when a digit is detected on the voice resource if the <see cref="P:VoiceElements.Client.VoiceResource.EnableDigitEvents">Enable Digit Events Property</see> is set to true.
@@ -12694,6 +13127,12 @@
             When set to true, this turns on DigitEvents by default.
             If you set this to false and donot want DigitEvents enabled, you must manually turn them off.
             </summary>
+        </member>
+        <member name="P:VoiceElements.Client.VoiceResource.BotParameters">
+            <!-- No matching elements were found for the following include tag --><include file="Documentation\VoiceResource.xml" path="VoiceResource/Properties/BotParameters/*"/>
+        </member>
+        <member name="P:VoiceElements.Client.VoiceResource.BotResponse">
+            <!-- No matching elements were found for the following include tag --><include file="Documentation\VoiceResource.xml" path="VoiceResource/Properties/BotResponse/*"/>
         </member>
         <member name="T:VoiceElements.Client.Digit">
             <summary>

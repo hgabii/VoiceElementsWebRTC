@@ -12,6 +12,7 @@ namespace VoiceApp
 {
     public class BasicIvr
     {
+        public string UniqueId { get; private set; }
         public ChannelResource ChannelResource { get; set; }
         public VoiceResource VoiceResource { get; set; }
         public static Log Log
@@ -20,6 +21,12 @@ namespace VoiceApp
             {
                 return IvrApplication.Log;
             }
+        }
+
+        public string CurrentCallId
+        {
+            get;
+            set;
         }
 
         public ManualResetEvent HangupMRE { get; set; }
@@ -35,7 +42,7 @@ namespace VoiceApp
             HangupMRE = new ManualResetEvent(false);
             ProcessCommandMRE = new AutoResetEvent(false);
             m_RecordName = System.IO.Path.GetTempPath() + "BasicIvr_" + DateTime.Now.ToString("yyyyMMdd.HHmm.ss.fff") + "_TestFile.wav";
-
+            UniqueId = Guid.NewGuid().ToString();
             UnlockUI unlockMessage = new UnlockUI();
             unlockMessageString = Serializer.Serialize(unlockMessage);
 
@@ -57,6 +64,120 @@ namespace VoiceApp
         private CustomSocketMessage m_CurrentMessage;
 
         private string unlockMessageString = null;
+
+        /// <summary>
+        /// This will notify a webrtc call that there is an incoming call.
+        /// </summary>
+        /// <param name="callId"></param>
+        /// <param name="phoneNumber"></param>
+        public void NotifyCall(string callId, string phoneNumber)
+        {
+            IncomingCall call = new IncomingCall();
+            call.callid = callId;
+            call.phonenumber = phoneNumber;
+            string notifyString = Serializer.Serialize(call);
+            WebChannel.SendCustomMessage(notifyString);
+            PlayRingBack();
+
+        }
+
+        /// <summary>
+        /// This is used when we want to play Ringback to an agent. When it's signalled (set) we no longer play ringback to the user.
+        /// </summary>
+        private ManualResetEvent m_RingingEvent = new ManualResetEvent(false);
+        public ManualResetEvent RingingEvent
+        {
+            get
+            {
+                return m_RingingEvent;
+            }
+        }
+
+        /// <summary>
+        /// Plays the ring file to the user.
+        /// </summary>
+        public void PlayRingBack()
+        {
+            try
+            {
+                m_RingingEvent.Reset();
+
+                VoiceResource.Stop();
+                ChannelResource.RouteFull(VoiceResource);
+                while (true)
+                {
+                    VoiceResource.TerminationDigits = "";
+                    VoiceResource.ClearDigitBuffer = true;
+
+                    string ringFilename = "Ring.wav";
+                    VoiceResource.Play(ringFilename);
+                    bool isSignalled = m_RingingEvent.WaitOne(1000);
+
+                    if (isSignalled)
+                    {
+                        break;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+
+            }
+        }
+
+        public void RouteCall(string callId)
+        {
+            IvrApplication.RouteCall(callId, this);
+        }
+
+        public void NotifyHangup()
+        {
+            if(String.IsNullOrEmpty(CurrentCallId))
+            {
+                RingingEvent.Set();
+            }
+            HangupCall hangupCall = new HangupCall();
+            string hangupString = Serializer.Serialize(hangupCall);
+            try
+            {
+                WebChannel.SendCustomMessage(hangupString);
+            }
+            catch { }
+
+            try
+            {
+                ChannelResource.RouteFull(VoiceResource);
+            }
+            catch { }
+        }
+
+        public void SendDialStart()
+        {
+            DialStart dialStart = new DialStart();
+            dialStart.callid = this.CurrentCallId;
+            string dialStartString = Serializer.Serialize(dialStart);
+            try
+            {
+                WebChannel.SendCustomMessage(dialStartString);
+            }
+            catch { }
+        }
+
+        public void Reject(string callId)
+        {
+            IvrApplication.RejectCall(callId);
+        }
+
+        public void Dial(string phoneNumber)
+        {
+            IvrApplication.DialCall(phoneNumber, this);
+        }
+
+
 
         public void RunScript()
         {
@@ -177,6 +298,30 @@ namespace VoiceApp
                                 nextComfortTime = DateTime.Now.AddSeconds(7.0d);
                                 WebChannel.SendCustomMessage(unlockMessageString);
                                 break;
+                            case "VoiceApp.BasicIvr+AnswerCall":
+                                AnswerCall answerCall = (AnswerCall)m_CurrentMessage;
+                                CurrentCallId = answerCall.callid;
+                                RouteCall(answerCall.callid);
+                                RingingEvent.Set();
+                                break;
+                            case "VoiceApp.BasicIvr+DialCall":
+                                DialCall dialCall = (DialCall)m_CurrentMessage;
+                                Dial(dialCall.phonenumber);
+                                break;
+                            case "VoiceApp.BasicIvr+RejectCall":
+                                RejectCall rejectCall = (RejectCall)m_CurrentMessage;
+                                Reject(rejectCall.callid);
+                                RingingEvent.Set();
+                                break;
+                            case "VoiceApp.BasicIvr+HangupCall":
+                                HangupCall hangupCall = (HangupCall)m_CurrentMessage;
+                                CurrentCallId = "";
+                                // Route the WebRTC Leg back to it's voice resource;
+                                ChannelResource.StopListening();
+                                ChannelResource.RouteFull(VoiceResource);
+                                IvrApplication.HangupCall(hangupCall.callid);
+                                WebChannel.SendCustomMessage(unlockMessageString);
+                                break;
                             default:
                                 Log.Write("Unable to handle message: {0}", m_CurrentMessage.GetType().FullName);
                                 break;
@@ -194,6 +339,20 @@ namespace VoiceApp
             }
             finally
             {
+
+                // Route back to the original voice resource.
+                try
+                {
+                    ChannelResource.StopListening();
+                }
+                catch { }
+
+                try
+                {
+                    ChannelResource.RouteFull(VoiceResource);
+                }
+                catch { }
+
                 try
                 {
                     ChannelResource.Disconnect();
@@ -205,6 +364,17 @@ namespace VoiceApp
                     ChannelResource.Dispose();
                 }
                 catch { }
+
+                // Notify the far end that you've disconnected, so that it hangs up.
+                if (CurrentCallId != null)
+                {
+                    IvrApplication.HangupCall(CurrentCallId);
+                }
+                
+                lock(IvrApplication.SyncVar)
+                {
+                    IvrApplication.s_WebRtc.Remove(UniqueId);
+                }
             }
         }
 
@@ -279,7 +449,36 @@ namespace VoiceApp
             public string data { get; set; }
         }
 
+        public class IncomingCall : CustomSocketMessage
+        {
+            public string phonenumber { get; set; }
+            public string callid { get; set; }
+        }
 
+        public class HangupCall : CustomSocketMessage
+        {
+            public string callid { get; set; }
+        }
+
+        public class RejectCall : CustomSocketMessage
+        {
+            public string callid { get; set; }
+        }
+
+        public class AnswerCall : CustomSocketMessage
+        {
+            public string callid { get; set; }
+        }
+
+        public class DialCall : CustomSocketMessage
+        { 
+            public string phonenumber { get; set; }
+        }
+
+        public class DialStart : CustomSocketMessage
+        {
+            public string callid { get; set; }
+        }
     }
 
     

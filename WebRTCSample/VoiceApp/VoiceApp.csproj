@@ -59,8 +59,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IpcElements">
-      <HintPath>..\References\IpcElements.dll</HintPath>
+    <Reference Include="IpcElements, Version=1.1.0.1, Culture=neutral, PublicKeyToken=f584cc487763ef8d, processorArchitecture=MSIL">
+      <HintPath>..\packages\InventiveLabs.VoiceElementsClient.8.6.3\lib\net20\IpcElements.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
@@ -72,23 +72,21 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="VoiceElementsClient, Version=2.1.4.25606, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\References\VoiceElementsClient.dll</HintPath>
+    <Reference Include="VoiceElementsClient, Version=8.6.3.0, Culture=neutral, PublicKeyToken=316081ac1872cac1, processorArchitecture=MSIL">
+      <HintPath>..\packages\InventiveLabs.VoiceElementsClient.8.6.3\lib\net20\VoiceElementsClient.dll</HintPath>
     </Reference>
-    <Reference Include="VoiceElementsCommon, Version=1.5.1.41445, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\References\VoiceElementsCommon.dll</HintPath>
+    <Reference Include="VoiceElementsCommon, Version=8.6.3.0, Culture=neutral, PublicKeyToken=316081ac1872cac1, processorArchitecture=MSIL">
+      <HintPath>..\packages\InventiveLabs.VoiceElementsClient.8.6.3\lib\net20\VoiceElementsCommon.dll</HintPath>
     </Reference>
-    <Reference Include="VoiceElementsInterface, Version=8.2.8.41445, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\References\VoiceElementsInterface.dll</HintPath>
+    <Reference Include="VoiceElementsInterface, Version=8.6.3.0, Culture=neutral, PublicKeyToken=316081ac1872cac1, processorArchitecture=MSIL">
+      <HintPath>..\packages\InventiveLabs.VoiceElementsClient.8.6.3\lib\net20\VoiceElementsInterface.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicAuthentication.cs" />
     <Compile Include="BasicIvr.cs" />
     <Compile Include="CustomSocketMessage.cs" />
+    <Compile Include="InboundCall.cs" />
     <Compile Include="IvrApplication.cs" />
     <Compile Include="IvrInteractive.cs">
       <SubType>Form</SubType>
@@ -115,6 +113,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

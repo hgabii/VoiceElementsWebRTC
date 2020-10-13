@@ -129,9 +129,6 @@ namespace WebServer
 
                 configuration.UrlReservations = new UrlReservations();
                 configuration.UrlReservations.CreateAutomatically = true;
-                //Uri uri = new Uri("http://127.0.0.1:12345");
-                //List<Uri> uris = new List<Uri>();
-                //uris.Add(uri);
 
                 List<Uri> uris = new List<Uri>();
 
@@ -140,7 +137,8 @@ namespace WebServer
                 Uri publicAddress = GetUri();
                 uris.Add(localUri);
                 uris.Add(localHostUri);
-                uris.Add(publicAddress);
+                // If you want to bind to HTTPS, you could modify the above function to allow for that.
+                //uris.Add(publicAddress);
 
                 using (var host = new NancyHost(configuration, uris.ToArray()))
                 {
