@@ -1,0 +1,17 @@
+G:\vcd\WebRTCSample\WebServer\bin\Debug\WebServer.dll.config
+G:\vcd\WebRTCSample\WebServer\bin\Debug\WebServer.dll
+G:\vcd\WebRTCSample\WebServer\bin\Debug\WebServer.pdb
+G:\vcd\WebRTCSample\WebServer\bin\Debug\Nancy.dll
+G:\vcd\WebRTCSample\WebServer\bin\Debug\Nancy.Hosting.Self.dll
+G:\vcd\WebRTCSample\WebServer\bin\Debug\Nancy.Serialization.JsonNet.dll
+G:\vcd\WebRTCSample\WebServer\bin\Debug\Nancy.ViewEngines.Razor.dll
+G:\vcd\WebRTCSample\WebServer\bin\Debug\Newtonsoft.Json.dll
+G:\vcd\WebRTCSample\WebServer\bin\Debug\System.Web.Razor.dll
+G:\vcd\WebRTCSample\WebServer\bin\Debug\Nancy.xml
+G:\vcd\WebRTCSample\WebServer\bin\Debug\Nancy.Hosting.Self.xml
+G:\vcd\WebRTCSample\WebServer\bin\Debug\Nancy.ViewEngines.Razor.xml
+G:\vcd\WebRTCSample\WebServer\bin\Debug\Newtonsoft.Json.xml
+G:\vcd\WebRTCSample\WebServer\bin\Debug\System.Web.Razor.xml
+G:\vcd\WebRTCSample\WebServer\obj\Debug\WebServer.dll
+G:\vcd\WebRTCSample\WebServer\obj\Debug\WebServer.pdb
+G:\vcd\WebRTCSample\WebServer\obj\Debug\WebServer.csprojResolveAssemblyReference.cache

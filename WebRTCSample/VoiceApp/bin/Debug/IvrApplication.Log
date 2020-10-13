@@ -1,0 +1,656 @@
+09/01/26 - 16:19:37.571 (no thread name)          Initializing Logging Class
+09/01/26 - 16:19:37.578 (no thread name)          Log Name: IvrApplication.Log
+09/01/26 - 16:19:37.578 (no thread name)          IvrApplication Constructor Complete
+09/01/26 - 16:19:37.601 (no thread name)          IvrApplication Starting...
+09/01/26 - 16:19:37.619 IvrApplication            IvrApplication::MainCode() Starting...
+09/01/26 - 16:19:38.021 IvrApplication            Connecting to: gtcp://172.18.13.80:54331
+09/01/26 - 16:19:53.118 IvrApplication            IvrApplication::MainCode() Exception: Can not connect to the remote host "gtcp://172.18.13.80:54331". System error message: An attempt was made to access a socket in a way forbidden by its access permissions 172.18.13.80:54331.
+
+Server stack trace: 
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.LowLevel_OpenConnection(HostInformation remote, GenuineConnectionType genuineConnectionType, String localUri, Int32 localPort, String connectionName, String& remoteUri, Int32& remoteHostUniqueIdentifier)
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.GetConnectionForSending(Message message)
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.InternalSend(Message message)
+   at Belikov.GenuineChannels.Connection.ConnectionManager.Send(Message message)
+   at Belikov.GenuineChannels.DotNetRemotingLayer.GenuineTcpClientTransportSink.ProcessMessage(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream, ITransportHeaders& responseHeaders, Stream& responseStream)
+   at System.Runtime.Remoting.Channels.BinaryClientFormatterSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at VoiceElements.Client.TelephonyServer..ctor(String url, String username, String password)
+   at VoiceApp.IvrApplication.MainCode() in C:\Vcd\VE\VoiceApp\IvrApplication.cs:line 151
+09/01/26 - 16:19:53.129 IvrApplication            IvrApplication::MainCode() ExceptionCan not connect to the remote host "gtcp://172.18.13.80:54331". System error message: An attempt was made to access a socket in a way forbidden by its access permissions 172.18.13.80:54331.
+
+Server stack trace: 
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.LowLevel_OpenConnection(HostInformation remote, GenuineConnectionType genuineConnectionType, String localUri, Int32 localPort, String connectionName, String& remoteUri, Int32& remoteHostUniqueIdentifier)
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.GetConnectionForSending(Message message)
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.InternalSend(Message message)
+   at Belikov.GenuineChannels.Connection.ConnectionManager.Send(Message message)
+   at Belikov.GenuineChannels.DotNetRemotingLayer.GenuineTcpClientTransportSink.ProcessMessage(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream, ITransportHeaders& responseHeaders, Stream& responseStream)
+   at System.Runtime.Remoting.Channels.BinaryClientFormatterSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at VoiceApp.IvrApplication.MainCode() in C:\Vcd\VE\VoiceApp\IvrApplication.cs:line 170
+09/01/26 - 16:22:47.456 (no thread name)          IvrApplication is in the Stopped state.  Cannot stop IvrApplication at this time.
+09/01/26 - 16:22:53.283 (no thread name)          Initializing Logging Class
+09/01/26 - 16:22:53.289 (no thread name)          Log Name: IvrApplication.Log
+09/01/26 - 16:22:53.289 (no thread name)          IvrApplication Constructor Complete
+09/01/26 - 16:22:53.303 (no thread name)          IvrApplication Starting...
+09/01/26 - 16:22:53.307 IvrApplication            IvrApplication::MainCode() Starting...
+09/01/26 - 16:22:53.704 IvrApplication            Connecting to: gtcp://172.18.13.80:54331
+09/01/26 - 16:23:08.734 IvrApplication            IvrApplication::MainCode() Exception: Can not connect to the remote host "gtcp://172.18.13.80:54331". System error message: No connection could be made because the target machine actively refused it 172.18.13.80:54331.
+
+Server stack trace: 
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.LowLevel_OpenConnection(HostInformation remote, GenuineConnectionType genuineConnectionType, String localUri, Int32 localPort, String connectionName, String& remoteUri, Int32& remoteHostUniqueIdentifier)
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.GetConnectionForSending(Message message)
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.InternalSend(Message message)
+   at Belikov.GenuineChannels.Connection.ConnectionManager.Send(Message message)
+   at Belikov.GenuineChannels.DotNetRemotingLayer.GenuineTcpClientTransportSink.ProcessMessage(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream, ITransportHeaders& responseHeaders, Stream& responseStream)
+   at System.Runtime.Remoting.Channels.BinaryClientFormatterSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at VoiceElements.Client.TelephonyServer..ctor(String url, String username, String password)
+   at VoiceApp.IvrApplication.MainCode() in C:\Vcd\VE\VoiceApp\IvrApplication.cs:line 151
+09/01/26 - 16:23:08.737 IvrApplication            IvrApplication::MainCode() ExceptionCan not connect to the remote host "gtcp://172.18.13.80:54331". System error message: No connection could be made because the target machine actively refused it 172.18.13.80:54331.
+
+Server stack trace: 
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.LowLevel_OpenConnection(HostInformation remote, GenuineConnectionType genuineConnectionType, String localUri, Int32 localPort, String connectionName, String& remoteUri, Int32& remoteHostUniqueIdentifier)
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.GetConnectionForSending(Message message)
+   at Belikov.GenuineChannels.GenuineTcp.TcpConnectionManager.InternalSend(Message message)
+   at Belikov.GenuineChannels.Connection.ConnectionManager.Send(Message message)
+   at Belikov.GenuineChannels.DotNetRemotingLayer.GenuineTcpClientTransportSink.ProcessMessage(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream, ITransportHeaders& responseHeaders, Stream& responseStream)
+   at System.Runtime.Remoting.Channels.BinaryClientFormatterSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at VoiceApp.IvrApplication.MainCode() in C:\Vcd\VE\VoiceApp\IvrApplication.cs:line 170
+09/01/26 - 16:23:28.283 (no thread name)          IvrApplication is in the Stopped state.  Cannot stop IvrApplication at this time.
+09/01/26 - 16:24:04.305 (no thread name)          Initializing Logging Class
+09/01/26 - 16:24:04.370 (no thread name)          Log Name: IvrApplication.Log
+09/01/26 - 16:24:04.372 (no thread name)          IvrApplication Constructor Complete
+09/01/26 - 16:24:04.385 (no thread name)          IvrApplication Starting...
+09/01/26 - 16:24:04.391 IvrApplication            IvrApplication::MainCode() Starting...
+09/01/26 - 16:24:04.757 IvrApplication            Connecting to: gtcp://172.18.13.120:54331
+09/01/26 - 16:24:07.571 IvrApplication            IvrApplication::MainCode() Running...
+09/01/26 - 16:24:18.994 (no thread name)          IvrApplication StoppingImmediate.
+09/01/26 - 16:24:19.348 IvrApplication            IvrApplication::MainCode() StoppingImmediate...
+09/01/26 - 16:24:19.349 IvrApplication            IvrApplication::MainCode() Stopped.
+09/01/26 - 16:26:04.909 (no thread name)          Initializing Logging Class
+09/01/26 - 16:26:04.935 (no thread name)          Log Name: IvrApplication.Log
+09/01/26 - 16:26:04.936 (no thread name)          IvrApplication Constructor Complete
+09/01/26 - 16:26:04.962 (no thread name)          IvrApplication Starting...
+09/01/26 - 16:26:04.969 IvrApplication            IvrApplication::MainCode() Starting...
+09/01/26 - 16:26:05.325 IvrApplication            Connecting to: gtcp://172.18.13.120:54331
+09/01/26 - 16:26:06.022 IvrApplication            VoiceElementsClient Version: 2.1.4.25606
+09/01/26 - 16:26:06.026 IvrApplication            VoiceElementsServer Version: 2.1.4.30833
+09/01/26 - 16:26:06.030 IvrApplication            IvrApplication::MainCode() Running...
+09/01/26 - 16:35:02.790 iptB1T1                   NewCall Arrival! DNIS: 13033950853@67.41.116.23  ANI: 17202838475@jnctn.net  Caller ID Name: 7202838475
+09/01/26 - 16:35:02.810 iptB1T1                   Inbound Call Answered...
+09/01/26 - 16:35:02.970 iptB1T1                   Dialing: url:500@172.18.13.4  With: From: "17202838475" <sip:17202838475@172.18.13.80>
+09/01/26 - 16:35:09.349 DisconnectedWorker        Inbound Disconnected Event Received
+09/01/26 - 16:35:09.352 DisconnectedWorker        GeneralCause = 5800
+09/01/26 - 16:35:09.358 DisconnectedWorker        GeneralCauseMessage = IPEC_SIPReasonStatusBYE
+09/01/26 - 16:35:09.365 DisconnectedWorker        GcCause = 1286
+09/01/26 - 16:35:09.373 DisconnectedWorker        GcCauseMessage = Event caused by call control library specific failure
+09/01/26 - 16:35:09.380 DisconnectedWorker        DropError = 0
+09/01/26 - 16:35:09.667 iptB1T1                   Stop Dial Issued.
+09/01/26 - 16:35:20.724 iptB1T1                   Call Complete.
+09/01/26 - 16:35:21.091 (no thread name)          IvrApplication StoppingImmediate.
+09/01/26 - 16:35:21.199 IvrApplication            IvrApplication::MainCode() StoppingImmediate...
+09/01/26 - 16:35:21.201 IvrApplication            IvrApplication::MainCode() Stopped.
+09/01/26 - 16:42:20.475 (no thread name)          Initializing Logging Class
+09/01/26 - 16:42:20.491 (no thread name)          Log Name: IvrApplication.Log
+09/01/26 - 16:42:20.493 (no thread name)          IvrApplication Constructor Complete
+09/01/26 - 16:42:20.506 (no thread name)          IvrApplication Starting...
+09/01/26 - 16:42:20.535 IvrApplication            IvrApplication::MainCode() Starting...
+09/01/26 - 16:42:20.708 IvrApplication            Connecting to: gtcp://64.27.3.205:54331
+09/01/26 - 16:42:22.822 IvrApplication            VoiceElementsClient Version: 2.1.4.25606
+09/01/26 - 16:42:22.825 IvrApplication            VoiceElementsServer Version: 2.1.4.38511
+09/01/26 - 16:42:22.829 IvrApplication            IvrApplication::MainCode() Running...
+09/01/26 - 16:42:36.590 (no thread name)          IvrApplication StoppingImmediate.
+09/01/26 - 16:42:37.119 IvrApplication            IvrApplication::MainCode() StoppingImmediate...
+09/01/26 - 16:42:37.120 IvrApplication            IvrApplication::MainCode() Stopped.
+09/01/26 - 16:43:11.026 (no thread name)          Initializing Logging Class
+09/01/26 - 16:43:11.045 (no thread name)          Log Name: IvrApplication.Log
+09/01/26 - 16:43:11.046 (no thread name)          IvrApplication Constructor Complete
+09/01/26 - 16:43:11.060 (no thread name)          IvrApplication Starting...
+09/01/26 - 16:43:11.093 IvrApplication            IvrApplication::MainCode() Starting...
+09/01/26 - 16:43:11.142 IvrApplication            Connecting to: gtcp://64.27.3.205:54331
+09/01/26 - 16:43:13.364 IvrApplication            VoiceElementsClient Version: 2.1.4.25606
+09/01/26 - 16:43:13.366 IvrApplication            VoiceElementsServer Version: 2.1.4.38511
+09/01/26 - 16:43:13.371 IvrApplication            IvrApplication::MainCode() Running...
+09/01/26 - 16:43:30.394 dtiB2T1                   NewCall Arrival! DNIS: 8667061328  ANI: 7202838475  Caller ID Name: 
+09/01/26 - 16:43:30.397 dtiB2T1                   Answering...
+09/01/26 - 16:43:36.051 dtiB2T1                   Call complete.
+09/01/26 - 16:43:45.720 (no thread name)          IvrApplication StoppingImmediate.
+09/01/26 - 16:43:46.181 IvrApplication            IvrApplication::MainCode() StoppingImmediate...
+09/01/26 - 16:43:46.182 IvrApplication            IvrApplication::MainCode() Stopped.
+16/04/20 - 17:14:42.496 000A (no thread name)     Initializing Logging Class
+16/04/20 - 17:14:42.502 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 17:14:42.503 000A (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 17:14:42.517 000A (no thread name)     IvrApplication Starting...
+16/04/20 - 17:14:42.522 000A (no thread name)     Starting WebServer
+16/04/20 - 17:14:42.526 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 17:14:42.566 000B IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 17:14:44.649 000B IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/20 - 17:14:44.651 000B IvrApplication       VoiceElementsServer Version: 8.3.12.111
+16/04/20 - 17:14:44.652 000B IvrApplication       IvrApplication::MainCode() Running...
+16/04/20 - 17:17:11.803 0008 (no thread name)     Initializing Logging Class
+16/04/20 - 17:17:11.810 0008 (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 17:17:11.810 0008 (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 17:17:11.825 0008 (no thread name)     IvrApplication Starting...
+16/04/20 - 17:17:11.829 0008 (no thread name)     Starting WebServer
+16/04/20 - 17:17:11.833 0009 IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 17:17:11.855 0009 IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 17:17:20.414 0009 IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/20 - 17:17:20.415 0009 IvrApplication       VoiceElementsServer Version: 8.3.12.111
+16/04/20 - 17:17:20.417 0009 IvrApplication       IvrApplication::MainCode() Running...
+16/04/20 - 17:17:51.027 000A (no thread name)     Initializing Logging Class
+16/04/20 - 17:17:51.033 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 17:17:51.034 000A (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 17:17:51.051 000A (no thread name)     IvrApplication Starting...
+16/04/20 - 17:17:51.057 000A (no thread name)     Starting WebServer
+16/04/20 - 17:17:51.058 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 17:17:51.081 000B IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 17:18:06.250 000B IvrApplication       IvrApplication::MainCode() Exception: The remote was unavailable for over 15 seconds!
+   at VoiceElements.Client.TelephonyServer.TelephonyServerStartConnection() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 339
+   at VoiceElements.Client.TelephonyServer..ctor(String url, String username, String password) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 254
+   at VoiceApp.IvrApplication.MainCode() in g:\vcd\WebRTCSample\VoiceApp\IvrApplication.cs:line 170
+16/04/20 - 17:18:06.264 000B IvrApplication       IvrApplication::MainCode() ExceptionThe remote was unavailable for over 15 seconds!
+   at VoiceApp.IvrApplication.MainCode() in g:\vcd\WebRTCSample\VoiceApp\IvrApplication.cs:line 266
+16/04/20 - 17:18:20.011 000A (no thread name)     Initializing Logging Class
+16/04/20 - 17:18:20.017 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 17:18:20.017 000A (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 17:18:20.032 000A (no thread name)     IvrApplication Starting...
+16/04/20 - 17:18:20.037 000A (no thread name)     Starting WebServer
+16/04/20 - 17:18:20.041 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 17:18:20.062 000B IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 17:18:34.593 000B IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/20 - 17:18:34.596 000B IvrApplication       VoiceElementsServer Version: 8.3.12.111
+16/04/20 - 17:18:34.597 000B IvrApplication       IvrApplication::MainCode() Running...
+16/04/20 - 17:19:06.516 000A (no thread name)     Initializing Logging Class
+16/04/20 - 17:19:06.522 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 17:19:06.523 000A (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 17:19:06.537 000A (no thread name)     IvrApplication Starting...
+16/04/20 - 17:19:06.543 000A (no thread name)     Starting WebServer
+16/04/20 - 17:19:06.544 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 17:19:06.564 000B IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 17:19:19.114 000B IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/20 - 17:19:19.116 000B IvrApplication       VoiceElementsServer Version: 8.3.12.111
+16/04/20 - 17:19:19.118 000B IvrApplication       IvrApplication::MainCode() Running...
+16/04/20 - 17:20:17.472 000A (no thread name)     Initializing Logging Class
+16/04/20 - 17:20:17.479 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 17:20:17.480 000A (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 17:20:17.490 000A (no thread name)     IvrApplication Starting...
+16/04/20 - 17:20:17.496 000A (no thread name)     Starting WebServer
+16/04/20 - 17:20:17.497 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 17:20:17.519 000B IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 17:20:40.991 000A (no thread name)     Initializing Logging Class
+16/04/20 - 17:20:40.998 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 17:20:40.998 000A (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 17:20:41.013 000A (no thread name)     IvrApplication Starting...
+16/04/20 - 17:20:41.018 000A (no thread name)     Starting WebServer
+16/04/20 - 17:20:41.019 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 17:20:41.043 000B IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 17:20:49.587 000B IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/20 - 17:20:49.639 000B IvrApplication       VoiceElementsServer Version: 8.3.12.111
+16/04/20 - 17:20:49.641 000B IvrApplication       IvrApplication::MainCode() Running...
+16/04/20 - 17:24:05.396 000A (no thread name)     Initializing Logging Class
+16/04/20 - 17:24:05.402 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 17:24:05.403 000A (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 17:24:05.418 000A (no thread name)     IvrApplication Starting...
+16/04/20 - 17:24:05.424 000A (no thread name)     Starting WebServer
+16/04/20 - 17:24:05.425 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 17:24:05.446 000B IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 17:24:14.024 000B IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/20 - 17:24:14.026 000B IvrApplication       VoiceElementsServer Version: 8.3.12.111
+16/04/20 - 17:24:14.027 000B IvrApplication       IvrApplication::MainCode() Running...
+16/04/20 - 17:36:26.516 0008 (no thread name)     Initializing Logging Class
+16/04/20 - 17:36:26.523 0008 (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 17:36:26.523 0008 (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 17:36:26.539 0008 (no thread name)     IvrApplication Starting...
+16/04/20 - 17:36:26.545 0008 (no thread name)     Starting WebServer
+16/04/20 - 17:36:26.548 0009 IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 17:36:26.585 0009 IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 17:36:28.093 0009 IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/20 - 17:36:28.094 0009 IvrApplication       VoiceElementsServer Version: 8.3.12.111
+16/04/20 - 17:36:28.096 0009 IvrApplication       IvrApplication::MainCode() Running...
+16/04/20 - 20:20:59.108 0009 (no thread name)     Initializing Logging Class
+16/04/20 - 20:20:59.115 0009 (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 20:20:59.115 0009 (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 20:20:59.130 0009 (no thread name)     IvrApplication Starting...
+16/04/20 - 20:20:59.135 000A IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 20:20:59.138 0009 (no thread name)     Starting WebServer
+16/04/20 - 20:20:59.182 000A IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 20:21:01.347 000A IvrApplication       IvrApplication::MainCode() Exception: Command Not Recognized. Contact Technical Support.  Command: TelephonyServer.RegisterWebRtcUrl.Invoke  Object Id: 440328fe-1c2f-4478-8727-6d567ec971e1
+   at VoiceElements.Client.TelephonyServer.ExecuteCommandHelperAsync(Byte[] buffer, String invoker) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 2181
+   at VoiceElements.Client.TelephonyServer.RegisterWebRtcUrl() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 1806
+   at VoiceApp.IvrApplication.MainCode() in g:\vcd\WebRTCSample\VoiceApp\IvrApplication.cs:line 186
+16/04/20 - 20:21:01.360 000A IvrApplication       IvrApplication::MainCode() ExceptionCommand Not Recognized. Contact Technical Support.  Command: TelephonyServer.RegisterWebRtcUrl.Invoke  Object Id: 440328fe-1c2f-4478-8727-6d567ec971e1
+   at VoiceApp.IvrApplication.MainCode() in g:\vcd\WebRTCSample\VoiceApp\IvrApplication.cs:line 267
+16/04/20 - 20:26:25.468 0009 (no thread name)     IvrApplication is in the Stopped state.  Cannot stop IvrApplication at this time.
+16/04/20 - 20:26:30.462 000A (no thread name)     Initializing Logging Class
+16/04/20 - 20:26:30.468 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 20:26:30.469 000A (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 20:26:30.482 000A (no thread name)     IvrApplication Starting...
+16/04/20 - 20:26:30.488 000A (no thread name)     Starting WebServer
+16/04/20 - 20:26:30.489 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 20:26:30.511 000B IvrApplication       Connecting to: gtcp://74.124.6.75:54331
+16/04/20 - 20:26:32.441 000B IvrApplication       IvrApplication::MainCode() Exception: Command Not Recognized. Contact Technical Support.  Command: TelephonyServer.RegisterWebRtcUrl.Invoke  Object Id: 7bd0dfbb-48d7-478a-b823-7927d346dfe0
+   at VoiceElements.Client.TelephonyServer.ExecuteCommandHelperAsync(Byte[] buffer, String invoker) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 2181
+   at VoiceElements.Client.TelephonyServer.RegisterWebRtcUrl() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 1806
+   at VoiceApp.IvrApplication.MainCode() in g:\vcd\WebRTCSample\VoiceApp\IvrApplication.cs:line 186
+16/04/20 - 20:26:32.454 000B IvrApplication       IvrApplication::MainCode() ExceptionCommand Not Recognized. Contact Technical Support.  Command: TelephonyServer.RegisterWebRtcUrl.Invoke  Object Id: 7bd0dfbb-48d7-478a-b823-7927d346dfe0
+   at VoiceApp.IvrApplication.MainCode() in g:\vcd\WebRTCSample\VoiceApp\IvrApplication.cs:line 267
+16/04/20 - 20:27:41.466 000A (no thread name)     IvrApplication is in the Stopped state.  Cannot stop IvrApplication at this time.
+16/04/20 - 20:28:01.641 000A (no thread name)     Initializing Logging Class
+16/04/20 - 20:28:01.648 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/20 - 20:28:01.648 000A (no thread name)     IvrApplication Constructor Complete
+16/04/20 - 20:28:01.664 000A (no thread name)     IvrApplication Starting...
+16/04/20 - 20:28:01.669 000A (no thread name)     Starting WebServer
+16/04/20 - 20:28:01.670 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/20 - 20:28:01.710 000B IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/20 - 20:28:03.505 000B IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/20 - 20:28:03.507 000B IvrApplication       VoiceElementsServer Version: 8.3.15.1215
+16/04/20 - 20:28:03.510 000B IvrApplication       IvrApplication::MainCode() Running...
+16/04/20 - 20:28:18.612 0006 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/index.html  ANI:   Caller ID Name: 
+16/04/20 - 20:28:18.614 0006 (no thread name)     Answering...
+16/04/20 - 20:28:25.533 0006 (no thread name)     Call complete.
+16/04/20 - 20:34:25.583 0006 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/index.html  ANI:   Caller ID Name: 
+16/04/20 - 20:34:25.585 0006 (no thread name)     Answering...
+16/04/20 - 20:34:32.575 0006 (no thread name)     Call complete.
+16/04/20 - 20:39:12.020 001B (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/index.html  ANI:   Caller ID Name: 
+16/04/20 - 20:39:13.060 001B (no thread name)     Answering...
+16/04/20 - 20:41:00.368 001B (no thread name)     Call complete.
+16/04/22 - 08:27:59.408 000A (no thread name)     IvrApplication StoppingImmediate.
+16/04/22 - 08:27:59.695 000B IvrApplication       IvrApplication::MainCode() StoppingImmediate...
+16/04/22 - 08:27:59.695 000B IvrApplication       IvrApplication::MainCode() Stopped.
+16/04/22 - 14:18:46.831 0009 (no thread name)     Initializing Logging Class
+16/04/22 - 14:18:46.837 0009 (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 14:18:46.837 0009 (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 14:18:46.854 0009 (no thread name)     IvrApplication Starting...
+16/04/22 - 14:18:46.859 0009 (no thread name)     Starting WebServer
+16/04/22 - 14:18:46.860 000A IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 14:18:46.899 000A IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 14:18:49.325 000A IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/22 - 14:18:49.327 000A IvrApplication       VoiceElementsServer Version: 8.3.15.1215
+16/04/22 - 14:18:49.328 000A IvrApplication       IvrApplication::MainCode() Running...
+16/04/22 - 14:19:02.111 0015 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:19:14.451 0015 (no thread name)     Call complete.
+16/04/22 - 14:19:19.136 0015 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:19:33.260 0015 (no thread name)     Call complete.
+16/04/22 - 14:24:13.585 0015 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:24:25.118 0014 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:24:25.160 0014 (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:24:35.521 001C (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:24:35.525 001C (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:24:35.642 001C (no thread name)     BasicIvr::WebChannel_CustomMessageEvent
+ Ex: The object is hungup, released or disposed.
+   at VoiceElements.Client.TelephonyServer.ExecuteCommandHelperAsync(Byte[] buffer, String invoker) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 2181
+   at VoiceElements.Client.VoiceResource.Stop() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 1876
+   at VoiceApp.BasicIvr.WebChannel_CustomMessageEvent(Object sender, CustomMessageEventArgs e) in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 223
+16/04/22 - 14:24:37.665 0015 (no thread name)     Call complete.
+16/04/22 - 14:25:24.827 001D (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html?  ANI:   Caller ID Name: 
+16/04/22 - 14:25:31.990 001D (no thread name)     Call complete.
+16/04/22 - 14:25:42.840 0016 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:25:52.762 001D (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayTextToSpeech","version":1,"ttsdata":""}
+16/04/22 - 14:25:52.767 001D (no thread name)     Message Type:VoiceApp.BasicIvr+PlayTextToSpeech
+16/04/22 - 14:26:03.610 001E (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayTextToSpeech","version":1,"ttsdata":"Test 123"}
+16/04/22 - 14:26:03.613 001E (no thread name)     Message Type:VoiceApp.BasicIvr+PlayTextToSpeech
+16/04/22 - 14:26:21.628 001E (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayTextToSpeech","version":1,"ttsdata":"Test One. Two. Three"}
+16/04/22 - 14:26:21.631 001E (no thread name)     Message Type:VoiceApp.BasicIvr+PlayTextToSpeech
+16/04/22 - 14:26:33.702 001E (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayTextToSpeech","version":1,"ttsdata":"Test One. Two. Three"}
+16/04/22 - 14:26:33.705 001E (no thread name)     Message Type:VoiceApp.BasicIvr+PlayTextToSpeech
+16/04/22 - 14:26:41.261 001D (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:26:41.264 001D (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:26:51.302 001E (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:26:51.308 001E (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:26:51.491 001E (no thread name)     BasicIvr::WebChannel_CustomMessageEvent
+ Ex: The object is hungup, released or disposed.
+   at VoiceElements.Client.TelephonyServer.ExecuteCommandHelperAsync(Byte[] buffer, String invoker) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 2181
+   at VoiceElements.Client.VoiceResource.Stop() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 1876
+   at VoiceApp.BasicIvr.WebChannel_CustomMessageEvent(Object sender, CustomMessageEventArgs e) in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 223
+16/04/22 - 14:26:53.387 0016 (no thread name)     Call complete.
+16/04/22 - 14:27:54.338 001D (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:28:04.183 001A (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:28:04.193 001A (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:28:13.397 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:28:13.404 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:28:13.534 0018 (no thread name)     BasicIvr::WebChannel_CustomMessageEvent
+ Ex: The object is hungup, released or disposed.
+   at VoiceElements.Client.TelephonyServer.ExecuteCommandHelperAsync(Byte[] buffer, String invoker) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 2181
+   at VoiceElements.Client.VoiceResource.Stop() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 1876
+   at VoiceApp.BasicIvr.WebChannel_CustomMessageEvent(Object sender, CustomMessageEventArgs e) in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 223
+16/04/22 - 14:28:15.376 001D (no thread name)     Call complete.
+16/04/22 - 14:28:52.646 0019 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:29:00.849 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+DialPadTest","version":1,"data":"data"}
+16/04/22 - 14:29:00.858 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+DialPadTest
+16/04/22 - 14:29:11.314 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:29:11.344 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:29:11.482 0016 (no thread name)     BasicIvr::WebChannel_CustomMessageEvent
+ Ex: The object is hungup, released or disposed.
+   at VoiceElements.Client.TelephonyServer.ExecuteCommandHelperAsync(Byte[] buffer, String invoker) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 2181
+   at VoiceElements.Client.VoiceResource.Stop() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 1876
+   at VoiceApp.BasicIvr.WebChannel_CustomMessageEvent(Object sender, CustomMessageEventArgs e) in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 223
+16/04/22 - 14:29:12.487 0019 (no thread name)     Call complete.
+16/04/22 - 14:29:28.647 0003 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:29:40.000 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayMessage","version":1,"data":"data"}
+16/04/22 - 14:29:40.012 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayMessage
+16/04/22 - 14:30:03.823 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayMessage","version":1,"data":"data"}
+16/04/22 - 14:30:03.834 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayMessage
+16/04/22 - 14:30:19.368 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayTextToSpeech","version":1,"ttsdata":"Fart"}
+16/04/22 - 14:30:19.377 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayTextToSpeech
+16/04/22 - 14:30:26.002 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayTextToSpeech","version":1,"ttsdata":"I like stinky farts"}
+16/04/22 - 14:30:26.011 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayTextToSpeech
+16/04/22 - 14:30:32.210 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 14:30:32.221 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 14:30:32.262 0003 (no thread name)     Unexpected exception! in inbound call
+ Ex: Can't Get File Info for Grammar File: Colors.xml
+   at VoiceElements.Client.VoiceResource.set_SpeechRecognitionGrammarFile(String value) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 539
+   at VoiceApp.BasicIvr.RunScript() in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 162
+16/04/22 - 14:30:33.374 0003 (no thread name)     Call complete.
+16/04/22 - 14:31:36.388 0003 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:31:45.394 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:31:45.406 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:31:54.594 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:31:54.605 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:31:54.749 0016 (no thread name)     BasicIvr::WebChannel_CustomMessageEvent
+ Ex: The object is hungup, released or disposed.
+   at VoiceElements.Client.TelephonyServer.ExecuteCommandHelperAsync(Byte[] buffer, String invoker) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 2181
+   at VoiceElements.Client.VoiceResource.Stop() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 1876
+   at VoiceApp.BasicIvr.WebChannel_CustomMessageEvent(Object sender, CustomMessageEventArgs e) in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 223
+16/04/22 - 14:31:56.597 0003 (no thread name)     Call complete.
+16/04/22 - 14:32:36.324 0015 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html?  ANI:   Caller ID Name: 
+16/04/22 - 14:32:43.272 0015 (no thread name)     Call complete.
+16/04/22 - 14:32:46.734 0015 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:32:57.072 001F (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:32:57.084 001F (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:33:06.367 001F (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:33:06.379 001F (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:33:06.505 001F (no thread name)     BasicIvr::WebChannel_CustomMessageEvent
+ Ex: The object is hungup, released or disposed.
+   at VoiceElements.Client.TelephonyServer.ExecuteCommandHelperAsync(Byte[] buffer, String invoker) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 2181
+   at VoiceElements.Client.VoiceResource.Stop() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 1876
+   at VoiceApp.BasicIvr.WebChannel_CustomMessageEvent(Object sender, CustomMessageEventArgs e) in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 223
+16/04/22 - 14:33:08.352 0015 (no thread name)     Call complete.
+16/04/22 - 14:40:36.668 001C (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html?  ANI:   Caller ID Name: 
+16/04/22 - 14:40:43.542 001C (no thread name)     Call complete.
+16/04/22 - 14:40:45.121 001A (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:40:56.198 001C (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Goodbye","version":1,"data":"data"}
+16/04/22 - 14:40:56.212 001C (no thread name)     Message Type:VoiceApp.BasicIvr+Goodbye
+16/04/22 - 14:40:59.337 001A (no thread name)     Call complete.
+16/04/22 - 14:40:59.598 0012 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:41:13.589 001A (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:41:13.601 001A (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:41:44.969 001A (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayMessage","version":1,"data":"data"}
+16/04/22 - 14:41:44.982 001A (no thread name)     Message Type:VoiceApp.BasicIvr+PlayMessage
+16/04/22 - 14:41:51.986 001A (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:41:52.000 001A (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:41:52.163 001A (no thread name)     BasicIvr::WebChannel_CustomMessageEvent
+ Ex: The object is hungup, released or disposed.
+   at VoiceElements.Client.TelephonyServer.ExecuteCommandHelperAsync(Byte[] buffer, String invoker) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 2181
+   at VoiceElements.Client.VoiceResource.Stop() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 1876
+   at VoiceApp.BasicIvr.WebChannel_CustomMessageEvent(Object sender, CustomMessageEventArgs e) in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 223
+16/04/22 - 14:41:53.155 0012 (no thread name)     Call complete.
+16/04/22 - 14:42:57.409 0019 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:43:09.138 0012 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:43:09.154 0012 (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:43:14.792 0019 (no thread name)     Call complete.
+16/04/22 - 14:43:39.909 0014 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:43:49.086 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayMessage","version":1,"data":"data"}
+16/04/22 - 14:43:49.100 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayMessage
+16/04/22 - 14:43:54.589 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:43:54.602 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:43:59.559 0014 (no thread name)     Call complete.
+16/04/22 - 14:44:12.046 0019 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:44:23.554 0014 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayMessage","version":1,"data":"data"}
+16/04/22 - 14:44:23.567 0014 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayMessage
+16/04/22 - 14:45:31.176 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+StreamMusic","version":1,"data":"data"}
+16/04/22 - 14:45:31.191 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+StreamMusic
+16/04/22 - 14:45:32.191 0019 (no thread name)     Unexpected exception! in inbound call
+ Ex: Can't Get File Info for file: music.wav
+   at VoiceElements.Client.VoiceResource.Play(String filename) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 1098
+   at VoiceApp.BasicIvr.RunScript() in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 143
+16/04/22 - 14:45:33.393 0019 (no thread name)     Call complete.
+16/04/22 - 14:46:04.371 0018 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:46:12.747 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Goodbye","version":1,"data":"data"}
+16/04/22 - 14:46:12.761 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+Goodbye
+16/04/22 - 14:46:15.886 0018 (no thread name)     Call complete.
+16/04/22 - 14:46:17.624 0018 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:48:26.189 0018 (no thread name)     Call complete.
+16/04/22 - 14:48:26.819 0019 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:48:35.352 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:48:35.365 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:49:05.072 0019 (no thread name)     Call complete.
+16/04/22 - 14:49:07.843 0019 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:49:16.460 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:49:16.472 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:49:24.956 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:49:24.970 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:49:28.806 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayMessage","version":1,"data":"data"}
+16/04/22 - 14:49:28.819 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayMessage
+16/04/22 - 14:49:57.255 0019 (no thread name)     Call complete.
+16/04/22 - 14:51:32.831 000A (no thread name)     Initializing Logging Class
+16/04/22 - 14:51:32.837 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 14:51:32.838 000A (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 14:51:32.846 000A (no thread name)     IvrApplication Starting...
+16/04/22 - 14:51:32.851 000A (no thread name)     Starting WebServer
+16/04/22 - 14:51:32.853 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 14:51:32.892 000B IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 14:51:49.198 000B IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/22 - 14:51:49.199 000B IvrApplication       VoiceElementsServer Version: 8.3.15.1215
+16/04/22 - 14:51:49.200 000B IvrApplication       IvrApplication::MainCode() Running...
+16/04/22 - 14:52:26.623 0018 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:52:39.413 001C (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+RecordMessage","version":1,"data":"data"}
+16/04/22 - 14:52:39.459 001C (no thread name)     Message Type:VoiceApp.BasicIvr+RecordMessage
+16/04/22 - 14:52:48.368 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:52:48.371 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:52:51.072 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayMessage","version":1,"data":"data"}
+16/04/22 - 14:52:51.074 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayMessage
+16/04/22 - 14:53:51.230 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+StreamMusic","version":1,"data":"data"}
+16/04/22 - 14:53:51.232 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+StreamMusic
+16/04/22 - 14:53:52.063 0018 (no thread name)     Unexpected exception! in inbound call
+ Ex: Can't Get File Info for file: music.wav
+   at VoiceElements.Client.VoiceResource.Play(String filename) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 1098
+   at VoiceApp.BasicIvr.RunScript() in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 143
+16/04/22 - 14:53:53.538 0018 (no thread name)     Call complete.
+16/04/22 - 14:57:10.223 000A (no thread name)     Initializing Logging Class
+16/04/22 - 14:57:10.229 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 14:57:10.230 000A (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 14:57:10.242 000A (no thread name)     IvrApplication Starting...
+16/04/22 - 14:57:10.267 000A (no thread name)     Starting WebServer
+16/04/22 - 14:57:10.290 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 14:57:10.331 000B IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 14:57:26.677 000B IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/22 - 14:57:26.678 000B IvrApplication       VoiceElementsServer Version: 8.3.15.1215
+16/04/22 - 14:57:26.679 000B IvrApplication       IvrApplication::MainCode() Running...
+16/04/22 - 14:57:27.212 0006 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:57:32.069 0017 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:57:42.522 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+StreamMusic","version":1,"data":"data"}
+16/04/22 - 14:57:42.566 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+StreamMusic
+16/04/22 - 14:57:42.607 0017 (no thread name)     Unexpected exception! in inbound call
+ Ex: Can't Get File Info for file: music.wav
+   at VoiceElements.Client.VoiceResource.Play(String filename) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\VoiceResource.cs:line 1098
+   at VoiceApp.BasicIvr.RunScript() in g:\vcd\WebRTCSample\VoiceApp\BasicIvr.cs:line 143
+16/04/22 - 14:57:43.926 0017 (no thread name)     Call complete.
+16/04/22 - 14:57:50.220 000A (no thread name)     IvrApplication StoppingImmediate.
+16/04/22 - 14:57:50.565 0006 (no thread name)     Call complete.
+16/04/22 - 14:57:50.846 000B IvrApplication       IvrApplication::MainCode() StoppingImmediate...
+16/04/22 - 14:57:50.847 000B IvrApplication       IvrApplication::MainCode() Stopped.
+16/04/22 - 14:58:42.468 0009 (no thread name)     Initializing Logging Class
+16/04/22 - 14:58:42.475 0009 (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 14:58:42.476 0009 (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 14:58:42.494 0009 (no thread name)     IvrApplication Starting...
+16/04/22 - 14:58:42.498 0009 (no thread name)     Starting WebServer
+16/04/22 - 14:58:42.502 000A IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 14:58:42.559 000A IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 14:58:44.365 000A IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/22 - 14:58:44.366 000A IvrApplication       VoiceElementsServer Version: 8.3.15.1215
+16/04/22 - 14:58:44.367 000A IvrApplication       IvrApplication::MainCode() Running...
+16/04/22 - 14:58:55.766 0016 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 14:59:05.003 0015 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+StreamMusic","version":1,"data":"data"}
+16/04/22 - 14:59:05.045 0015 (no thread name)     Message Type:VoiceApp.BasicIvr+StreamMusic
+16/04/22 - 14:59:14.620 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:59:14.623 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:59:20.212 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayTextToSpeech","version":1,"ttsdata":"Fat Man"}
+16/04/22 - 14:59:20.215 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayTextToSpeech
+16/04/22 - 14:59:26.494 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayTextToSpeech","version":1,"ttsdata":"Little Boy"}
+16/04/22 - 14:59:26.496 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayTextToSpeech
+16/04/22 - 14:59:32.254 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+PlayTextToSpeech","version":1,"ttsdata":"Voice Elements"}
+16/04/22 - 14:59:32.257 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+PlayTextToSpeech
+16/04/22 - 14:59:47.120 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+DialPadTest","version":1,"data":"data"}
+16/04/22 - 14:59:47.123 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+DialPadTest
+16/04/22 - 14:59:53.551 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 14:59:53.553 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 14:59:53.848 0016 (no thread name)     Digits: 
+16/04/22 - 15:02:05.837 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+DialPadTest","version":1,"data":"data"}
+16/04/22 - 15:02:05.841 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+DialPadTest
+16/04/22 - 15:02:20.181 0018 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+Stop","version":1,"data":"data"}
+16/04/22 - 15:02:20.183 0018 (no thread name)     Message Type:VoiceApp.BasicIvr+Stop
+16/04/22 - 15:02:20.486 0016 (no thread name)     Digits: 
+16/04/22 - 15:02:37.792 0016 (no thread name)     Call complete.
+16/04/22 - 15:04:17.499 0015 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 15:04:29.715 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+DialPadTest","version":1,"data":"data"}
+16/04/22 - 15:04:29.719 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+DialPadTest
+16/04/22 - 15:04:49.064 0015 (no thread name)     Digits: 1
+16/04/22 - 15:04:56.524 0007 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+DialPadTest","version":1,"data":"data"}
+16/04/22 - 15:04:56.526 0007 (no thread name)     Message Type:VoiceApp.BasicIvr+DialPadTest
+16/04/22 - 15:05:05.737 0015 (no thread name)     Call complete.
+16/04/22 - 15:05:06.332 0015 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 15:05:15.742 0007 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+DialPadTest","version":1,"data":"data"}
+16/04/22 - 15:05:15.744 0007 (no thread name)     Message Type:VoiceApp.BasicIvr+DialPadTest
+16/04/22 - 15:05:28.092 0015 (no thread name)     Digits: 123
+16/04/22 - 15:05:33.784 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+DialPadTest","version":1,"data":"data"}
+16/04/22 - 15:05:33.787 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+DialPadTest
+16/04/22 - 15:05:40.702 0015 (no thread name)     Digits: 456
+16/04/22 - 15:05:47.985 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+DialPadTest","version":1,"data":"data"}
+16/04/22 - 15:05:47.991 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+DialPadTest
+16/04/22 - 15:05:54.412 0015 (no thread name)     Digits: *
+16/04/22 - 15:06:00.165 0007 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+DialPadTest","version":1,"data":"data"}
+16/04/22 - 15:06:00.173 0007 (no thread name)     Message Type:VoiceApp.BasicIvr+DialPadTest
+16/04/22 - 15:06:10.151 0015 (no thread name)     Digits: 1234567890
+16/04/22 - 15:06:20.734 0015 (no thread name)     Call complete.
+16/04/22 - 15:06:22.865 0007 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 15:06:32.153 0015 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:06:32.161 0015 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:06:38.427 0007 (no thread name)     Speech: 
+16/04/22 - 15:07:10.705 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:07:10.714 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:07:17.651 0007 (no thread name)     Speech: 
+16/04/22 - 15:08:06.064 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:08:06.072 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:08:18.735 0007 (no thread name)     Speech: black
+16/04/22 - 15:08:26.386 0014 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:08:26.394 0014 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:08:35.206 0007 (no thread name)     Speech: 
+16/04/22 - 15:09:08.728 0007 (no thread name)     Call complete.
+16/04/22 - 15:09:43.104 0014 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 15:09:51.437 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:09:51.446 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:10:05.720 0014 (no thread name)     Speech: 
+16/04/22 - 15:10:15.033 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:10:15.043 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:10:29.145 0014 (no thread name)     Speech: dark orange
+16/04/22 - 15:10:39.868 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:10:39.880 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:10:45.981 0014 (no thread name)     Speech: yellow
+16/04/22 - 15:10:50.564 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:10:50.573 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:10:54.802 0014 (no thread name)     Speech: 
+16/04/22 - 15:11:10.152 0016 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:11:10.164 0016 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:11:15.433 0014 (no thread name)     Speech: 
+16/04/22 - 15:11:21.200 0007 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:11:21.209 0007 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:11:27.145 0014 (no thread name)     Speech: 
+16/04/22 - 15:11:33.506 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+SpeechRecognition","version":1,"data":"data"}
+16/04/22 - 15:11:33.518 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+SpeechRecognition
+16/04/22 - 15:11:39.314 0014 (no thread name)     Speech: dark orange
+16/04/22 - 15:11:50.091 0014 (no thread name)     Call complete.
+16/04/22 - 15:11:54.157 0016 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicivr.html  ANI:   Caller ID Name: 
+16/04/22 - 15:12:05.805 0019 (no thread name)     Received Message: {"__type":"VoiceApp.BasicIvr+DialPadTest","version":1,"data":"data"}
+16/04/22 - 15:12:05.814 0019 (no thread name)     Message Type:VoiceApp.BasicIvr+DialPadTest
+16/04/22 - 15:12:13.128 0016 (no thread name)     Digits: 345
+16/04/22 - 15:12:19.797 0016 (no thread name)     Call complete.
+16/04/22 - 15:43:30.792 000A (no thread name)     Initializing Logging Class
+16/04/22 - 15:43:30.799 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 15:43:30.799 000A (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 15:43:30.814 000A (no thread name)     IvrApplication Starting...
+16/04/22 - 15:43:30.818 000A (no thread name)     Starting WebServer
+16/04/22 - 15:43:30.822 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 15:43:30.863 000B IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 15:43:45.964 000B IvrApplication       IvrApplication::MainCode() Exception: ElementsAuthenticator::TelephonyServerAuthorization() Invalid Username/Password.
+   at VoiceElements.Client.TelephonyServer.TelephonyServerStartConnection() in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 339
+   at VoiceElements.Client.TelephonyServer..ctor(String url, String username, String password) in D:\Vcd\VoiceElements.NET\VoiceElementsClient\TelephonyServer.cs:line 254
+   at VoiceApp.IvrApplication.MainCode() in g:\vcd\WebRTCSample\VoiceApp\IvrApplication.cs:line 170
+16/04/22 - 15:43:45.976 000B IvrApplication       IvrApplication::MainCode() ExceptionElementsAuthenticator::TelephonyServerAuthorization() Invalid Username/Password.
+   at VoiceApp.IvrApplication.MainCode() in g:\vcd\WebRTCSample\VoiceApp\IvrApplication.cs:line 267
+16/04/22 - 15:44:50.763 000A (no thread name)     IvrApplication is in the Stopped state.  Cannot stop IvrApplication at this time.
+16/04/22 - 15:57:47.833 000A (no thread name)     Initializing Logging Class
+16/04/22 - 15:57:47.839 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 15:57:47.839 000A (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 15:57:47.855 000A (no thread name)     IvrApplication Starting...
+16/04/22 - 15:57:47.881 000A (no thread name)     Starting WebServer
+16/04/22 - 15:57:47.901 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 15:57:47.925 000B IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 15:57:49.710 000B IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/22 - 15:57:49.712 000B IvrApplication       VoiceElementsServer Version: 8.3.15.1215
+16/04/22 - 15:57:49.713 000B IvrApplication       IvrApplication::MainCode() Running...
+16/04/22 - 17:27:27.953 0003 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicauthentication.html  ANI:   Caller ID Name: 
+16/04/22 - 17:27:34.774 0003 (no thread name)     Call complete.
+16/04/22 - 17:29:52.913 0009 (no thread name)     Initializing Logging Class
+16/04/22 - 17:29:52.919 0009 (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 17:29:52.920 0009 (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 17:29:52.936 0009 (no thread name)     IvrApplication Starting...
+16/04/22 - 17:29:52.940 0009 (no thread name)     Starting WebServer
+16/04/22 - 17:29:52.943 000A IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 17:29:52.984 000A IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 17:30:04.680 000A (no thread name)     Initializing Logging Class
+16/04/22 - 17:30:04.686 000A (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 17:30:04.687 000A (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 17:30:04.700 000A (no thread name)     IvrApplication Starting...
+16/04/22 - 17:30:04.705 000A (no thread name)     Starting WebServer
+16/04/22 - 17:30:04.708 000B IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 17:30:04.730 000B IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 17:30:21.040 000B IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/22 - 17:30:21.042 000B IvrApplication       VoiceElementsServer Version: 8.3.15.1215
+16/04/22 - 17:30:21.043 000B IvrApplication       IvrApplication::MainCode() Running...
+16/04/22 - 17:30:33.933 0006 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicauthentication.html  ANI:   Caller ID Name: 
+16/04/22 - 17:31:21.280 0006 (no thread name)     Call complete.
+16/04/22 - 17:35:01.190 0009 (no thread name)     Initializing Logging Class
+16/04/22 - 17:35:01.197 0009 (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 17:35:01.197 0009 (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 17:35:01.212 0009 (no thread name)     IvrApplication Starting...
+16/04/22 - 17:35:01.216 0009 (no thread name)     Starting WebServer
+16/04/22 - 17:35:01.219 000A IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 17:35:01.258 000A IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 17:35:17.563 000A IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/22 - 17:35:17.564 000A IvrApplication       VoiceElementsServer Version: 8.3.15.1215
+16/04/22 - 17:35:17.565 000A IvrApplication       IvrApplication::MainCode() Running...
+16/04/22 - 17:35:45.096 0017 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicauthentication.html  ANI:   Caller ID Name: 
+16/04/22 - 17:36:32.553 0017 (no thread name)     Call complete.
+16/04/22 - 17:36:56.026 0019 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicauthentication.html  ANI:   Caller ID Name: 
+16/04/22 - 17:37:28.123 0019 (no thread name)     Call complete.
+16/04/22 - 17:37:28.580 001A (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicauthentication.html  ANI:   Caller ID Name: 
+16/04/22 - 17:38:15.987 001A (no thread name)     Call complete.
+16/04/22 - 17:38:28.276 0013 (no thread name)     NewCall Arrival! DNIS: http://localhost:8181/1602/basicauthentication.html  ANI:   Caller ID Name: 
+16/04/22 - 17:38:42.328 001A (no thread name)     Challenge Returned - UN: Matt PW: Bowden
+16/04/22 - 17:38:53.014 0013 (no thread name)     Call complete.
+16/04/22 - 18:21:40.852 0009 (no thread name)     Initializing Logging Class
+16/04/22 - 18:21:40.858 0009 (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 18:21:40.859 0009 (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 18:21:40.872 0009 (no thread name)     IvrApplication Starting...
+16/04/22 - 18:21:40.877 0009 (no thread name)     Starting WebServer
+16/04/22 - 18:21:40.878 000A IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 18:21:40.919 000A IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 18:21:42.699 000A IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/22 - 18:21:42.701 000A IvrApplication       VoiceElementsServer Version: 8.3.15.1215
+16/04/22 - 18:21:42.704 000A IvrApplication       IvrApplication::MainCode() Running...
+16/04/22 - 18:24:56.839 0008 (no thread name)     Initializing Logging Class
+16/04/22 - 18:24:56.845 0008 (no thread name)     Log Name: IvrApplication.Log
+16/04/22 - 18:24:56.846 0008 (no thread name)     IvrApplication Constructor Complete
+16/04/22 - 18:24:56.857 0008 (no thread name)     IvrApplication Starting...
+16/04/22 - 18:24:56.864 0008 (no thread name)     Starting WebServer
+16/04/22 - 18:24:56.864 0009 IvrApplication       IvrApplication::MainCode() Starting...
+16/04/22 - 18:24:56.888 0009 IvrApplication       Connecting to: gtcp://209.105.253.154:54331
+16/04/22 - 18:25:09.432 0008 (no thread name)     IvrApplication is in the Starting state.  Cannot stop IvrApplication at this time.
+16/04/22 - 18:25:13.197 0009 IvrApplication       VoiceElementsClient Version: 8.3.15.1215
+16/04/22 - 18:25:13.197 0009 IvrApplication       VoiceElementsServer Version: 8.3.15.1215
+16/04/22 - 18:25:13.198 0009 IvrApplication       IvrApplication::MainCode() Running...

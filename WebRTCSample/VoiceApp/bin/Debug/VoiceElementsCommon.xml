@@ -1,0 +1,3424 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VoiceElementsCommon</name>
+    </assembly>
+    <members>
+        <member name="T:VoiceElements.Common.DataFormat">
+            <summary>
+        The format of the data to expect or use on a play or record function.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.DataFormat">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.DataFormat">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.DataFormat.Raw">
+            <summary>
+            The data file or buffer contains raw data only. 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DataFormat.Wave">
+            <summary>
+            The data file or buffer contains standard wav headers.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DataFormat.Vap">
+            <summary>
+            A data file or buffer of indexed voice segments
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DataFormat.Ogg">
+            <summary>
+            The data file or buffer contains standard ogg headers.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.Codec">
+            <summary>
+        The codec to use when playing, recording or streaming voice data.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Codec">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Codec">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.Automatic">
+            <summary>
+            For playing, the voice format is automatically determined if possible.  For recording, MULAW_8KHZ_8BIT is the default.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.DXPR_ADPCM_6Khz_4Bit">
+            <summary>
+            ADPCM 6Khz, 4Bit (24 Kb/s) using dx_play or dx_record.
+            Maps to CTI32 Format: Kbps24
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.DXPR_ADPCM_8Khz_4Bit">
+            <summary>
+            ADPCM 8Khz, 4Bit (32 Kb/s) using dx_play or dx_record.
+            Maps to CTI32 Format: Kbps32
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.DXPR_PCM_6Khz_8Bit">
+            <summary>
+            PCM 6Khz, 8Bit (48 Kb/s) using dx_play or dx_record.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.DXPR_PCM_8Khz_8Bit">
+            <summary>
+            PCM 8Khz, 8Bit (64 Kb/s) using dx_play or dx_record.  
+            Maps to CTI Format: Kbps64
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.DXPR_PCM_ALAW_6Khz_8Bit">
+            <summary>
+            PCM ALAW 6Khz, 8Bit (48 Kb/s) using dx_play or dx_record.  
+            Supported by D/41ESC, D/160SC-LS, D/240SC, D/240SC-T1, D/300SC-E1 and D/320SC boards only.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.DXPR_PCM_ALAW_8Khz_8Bit">
+            <summary>
+            PCM ALAW 8Khz, 8Bit (64 Kb/s) using dx_play or dx_record.  
+            Supported by D/41ESC, D/160SC-LS, D/240SC, D/240SC-T1, D/300SC-E1 and D/320SC boards only.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.ALAW_6Khz_8Bit">
+            <summary>
+            ALAW, 6Khz, 8Bit (48 Kb/s)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G711_ALAW_6Khz_8Bit">
+            <summary>
+            G711 ALAW, 6Khz, 8Bit (48 Kb/s) - Synonym for ALAW_6Khz_8Bit
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.ALAW_8Khz_8Bit">
+            <summary>
+            ALAW, 8Khz, 8Bit (64 Kb/s)
+            Maps to CTI32 Format: Wave8Alaw
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G711_ALAW_8Khz_8Bit">
+            <summary>
+            G711 ALAW, 8Khz, 8Bit (64 Kb/s) - Synonym for ALAW_8Khz_8Bit
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.ALAW_11Khz_8Bit">
+            <summary>
+            ALAW, 11Khz, 8Bit (88 Kb/s)
+            Maps to CTI32 Format: Wave11Alaw
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G711_ALAW_11Khz_8Bit">
+            <summary>
+            G711 ALAW, 11Khz, 8Bit (88 Kb/s) - Synonym for ALAW_11Khz_8Bit
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.MULAW_6Khz_8Bit">
+            <summary>
+            MULAW, 6Khz, 8Bit (48 Kb/s)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G711_MULAW_6Khz_8Bit">
+            <summary>
+            G711 MULAW, 6Khz, 8Bit (48 Kb/s) - Synonym for MULAW_6Khz_8Bit
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.MULAW_8Khz_8Bit">
+            <summary>
+            MULAW, 8Khz, 8Bit (64 Kb/s)
+            Maps to CTI32 Format: Wave8Mulaw, Vox8Mulaw
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G711_MULAW_8Khz_8Bit">
+            <summary>
+            G711 MULAW, 8Khz, 8Bit (64 Kb/s) - Synonym for MULAW_8Khz_8Bit
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.MULAW_11Khz_8Bit">
+            <summary>
+            MULAW, 11Khz, 8Bit (88 Kb/s)
+            Maps to CTI32 Format: Wave11Mulaw
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G711_MULAW_11Khz_8Bit">
+            <summary>
+            G711 MULAW, 11Khz, 8Bit (88 Kb/s) - Synonym for MULAW_11Khz_8Bit
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G721_8Khz_4Bit">
+            <summary>
+            G721 8Khz, 4Bit (32 Kb/s)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.PCM_6Khz_8Bit">
+            <summary>
+            PCM 6Khz, 8Bit (48 Kb/s) 
+            Maps to CTI32 Format: Wave6
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.PCM_8Khz_8Bit">
+            <summary>
+            PCM 8Khz, 8Bit (64 Kb/s) 
+            Maps to CTI32 Format: Wave8
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.PCM_8Khz_16Bit">
+            <summary>
+            PCM 8Khz, 16Bit (128 Kb/s) 
+            Maps to CTI32 Format: Wave8X16
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.PCM_11Khz_8Bit">
+            <summary>
+            Linear PCM 11Khz, 8Bit (88 Kb/s)
+            Maps to CTI32 Format: Wave11
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.PCM_11Khz_16Bit">
+            <summary>
+            Linear PCM 11Khz, 16Bit (176 Kb/s)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.DIALOGIC_ADPCM_6Khz_4Bit">
+            <summary>
+            DIALOGIC (OKI) ADPCM 6Khz, 4Bit (24 Kb/s)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.DIALOGIC_ADPCM_8Khz_4Bit">
+            <summary>
+            DIALOGIC (OKI) ADPCM 8Khz, 4Bit (32 Kb/s)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G726_8Khz_2Bit">
+            <summary>
+            G726 8Khz, 2Bit (16 Kb/s) 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G726_8Khz_3Bit">
+            <summary>
+            G726 8Khz, 3Bit (24 Kb/s) 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G726_8Khz_4Bit">
+            <summary>
+            G726 8Khz, 4Bit (32 Kb/s) 
+            Maps to CTI32 Format: G726
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.G726_8Khz_5Bit">
+            <summary>
+            G726 8Khz, 5Bit (40 Kb/s) 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.GSM610_8Khz">
+            <summary>
+            GSM610 8Khz (13 Kb/s) 
+            Maps to CTI32 Format: GSM610
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.GSM610_MICROSOFT_8Khz">
+            <summary>
+            GSM610 MICROSOFT 8Khz (13 Kb/s) - Synonym for GSM610_8Khz
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.GSM610_ETSI_8Khz">
+            <summary>
+            GSM610 ETSI 8Khz (13 Kb/s) - ETSI standard framing
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.GSM610_TIPHON_8Khz">
+            <summary>
+            GSM610 TIPHON 8Khz (13 Kb/s) - Tiphon Bit Order
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.TRUESPEECH_8Khz">
+            <summary>
+            TRUESPEECH 8Khz (8.5 Kb/s)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.LC_CELP_8Khz">
+            <summary>
+            LUCENT CELP 8Khz (8.5 Kb/s) - Synonym for TRUESPEECH_8Khz
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Codec.OPUS_8Khz">
+            <summary>
+            Xiph Opus at 8Khz
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.TerminationCode">
+            <summary>
+        Various Dialogic termination conditions.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.TerminationCode">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.TerminationCode">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.Normal">
+            <summary>
+            Normal
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.MaximumDTMF">
+            <summary>
+            Maximum DTMF digits received.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.MaximumSilence">
+            <summary>
+            Maximum Silence occurred.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.MaximumNonSilence">
+            <summary>
+            Maximum Non-silence occurred.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.Hangup">
+            <summary>
+            Hang-up (loop current drop).
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.MaximumInterDigitTime">
+            <summary>
+            Maximum Inter-digit detection reached.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.MaximumTime">
+            <summary>
+            Maximum time allowed expired.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.Digit">
+            <summary>
+            Specific digit received
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.Pattern">
+            <summary>
+            Pattern matched silence off.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.UserStopped">
+            <summary>
+            Function stopped by user. (StopChannel)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.EndOfData">
+            <summary>
+            End of data/file. (Entire file played and finished.)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.Tone">
+            <summary>
+            Tone on/off event
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.BargeIn">
+            <summary>
+            Barge In Detected
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.Speech">
+            <summary>
+            Speech Decoded Sucessfully
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.Error">
+            <summary>
+            I/O Device Error
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.MaximumData">
+            <summary>
+            Maximum Data
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.Beep">
+            <summary>
+            Beep Detected 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.TerminationCode.OtherError">
+            <summary>
+            Any other unknown error.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.DialResult">
+            <summary>
+        Indicates the result of a outbound Dialing operation.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.DialResult">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.DialResult">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.Successful">
+            <summary>
+            Successful - No call progress - successful.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.CadenceBreak">
+            <summary>
+            Perfectcall cadence break.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.LoopCurrentDrop">
+            <summary>
+            Perfectcall loop current drop.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.HumanDetected">
+            <summary>
+            Human answered. Positive Voice Detect.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.MachineDetected">
+            <summary>
+            Answering machine answered.  Positive Answering Machine Detect.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.PbxDetected">
+            <summary>
+            Connected to PBX.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.Busy">
+            <summary>
+            Line was busy.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.NoAnswer">
+            <summary>
+            Nobody answered the phone.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.NoRingback">
+            <summary>
+            Never heard any ringing going on.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.Connected">
+            <summary>
+            Call connected.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.OperatorIntercept">
+            <summary>
+            That tone you get: be-be-beep. When the number is no good.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.AnalysisStopped">
+            <summary>
+            Call analysis stopped.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.NoDialTone">
+            <summary>
+            No dial tone detected.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.FaxToneDetected">
+            <summary>
+            A fax tone was detected.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.Error">
+            <summary>
+            An unknown error occurred.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.Failed">
+            <summary>
+            Failed.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialResult.FastBusy">
+            <summary>
+            Fast Busy.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.FormatSpoken">
+            // Documentation file reference
+            <summary>
+        Indicates the format to be spoken when playing numbers.  Dates are not effected by this setting.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.FormatSpoken">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.FormatSpoken">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.FormatSpoken.Standard">
+            <summary>
+            Plays a numbers in standard fashion. Fort example, 1002.5 yeilds "one zero zero two point five".
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.FormatSpoken.Intelligently">
+            <summary>
+            Plays a numbers intelligently. For example, 1002.5 yeilds "one thousand two point five".
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.FormatSpoken.Currency">
+            <summary>
+            Plays numbers as currency.  For Example, 12.5 yeilds "twelve dollars and fifty cents".
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.QosEventType">
+            <summary>
+        Indicates the type of Qos Event received.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.QosEventType">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.QosEventType">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.QosEventType.DtmfDiscarded">
+            <summary>
+            Indicates Dtmf may have been discarded
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.QosEventType.LostPackets">
+            <summary>
+            Indicates Packet Loss Problems
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.QosEventType.Jitter">
+            <summary>
+            Indicates Jitter
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.QosEventType.RoundTripLatency">
+            <summary>
+            Indicates Round Trip Latency Problems
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.QosEventType.RtcpTimeout">
+            <summary>
+            Indicates Rtcp Timeout
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.QosEventType.RtpTimeout">
+            <summary>
+            Indicates Rtp Timeout
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.DialReturnType">
+            <summary>
+        Returns the result of the success conditions for the dialer commands.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.DialReturnType">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.DialReturnType">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.DialReturnType.Successful">
+            <summary>
+            The successful call condition was met.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialReturnType.Expired">
+            <summary>
+            The CallExpires condition was met.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialReturnType.ConditionNotMet">
+            <summary>
+            The successful call condition was no tmet
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialReturnType.Cancelled">
+            <summary>
+            The Call was cancelled
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.DialType">
+            <summary>
+        The dial type to use.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.DialType">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.DialType">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.DialType.Sequential">
+            <summary>
+            Means that we will call one after another.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialType.Simultaneous">
+            <summary>
+            Means that we will call all at once.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialType.Single">
+            <summary>
+            Means that we will call one at a time.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.DialMode">
+            <summary>
+        The type of Dial Mode to use when using the abstract Dialer class.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.DialMode">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.DialMode">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.DialMode.Queued">
+            <summary>
+            Means that we use a queue to manage the dials.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.DialMode.Direct">
+            <summary>
+            Means that we use a direct call.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.CallPriority">
+            <summary>
+        The priority of the call.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.CallPriority">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.CallPriority">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.CallPriority.Low">
+            <summary>
+            Indicates a low priority call. All normal and high priority requests will dial before low requests.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallPriority.Normal">
+            <summary>
+            Indicates a normal priority call. This is the default. All high priority requests will dial before normal requests.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallPriority.High">
+            <summary>
+            Indicates a high priority call. High priority requests will dial before all others.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.SuccessCriteria">
+            <summary>
+        The success conditions for a call or set of calls.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.SuccessCriteria">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.SuccessCriteria">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.SuccessCriteria.HumanDetected">
+            <summary>
+            The call will be considered a success when a human is detected.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.SuccessCriteria.MachineDetected">
+            <summary>
+            The call will be considered a success when a machine is detected.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.SuccessCriteria.DTMF">
+            <summary>
+            The call will be considered a success when the DTMF digit in AcceptableDigits is entered by the user.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.SuccessCriteria.Connected">
+            <summary>
+            The call will be considered a success if a dial result of connected is returned.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.SuccessCriteria.HumanOrMachineDetected">
+            <summary>
+            The call will be considered a success if either a human or machine is detected.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.WaveUtility">
+            <summary>
+        A class for manipulating wave files.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.WaveUtility.Append(System.String,System.String)">
+            <summary>
+          Appends wave data from the the second file to the first.
+        </summary><param name="baseFile">First file onto which you will append.</param><param name="appendedFile">The file to append onto the first.</param><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.WaveUtility.Append">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.WaveUtility.Append">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.WaveUtility.Concat(System.String[],System.String)">
+            <summary>
+          Concatenates a set of wave files into one output file.
+        </summary><param name="inputFiles">Input files you wish to concatenate into one file.</param><param name="outputFile">The output file for the concatenation.</param><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.WaveUtility.Conact">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.WaveUtility.Conact">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.WaveUtility.WaveGetComment(System.String)">
+            <summary>
+          Gets a comment in the RIFF section of the wave file.  Comments should be in the LIST:INFO:ICMT field.
+        </summary><param name="filename">The filename in which you would like to read the comment.</param><returns>The value of the comment</returns><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.WaveUtility.WaveGetComment">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.WaveUtility.WaveGetComment">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.WaveUtility.WaveWriteComment(System.String,System.String)">
+            <summary>
+          Writes the comment into the file.
+        </summary><param name="filename">The filename that you would like to write the comment to.</param><param name="comment">The contents of the comment.</param><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.WaveUtility.WaveWriteComment">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.WaveUtility.WaveWriteComment">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.WaveUtility.AppendFromVap(System.String,System.String,System.Int32[])">
+            <summary>
+          Appends Vap data to an existing wave file.
+        </summary><param name="baseFile">The wave file to which you would like to append.</param><param name="vapFile">The Vap file from which you draw the data to append.</param><param name="vapIndicies">the indices of the Vap data to append.</param><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.WaveUtility.AppendFromVap">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.WaveUtility.AppendFromVap">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="T:VoiceElements.Common.StateChanged">
+            <summary>
+            A Delegate used for signalling a change in state.
+            </summary>
+            <param name="newState"></param>
+        </member>
+        <member name="T:VoiceElements.Common.State">
+            <summary>
+        Indicates the state of a thread or service.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.State">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.State">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.State.Stopped">
+            <summary>
+            The Stopped State
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.State.Starting">
+            <summary>
+            The Starting State
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.State.Running">
+            <summary>
+            The Running State
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.State.StoppingControlled">
+            <summary>
+            A Controlled Stop State
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.State.StoppingImmediate">
+            <summary>
+            An Immediate Stop State
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.ElementsException">
+            <remarks>
+            A class that encapsulates a voice elements exception.
+            </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.ElementsException.#ctor">
+            <summary>
+            A standard constructor.
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.ElementsException.#ctor(System.String)">
+            <summary>
+            A constuctor setting the message text.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:VoiceElements.Common.ElementsException.#ctor(System.String,System.Exception)">
+            <summary>
+            A constuctor setting the message text and InnerException
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:VoiceElements.Common.ElementsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            A constuctor used in serailization.
+            </summary>
+            <param name="si"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:VoiceElements.Common.HangupException">
+            <summary>
+        A class that encapsulates a specific voice elements hangup exception.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.HangupException">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.HangupException">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.HangupException.#ctor">
+            <summary>
+            A standard constructor.
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.HangupException.#ctor(System.String)">
+            <summary>
+            A constuctor setting the message text.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:VoiceElements.Common.HangupException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            A constuctor used in serailization.
+            </summary>
+            <param name="si"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:VoiceElements.Common.AuthorizationException">
+            <remarks>
+            A class that encapsulates a specific voice elements authorization exception.
+            </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.AuthorizationException.#ctor">
+            <summary>
+            A standard constructor.
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.AuthorizationException.#ctor(System.String)">
+            <summary>
+            A constuctor setting the message text.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:VoiceElements.Common.AuthorizationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            A constuctor used in serailization.
+            </summary>
+            <param name="si"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:VoiceElements.Common.CallProgress">
+            <summary>
+        Indicates the type of dialing to perform.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.CallProgress">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.CallProgress">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.CallProgress.DialOnly">
+            <summary>
+            Performs the dial and returns immediately.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallProgress.WaitForConnect">
+            <summary>
+            Performs the dial and waits for a connect, busy, or no answer.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallProgress.AnalyzeCall">
+            <summary>
+            Attempts to determine if the called party is a human or machine.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.Digest">
+            <summary>
+            Digest Class
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.Digest.DigestCalcHA1(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            CalcHA1
+            </summary>
+            <param name="alg"></param>
+            <param name="userName"></param>
+            <param name="realm"></param>
+            <param name="password"></param>
+            <param name="nonce"></param>
+            <param name="cNonce"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Common.Digest.DigestCalcResponse(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            DigestCalcResponse
+            </summary>
+            <param name="ha1"></param>
+            <param name="nonce"></param>
+            <param name="nonceCount"></param>
+            <param name="cNonce"></param>
+            <param name="qop"></param>
+            <param name="method"></param>
+            <param name="digestUri"></param>
+            <param name="hEntity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Common.Digest.GetHash(System.String)">
+            <summary>
+            GetHash
+            </summary>
+            <param name="strIn"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VoiceElements.Common.CallAnalysis">
+            <summary>
+            A Class that defines CallAnalysis
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.DX_CALLP">
+            <summary>
+            Turn on Call Analysis
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.CallAnalysis.AnalysisMode">
+            <summary>
+            Defines for Call Analysis modes (ca_intflg field)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisMode.DX_OPTEN">
+            <summary>
+            Enable Operator Intercept with Connect
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisMode.DX_OPTDIS">
+            <summary>
+            Disable Operator Intercept
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisMode.DX_OPTNOCON">
+            <summary>
+            Enable Operator Intercept w/o Connect
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisMode.DX_PVDENABLE">
+            <summary>
+            Enable PVD
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisMode.DX_PVDOPTEN">
+            <summary>
+            Enable PVD with OPTEN
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisMode.DX_PVDOPTNOCON">
+            <summary>
+            Enable PVD with OPTNOCON
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisMode.DX_PAMDENABLE">
+            <summary>
+            Enable PAMD
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisMode.DX_PAMDOPTEN">
+            <summary>
+            Enable PAMD with OPTEN
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.CallAnalysis.AnalysisTerminationType">
+            <summary>
+            Call Analysis termination type.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisTerminationType.CR_BUSY">
+            <summary>
+            Line busy
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisTerminationType.CR_NOANS">
+            <summary>
+            No answer
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisTerminationType.CR_NORB">
+            <summary>
+            No ringback
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisTerminationType.CR_CNCT">
+            <summary>
+            Call connected
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisTerminationType.CR_CEPT">
+            <summary>
+            Operator intercept
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisTerminationType.CR_STOPD">
+            <summary>
+            Call analysis stopped
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisTerminationType.CR_NODIALTONE">
+            <summary>
+            No dialtone detected
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisTerminationType.CR_FAXTONE">
+            <summary>
+            Fax tone detected
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisTerminationType.CR_ERROR">
+            <summary>
+            Call analysis error
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.CallAnalysis.AnalysisTones">
+            <summary>
+            Tone ID types
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.CallAnalysis.AnalysisErrors">
+            <summary>
+            Call Analysis Errors as returned by ATDX_CPERROR()
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisErrors.CR_MEMERR">
+            <summary>
+            Out of Memory when Creating Temporary
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisErrors.CR_TMOUTON">
+            <summary>
+            Timeout Waiting for SIT Tone
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisErrors.CR_TMOUTOFF">
+            <summary>
+            SIT Tone too long
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisErrors.CR_UNEXPTN">
+            <summary>
+            Unexpected SIT Tone
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisErrors.CR_MXFRQERR">
+            <summary>
+            Invalid ca_maxtimefrq field in DX_CAP
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisErrors.CR_UPFRQERR">
+            <summary>
+            Invalid Upper Frequency Selection
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisErrors.CR_LGTUERR">
+            <summary>
+            Lower Freq. Greater than Upper Freq.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.AnalysisErrors.CR_OVRLPERR">
+            <summary>
+            Overlap in Selected SIT Tones
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.CallAnalysis.ConnectionTypes">
+            <summary>
+            Connection types ( ATDX_CONNTYPE() )
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.ConnectionTypes.CON_CAD">
+            <summary>
+            Cadence Break
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.ConnectionTypes.CON_LPC">
+            <summary>
+            Loop Current Drop
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.ConnectionTypes.CON_PVD">
+            <summary>
+            Positive Voice Detect
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.ConnectionTypes.CON_PAMD">
+            <summary>
+            Positive Answering Machine Detect
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.ConnectionTypes.CON_DIGITAL">
+            <summary>
+            connect to pbx
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.CallAnalysis.PamdTypes">
+            <summary>
+            PAMD equates
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.PamdTypes.PAMD_FULL">
+            <summary>
+            FULL decision on PAMD
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.PamdTypes.PAMD_QUICK">
+            <summary>
+            QUICK decision on PAMD
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.PamdTypes.PAMD_ACCU">
+            <summary>
+            ACCU decision on PAMD
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.PamdTypes.PAMD_ACCURACY">
+            <summary>
+            Accuracy decision on PAMD
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.PamdTypes.PAMD_QUAL1TMP">
+            <summary>
+            Qualification template 1 for PAMD
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysis.PamdTypes.PAMD_QUAL2TMP">
+            <summary>
+            Qualification template 1 for PAMD
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.CallAnalysisParameters">
+            <summary>
+            Contains the various user defined call progress values.  If set to 0, the default for the parameter is used.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_nbrdna">
+            <summary>
+            # of rings before no answer. 
+            Number of Rings Before Detecting No Answer: The number of single or double rings to wait before returning a no answer. 
+            Default: 4. 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_stdely">
+            <summary>
+            Delay after dialing before analysis.
+            Start Delay: The delay after dialing has been completed and before starting Frequency Detection. 
+            This parameter also determines the start of Cadence Detection and Positive Voice Detection. 
+            Default: 25 (10 ms units). Note that this can affect detection of the first element of an operator intercept tone. 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_cnosig">
+            <summary>
+            Duration of no signal time out delay.
+            Continuous No Signal. The maximum time of silence (no signal) allowed immediately after cadence detection begins. 
+            If exceeded, a “no ringback” is returned.
+            Default: 4000 Units: 10 msec
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lcdly">
+            <summary>
+            Delay after dial before lc drop connect
+            Loop Current Delay: The delay after dialing has been completed and before beginning Loop Current Detection.
+            To disable Loop Current Detection, set to -1. Default: 400 (10 ms units). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lcdly1">
+            <summary>
+            Delay after lc drop con. before msg.
+            Loop Current Delay 1: The delay after Loop Current Detection detects a transient drop in loop current and 
+            before Call Analysis returns a connect to the application. 
+            Default: 10 (10 ms units). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_hedge">
+            <summary>
+            Edge of answer to send connect message.
+            Hello Edge: The point at which a connect will be returned to the application, either the rising edge 
+            (immediately when a connect is detected) or the falling edge (after the end of the salutation). 
+            1 = rising edge. 2 = falling edge. 
+            Default: 2 (connect returned on falling edge of salutation). 
+            Try changing this if the called party has to say "Hello" twice to trigger the answer event. 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_cnosil">
+            <summary>
+            Initial continuous noise timeout delay.
+            Continuous Nonsilence: The maximum length of nonsilence allowed. If exceeded, a no ringback is returned. 
+            Default: 650 (in 10 ms units), or 6.5 seconds.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lo1tola">
+            <summary>
+            % acceptable pos. dev of public ushort low sig.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lo1tolb">
+            <summary>
+            % acceptable neg. dev of public ushort low sig.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lo2tola">
+            <summary>
+            % acceptable pos. dev of long low sig.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lo2tolb">
+            <summary>
+            % acceptable neg. dev of long low sig.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_hi1tola">
+            <summary>
+            % acceptable pos. dev of high signal.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_hi1tolb">
+            <summary>
+            % acceptable neg. dev of high signal.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lo1bmax">
+            <summary>
+            Maximum interval for shrt low for busy.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lo2bmax">
+            <summary>
+            Maximum interval for long low for busy.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_hi1bmax">
+            <summary>
+            Maximum interval for 1st high for busy
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_nsbusy">
+            <summary>
+            Num. of highs after nbrdna busy check.
+            Nonsilence Busy: The number of nonsilence periods in addition to ca_nbrdna to wait before returning a busy. 
+            Default: 0. ca_nsbusy is added to ca_nbrdna to give the actual number of busy cadences at which to return busy.
+            Note that even though ca_nsbusy is declared as an unsigned variable, it can be a small negative number.
+            Do not allow ca_nbrdna + ca_nsbusy to equal 2. 
+            This is a foible of the 2's complement bit mapping of a small negative number to an unsigned variable. 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_logltch">
+            <summary>
+            Silence deglitch duration.
+            Low Glitch: The maximum silence period to ignore. Used to help eliminate spurious silence intervals. 
+            Default: 15 (in 10 ms units). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_higltch">
+            <summary>
+            Non-silence deglitch duration.
+            High Glitch: The maximum nonsilence period to ignore. Used to help eliminate spurious nonsilence intervals. 
+            Default: 19 (in 10 ms units)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lo1rmax">
+            <summary>
+            Max. public ushort low  dur. of double ring.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lo2rmin">
+            <summary>
+            Min. long low  dur. of double ring.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_intflg">
+            <summary>
+            Operator intercept mode.
+            Intercept Mode Flag. Enables or disables SIT frequency detection, positive voice detection
+            (PVD), and/or positive answering machine detection (PAMD), and selects the mode of
+            operation for SIT frequency detection.
+            • DX_OPTDIS – Disable SIT frequency detection, PAMD, and PVD.
+            This setting provides call progress without SIT frequency detection.
+            • DX_OPTNOCON – Enable SIT frequency detection and return an “intercept”
+            immediately after detecting a valid frequency.
+            This setting provides call progress with SIT frequency detection.
+            • DX_PVDENABLE – Enable PVD and fax tone detection.
+            This setting provides PVD call analysis only (no call progress).
+            • DX_PVDOPTNOCON – Enable PVD, DX_OPTNOCON, and fax tone detection.
+            This setting provides call progress with SIT frequency detection and PVD call analysis.
+            • DX_PAMDENABLE – Enable PAMD, PVD, and fax tone detection.
+            This setting provides PAMD and PVD call analysis only (no call progress).
+            • DX_PAMDOPTEN – Enable PAMD, PVD, DX_OPTNOCON, and fax tone detection.
+            This setting provides full call progress and call analysis.
+            Default: DX_OPTNOCON
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_intfltr">
+            <summary>
+            Minimum signal to qualify freq. detect.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.rfu1">
+            <summary>
+            reserved for future use
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.rfu2">
+            <summary>
+            reserved for future use
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.rfu3">
+            <summary>
+            reserved for future use
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.rfu4">
+            <summary>
+            reserved for future use
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_hisiz">
+            <summary>
+            Used to determine which lowmax to use.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_alowmax">
+            <summary>
+            Max. low before con. if high GT hisize.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_blowmax">
+            <summary>
+            Max. low before con. if high LT hisize.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_nbrbeg">
+            <summary>
+            Number of rings before analysis begins.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_hi1ceil">
+            <summary>
+            Maximum 2nd high dur. for a retrain.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lo1ceil">
+            <summary>
+            Maximum 1st low dur. for a retrain.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lowerfrq">
+            <summary>
+            Lower allowable frequency in hz.
+            Lower Frequency: Lower bound for first tone in Hz. 
+            Default: 900.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_upperfrq">
+            <summary>
+            Upper allowable frequency in hz.
+            Upper Frequency: Upper bound for first tone in Hz. 
+            Default: 1000. Adjust higher for additional operator intercept tones.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_timefrq">
+            <summary>
+            Total duration of good signal required.
+            Time Frequency: Minimum time for first tone to remain in bounds. 
+            The minimum amount of time required for the audio signal to remain within the frequency detection range for it to be detected. 
+            The audio signal must not be greater than ca_upperfrq or lower than ca_lowerfrq for at least the time interval specified in ca_timefrq. 
+            Default: 5 (10 ms units) 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_rejctfrq">
+            <summary>
+            Allowable % of bad signal.  (Not Used)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_maxansr">
+            <summary>
+            Maximum duration of answer.
+            Maximum Answer: The maximum allowable length of ansrsize. When ansrsize exceeds ca_maxansr, a connect is returned to the application. 
+            Default: 1000 (in 10 ms units), or 10 seconds. 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_ansrdgl">
+            <summary>
+            Silence deglitching value for answer.
+            Answer Deglitcher: The maximum silence period (in 10 ms units) allowed between words in a salutation.
+            This parameter should be enabled only when you are interested in measuring the length of the salutation. Default: -1 (disabled). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_mxtimefrq">
+            <summary>
+            max time for 1st freq to remain in bounds
+            Maximum Time Frequency: Maximum allowable time for first tone to be present. 
+            Default: 0 (10 ms units). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lower2frq">
+            <summary>
+            Lower Bound for second Frequency: Lower bound for second tone in Hz. 
+            Default: 0 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_upper2frq">
+            <summary>
+            Upper Bound for second Frequency: Upper bound for second tone in Hz. 
+            Default: 0. 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_time2frq">
+            <summary>
+            min time for 2nd freq to remains in bounds
+            Time for second Frequency: Minimum time for second tone to remain in bounds. 
+            Default: 0 (10 ms units). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_mxtime2frq">
+            <summary>
+            max time for 2nd freq to remain in bounds
+            Maximum Time for second Frequency: Maximum allowable time for second tone to be present. 
+            Default: 0 (10 ms units). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_lower3frq">
+            <summary>
+            Lower Bound for third Frequency: Lower bound for third tone in Hz. 
+            Default: 0.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_upper3frq">
+            <summary>
+            Upper Bound for third Frequency: Upper bound for third tone in Hz. 
+            Default: 0. 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_time3frq">
+            <summary>
+            min time for 3rd freq to remains in bounds
+            Time for third Frequency: Minimum time for third tone to remain in bounds. 
+            Default: 0 (10 ms units). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_mxtime3frq">
+            <summary>
+            max time for 3rd freq to remain in bounds
+            Maximum Time for third Frequency: Maximum allowable time for third tone to be present. 
+            Default: 0 (10 ms units)
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_dtn_pres">
+            <summary>
+            Length of a valid dial tone (def=1sec)
+            Dial Tone Present: The length of time that the dial tone must be continuously present (in 10 ms units).
+            If a dial tone is present for this amount of time, dialing of the dial string proceeds. 
+            Default value: 100 (one second). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_dtn_npres">
+            <summary>
+            Max time to wait for dial tone (def=3sec)
+            Dial Tone Not Present: The length of time to wait before declaring the dial tone not present (in 10 ms units). 
+            If a dial tone of sufficient length (ca_dtn_pres) is not found within this period of time, 
+            Call Analysis terminates with the reason CR_NODIALTONE. 
+            The dial tone character (L, I, or X) for the missing dial tone can be obtained using ATDX_DTNFAIL( ). 
+            Default value: 300 (three seconds). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_dtn_deboff">
+            <summary>
+            The dialtone off debouncer (def=100ms)
+            Dial Tone Debounce: The maximum duration of a break in an otherwise continuous dial tone before it is considered invalid (in 10 ms units).
+            This parameter is used for ignoring short drops in dial tone.
+            If a drop longer than ca_dtn_deboff occurs, then dial tone is no longer considered present, 
+            and another dial tone must begin and be continuous for ca_dtn_pres. 
+            Default value: 10 (100 msec). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_pamd_failtime">
+            <summary>
+            Wait for AMD/PVD after cadence break(default=4sec)
+            PAMD Fail Time. Maximum time to wait for positive answering machine detection or positive voice detection after a cadence break.
+            Default: 400 Units: 10 msec
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_pamd_minring">
+            <summary>
+            min allowable ring duration (def=1.9sec)
+            Minimum PAMD ring: Minimum allowable ring duration for Positive Answering Machine Detection. 
+            Default Value: 190 (in 10 ms units). 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_pamd_spdval">
+            <summary>
+            Set to 2 selects quick decision (def=1)
+            PAMD Speed Value. Quick or full evaluation for PAMD detection
+            • PAMD_FULL – Full evaluation of response
+            • PAMD_QUICK – Quick look at connect circumstances
+            • PAMD_ACCU – Recommended setting. Does the most accurate evaluation detecting live
+            voice as accurately as PAMD_FULL but is more accurate than PAMD_FULL (although
+            slightly slower) in detecting an answering machine. Use PAMD_ACCU when accuracy is
+            more important than speed.
+            Default: PAMD_ACCU
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_pamd_qtemp">
+            <summary>
+            The Qualification template to use for PAMD
+            PAMD Qualification Template: The algorithm to use in PAMD. 
+            At present there is only one template: PAMD_QUAL1TMP. This parameter must be set to this value. 
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_noanswer">
+            <summary>
+            time before no answer after first ring (default=30sec)
+            No Answer. Length of time to wait after first ringback before deciding that the call is not answered.
+            Default: 3000 Units: 10 msec
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.CallAnalysisParameters.ca_maxintering">
+            <summary>
+            Max inter ring delay before connect (8 sec)
+            Maximum Inter-ring: The maximum length of time to wait between consecutive ringback signals (in 10 ms units).
+            If this duration is exceeded, Call Analysis is terminated with the reason CR_CONN (connected). Default value: 800 (8 seconds). 
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.VapStream.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Reads the stream.
+            </summary>
+            <param name="buffer"></param>
+            <param name="offset"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VoiceElements.Common.IObjectMonitor">
+            <summary>
+            And interface that permits property monitoring of sub classes.
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.IObjectMonitor.PropertyChanged(System.Object,System.String)">
+            <summary>
+            Called when a sub class is monitored and a property changes.
+            </summary>
+            <param name="obj"></param>
+            <param name="prop"></param>
+        </member>
+        <member name="T:VoiceElements.Common.ConferenceAttributes">
+            <summary>
+        a set of attributes that define how a resource behaves in a conference.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ConferenceAttributes">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ConferenceAttributes">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.ConferenceAttributes.m_Version">
+            <summary>
+            The version number of this class.
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.ConferenceAttributes.DeSerialize(System.IO.BinaryReader)">
+            <summary>
+          Deserializes data from a binary reader into a Conference Attributes object.
+        </summary><param name="br">The binary reader from which to Deserialize</param><returns>A conference attributes object populated with the properties read in an deserialized.</returns><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.DeSerialize">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.DeSerialize">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.ConferenceAttributes.#ctor">
+            <summary>
+            Standard Constructor
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.ConferenceAttributes.#ctor(VoiceElements.Common.IObjectMonitor)">
+            <summary>
+            Constructor with an IObjectMonitor
+            </summary>
+            <param name="iom"></param>
+        </member>
+        <member name="M:VoiceElements.Common.ConferenceAttributes.Serialize(System.IO.BinaryWriter)">
+            <summary>
+          Serializes this instance via the supplied binary writer.
+        </summary><param name="bw">The binary writer to which to serialize.</param><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Serialize">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Serialize">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ConferenceAttributes.Moderator">
+            <summary>
+          This party is considered a moderator.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Moderator">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Moderator">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ConferenceAttributes.ConfereeType">
+            <summary>
+          The current type of the conferee
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ConfereeType">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ConfereeType">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ConferenceAttributes.ConfereeMode">
+            <summary>
+          The current mode of the conferee.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ConfereeMode">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ConfereeMode">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks> 
+        </member>
+        <member name="P:VoiceElements.Common.ConferenceAttributes.EchoCancellation">
+            <summary>
+          If set, the system will attempt to use echo cancellation for this conferee.  (DM3/HMP only)
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.EchoCancellation">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.EchoCancellation">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ConferenceAttributes.AutomaticGainControl">
+            <summary>
+          If set the system will enable AGC for this conferee.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.AutomaticGainControl">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.AutomaticGainControl">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ConferenceAttributes.MemberToneClamp">
+            <summary>
+          If set the system will clamp DTMF tones for this conferee.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.MemberToneClamp">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.MemberToneClamp">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ConferenceAttributes.TariffTone">
+            <summary>
+          If set the system will play periodic tariff tones to this conferee.
+        </summary><remarks>       
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.TariffTone">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.TariffTone">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ConferenceAttributes.DigitalFrontEnd">
+            <summary>
+          Enables or Disables Digital Front End processing.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.DigitalFrontEnd">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.DigitalFrontEnd">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ConferenceAttributes.AbsoluteVolume">
+            <summary>
+          Sets the Absolute Volume for this conferee. -24 to +12 DB - DM3 Only, Not HMP
+        </summary><remarks>
+          <strong>Valid Range - DM3 Only</strong>
+          <para></para>
+          -24 to +12 DB - DM3 Only, Not HMP
+          <para></para>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.AbsoluteVolume">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.AbsoluteVolume">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ConferenceAttributes.RelativeCurrentVolume">
+            // Documentation file reference
+            <summary>
+          Sets the Relative Volume for the conferee. -36 to +36 DB - DM3 Only, Not HMP
+        </summary><remarks>
+          <strong>Valid Range - DM3 Only</strong>
+          <para></para>
+          -36 to +36 DB - DM3 Only, Not HMP
+          <para></para>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.RelativeCurrentVolume">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.RelativeCurrentVolume">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="T:VoiceElements.Common.ConferenceNotifyMode">
+            <summary>
+        Flags for the Conference Notify Mode.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ConferenceNotifyMode">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ConferenceNotifyMode">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.ConferenceNotifyMode.Normal">
+            <summary>
+            The Normal Attribute
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConferenceNotifyMode.On">
+            <summary>
+            All parties will be notified when a new party is added to the conference.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConferenceNotifyMode.NewTalkersOnly">
+            <summary>
+            All parties will be notified when a new party that is a talker is added to the conference.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConferenceNotifyMode.Off">
+            <summary>
+            No parties will be notified when new parties are added to the conference.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.ConfereeType">
+            <summary>
+        Enumeration for the conferee type.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ConfereeType">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ConfereeType">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.ConfereeType.Normal">
+            <summary>
+            The Normal Type
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConfereeType.Coach">
+            <summary>
+            The conferee is a coach.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConfereeType.Pupil">
+            <summary>
+            The conferee is a pupil.
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.ConfereeMode">
+            <summary>
+        Enumeration for the conferee mode.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ConfereeMode">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ConfereeMode">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.ConfereeMode.Normal">
+            <summary>
+            The Normal Mode
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConfereeMode.ListenOnly">
+            <summary>
+            The Conferee is in listen only mode.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConfereeMode.TransmitOnly">
+            <summary>
+            The Conferee is in transmit only mode.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConfereeMode.Broadcast">
+            <summary>
+            The Conferee is a broadcaster.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConfereeMode.FixedTalker">
+            <summary>
+            Participant's audio stream is always mixed in the conference regardless of input level
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.ConferenceAttendance">
+            <summary>
+        Specifies the type of attendance.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ConferenceAttendance">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ConferenceAttendance">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.ConferenceAttendance.None">
+            <summary>
+            Attendee is neither participating nor monitoring.
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConferenceAttendance.Participant">
+            <summary>
+            Is a Participant
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.ConferenceAttendance.Monitor">
+            <summary>
+            Is a Monitor
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.UmcLibrary">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.UmcLibrary.MapNetworkDrive(System.String,System.String)">
+            <summary>
+            Maps A Network Drive
+            </summary>
+            <param name="localname"></param>
+            <param name="remotename"></param>
+        </member>
+        <member name="M:VoiceElements.Common.UmcLibrary.UnMapNetworkDrive(System.String)">
+            <summary>
+            Unmaps a network drive.
+            </summary>
+            <param name="localname"></param>
+        </member>
+        <member name="M:VoiceElements.Common.UmcLibrary.GetPrivateProfileString(System.String,System.String,System.String,System.Text.StringBuilder,System.UInt32,System.String)">
+            <summary>
+            Get Value From An INI File
+            </summary>
+            <param name="lpAppName"></param>
+            <param name="lpKeyName"></param>
+            <param name="lpDefault"></param>
+            <param name="lpReturnedString"></param>
+            <param name="nSize"></param>
+            <param name="lpFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Common.UmcLibrary.WritePrivateProfileStringA(System.String,System.String,System.String,System.String)">
+            <summary>
+            Set A Value In An INI File
+            </summary>
+            <param name="lpAppName"></param>
+            <param name="lpKeyName"></param>
+            <param name="lpString"></param>
+            <param name="lpFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VoiceElements.Common.EventCache">
+            <summary>
+            The EventCache
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.EventCache.GetMRE">
+            <summary>
+            GetMRE
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Common.EventCache.GetARE">
+            <summary>
+            GetARE
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Common.EventCache.ReturnMRE(System.Threading.ManualResetEvent)">
+            <summary>
+            ReturnMRE
+            </summary>
+            <param name="mre"></param>
+        </member>
+        <member name="M:VoiceElements.Common.EventCache.ReturnARE(System.Threading.AutoResetEvent)">
+            <summary>
+            ReturnARE
+            </summary>
+            <param name="are"></param>
+        </member>
+        <member name="T:VoiceElements.Common.MessageLogged">
+            <summary>
+            A delegate for the MessageLogged event.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:VoiceElements.Common.Log">
+            <summary>
+        A class that provides all means for writing to logs, exceptions, etc.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.Log.LogLevel">
+            <summary>
+          Set the level of logging. Default is 0.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.LogLevel">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.LogLevel">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.Log.LogPath">
+            <summary>
+            Defines the path for the logs
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.Log.#ctor(System.String)">
+            <summary>
+            Constructs a log, which either appends and existing log file or creates a new one.
+          </summary><param name="logname">Name of the log, file to create or to append.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.Constructor">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.Constructor">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.CloseLog">
+            <summary>
+          Closes the log file and log object.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.CloseLog">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.CloseLog">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.WriteWithFrame(System.String)">
+            <summary>
+            Write a message to the log file and includes the stack frame.
+          </summary><param name="LogEntry">The message to write to the log.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.WriteFrame.String">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.WriteFrame.String">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.WriteWithFrame(System.Int32,System.String)">
+            <summary>
+            Write a message to the log file and includes the stack frame including assigning a log level.
+          </summary><param name="logLevel">The numeric log level to assign this entry.</param><param name="LogEntry">The message to write to the log.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.WriteFrame.IntString">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.WriteFrame.IntString">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.Write(System.String,System.Object[])">
+            <summary>
+            Writes the specified StringObj message to the log file.
+          </summary><param name="s">String entry for the log.</param><param name="args">Object and parameters.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.Write.StringObj">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.Write.StringObj">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.Write(System.Int32,System.String,System.Object[])">
+            <summary>
+            Writes the specified string message to the log file with parameters and a log level.
+          </summary><param name="logLevel">Log level to assign this message.</param><param name="s">String entry for the log.</param><param name="args">Object and parameters.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.Write.IntStringObj">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.Write.IntStringObj">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.WriteWithId(System.String,System.String,System.Object[])">
+            <summary>
+            Writes a message with a user specified identifier preceeding the message, usually channel name or thread id.
+          </summary><param name="id">Specified identifier preceeding the message, usually channel name or thread id.</param><param name="s">Entry for the log.</param><param name="args">Additional parameters.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.WriteId.StringStringObj">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.WriteId.StringStringObj">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.WriteWithId(System.Int32,System.String,System.String,System.Object[])">
+            <summary>
+            Writes a message with a user specified identifier preceeding the message, usually channel name or thread id.  Also includes an assigned log level.
+          </summary><param name="logLevel">Numeric log level to assign this entry.</param><param name="id">Specified identifier preceeding the message, usually channel name or thread id.</param><param name="s">Entry for the log.</param><param name="args">Additional parameters.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.WriteId.IntStringStringObj">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.WriteId.IntStringStringObj">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.WriteException(System.Exception,System.String,System.Object[])">
+            <summary>
+            Writes a message to the log with additional information from the supplied exception along with additional parameters.
+          </summary><param name="ex">The exception to write.</param><param name="s">An additional message to write to the log.</param><param name="args">Additional parameters.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.WriteEx.ExStringObj">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.WriteEx.ExStringObj">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.WriteException(System.Int32,System.Exception,System.String,System.Object[])">
+            <summary>
+            Writes a message to the log with additional information from the supplied exception along with a log level and parameters.
+          </summary><param name="logLevel">The log level assigned to this entry.</param><param name="ex">The exception to write.</param><param name="s">An additional message to write to the log.</param><param name="args">Additional parameters.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.WriteEx.IntExStringObj">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.WriteEx.IntExStringObj">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.WriteException(System.Exception,System.String)">
+            <summary>
+            Writes a message to the log with additional information from the supplied exception.
+          </summary><param name="ex">The exception to write.</param><param name="message">An additional message to write to the log.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.WriteEx.ExString">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.WriteEx.ExString">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.WriteException(System.Int32,System.Exception,System.String)">
+            <summary>
+            Writes a message to the log with additional information from the supplied exceptionand assign a log level.
+          </summary><param name="logLevel">The log level to assign the entry.</param><param name="ex">The exception to write.</param><param name="message">An additional message to write to the log.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.WriteEx.IntExString">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.WriteEx.IntExString">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="F:VoiceElements.Common.Log.Identifier1">
+            <summary>
+            A Thread Specific Identifer Included in the log
+            </summary>
+        </member>
+        <member name="F:VoiceElements.Common.Log.Identifier2">
+            <summary>
+            A Thread Specific Identifer Included in the log
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.Log.Write(System.String)">
+            <summary>
+            Writes the specified string message to the log file.
+          </summary><param name="LogEntry">Entry for the log.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.Write.String">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.Write.String">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.Log.Write(System.Int32,System.String)">
+            <summary>
+            Writes the specified string message to the log file and assigns a numeric log level.
+          </summary><param name="logLevel">Log level to assign this message.</param><param name="LogEntry">Entry for the log.</param><remarks>
+            <strong>Documentation In Development</strong>
+            <para></para>
+            We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+            is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+            <list type="bullet">
+              <item>
+                <strong>
+                  <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.Write.IntString">Email Inventive Labs to Request Elaboration on this Feature</see>
+                </strong>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+              </item>
+              <item>
+                <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.Write.IntString">Email Inventive Labs Support about this Feature</see>
+              </item>
+              <item>
+                <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+              </item>
+            </list>
+            <para></para>
+            Thank you for your continued support of Voice Elements.
+          </remarks>
+        </member>
+        <member name="E:VoiceElements.Common.Log.MessageLogged">
+            <summary>
+          An event that is fired when a message is logged to the log file.  This allows interactive clients to display these messages on a form.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.MessageLogged">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.MessageLogged">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.Log.AlwaysExpanded">
+            <summary>
+          Is the log always expanded when output is going to window.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.Log.AlwaysExpanded">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.Log.AlwaysExpanded">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="T:VoiceElements.Common.ThreadPoolConfig">
+            <summary>
+            Configures the Thread Pool
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.ThreadPoolConfig.Configure(VoiceElements.Common.Log)">
+            <summary>
+            Configures the ThreadPool
+            </summary>
+            <param name="log"></param>
+        </member>
+        <member name="T:VoiceElements.Common.TifConverter">
+            <summary>
+            A Class used to convert Tif Files to a format acceptable for faxing with Dialogic.
+            </summary>
+        </member>
+        <member name="M:VoiceElements.Common.TifConverter.TifToTif(System.String,System.String)">
+            <summary>
+            Converts a standard TIF file to a TIF file that dialogic can handle.
+            </summary>
+            <param name="inputFileName"></param>
+            <param name="outputFileName"></param>
+        </member>
+        <member name="M:VoiceElements.Common.TifConverter.JpgToTif(System.String,System.String)">
+            <summary>
+            Converts a standard Jpg file to a TIF file that dialogic can handle.
+            </summary>
+            <param name="inputFileName"></param>
+            <param name="outputFileName"></param>
+        </member>
+        <member name="M:VoiceElements.Common.TifConverter.PdfToTif(System.String,System.String)">
+            <summary>
+            Converts a standard PDF to a TIF file.
+            </summary>
+            <param name="inputFile"></param>
+            <param name="outputFile"></param>
+        </member>
+        <member name="M:VoiceElements.Common.TifConverter.TifToPdf(System.String,System.String)">
+            <summary>
+            Converts a standard Tif file to a PDF
+            </summary>
+            <param name="inputFileName"></param>
+            <param name="outputFileName"></param>
+        </member>
+        <member name="M:VoiceElements.Common.TifConverter.TifToPdf(System.String,System.String,System.String)">
+            <summary>
+            Converts a standard Tif file to a PDF
+            </summary>
+            <param name="inputFileName"></param>
+            <param name="outputFileName"></param>
+            <param name="password"></param>
+        </member>
+        <member name="P:VoiceElements.Common.TifConverter.Log">
+            <summary>
+            Set this to your application log instance.  Otherwise the system will create a log file called TIFConverter.log
+            </summary>
+        </member>
+        <member name="T:VoiceElements.Common.ServerInfo">
+            <summary>
+        Summarizes your Voice Elements Server properties.
+      </summary><remarks>
+        <strong>Documentation In Development</strong>
+        <para></para>
+        We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+        is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+        <list type="bullet">
+          <item>
+            <strong>
+              <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ServerInfo">Email Inventive Labs to Request Elaboration on this Feature</see>
+            </strong>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+          </item>
+          <item>
+            <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ServerInfo">Email Inventive Labs Support about this Feature</see>
+          </item>
+          <item>
+            <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+          </item>
+        </list>
+        <para></para>
+        Thank you for your continued support of Voice Elements.
+      </remarks>
+        </member>
+        <member name="M:VoiceElements.Common.ServerInfo.DeSerialize(System.IO.BinaryReader)">
+            <summary>
+            Deserializes data from a binary reader.
+            </summary>
+            <param name="br"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VoiceElements.Common.ServerInfo.Serialize(System.IO.BinaryWriter)">
+            <summary>
+            Serializes this instance via the supplied binary writer.
+            </summary>
+            <param name="bw"></param>
+        </member>
+        <member name="P:VoiceElements.Common.ServerInfo.ServerName">
+            <summary>
+          The name of the server you are connected to.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ServerInfo.ServerName">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ServerInfo.ServerName">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ServerInfo.AnalogChannelCount">
+            <summary>
+          The maximum number of analog channels you have shared access to on the server.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ServerInfo.AnalogChannelCount">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ServerInfo.AnalogChannelCount">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ServerInfo.DigitalChannelCount">
+            <summary>
+          The maximum number of digital channels you have shared access to on the server.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ServerInfo.DigitalChannelCount">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ServerInfo.DigitalChannelCount">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ServerInfo.MsiChannelCount">
+            <summary>
+          The maximum number of Msi channels you have shared access to on the server.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ServerInfo.MsiChannelCount">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ServerInfo.MsiChannelCount">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ServerInfo.SipChannelCount">
+            <summary>
+          The maximum number of SIP channels you have shared access to on the server.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ServerInfo.SipChannelCount">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ServerInfo.SipChannelCount">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ServerInfo.T1ChannelCount">
+            <summary>
+          The maximum number of T1 channels you have shared access to on the server.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ServerInfo.T1ChannelCount">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ServerInfo.T1ChannelCount">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ServerInfo.ConferenceResourceCount">
+            <summary>
+          The maximum number of conference resources you have shared access to on the server.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ServerInfo.ConferenceResourceCount">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ServerInfo.ConferenceResourceCount">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ServerInfo.FaxResourceCount">
+            <summary>
+          The maximum number of fax resources you have shared access to on the server.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ServerInfo.FaxResourceCount">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ServerInfo.FaxResourceCount">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="P:VoiceElements.Common.ServerInfo.VoiceResourceCount">
+            <summary>
+          The maximum number of voice resources you have shared access to on the server.
+        </summary><remarks>
+          <strong>Documentation In Development</strong>
+          <para></para>
+          We are constantly adding features and new capabilities to <see href="http://www.voiceelements.com/Products/VEToolkit.aspx">The Voice Elements Platform</see>.  Therefore, our documentation of individual methods, properties and other elements
+          is constantly being developed and improved.  If you would like to know more about this element, please help us perfect our documentation and help you develop your application by doing one or more of the following:
+          <list type="bullet">
+            <item>
+              <strong>
+                <see href="mailto:documentation@inventivelabs.com?subject=Request to Elaborate Common.ServerInfo.VoiceResourceCount">Email Inventive Labs to Request Elaboration on this Feature</see>
+              </strong>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=Main_Page">Visit Our Support Wiki</see>
+            </item>
+            <item>
+              <see href="mailto:support@inventivelabs.com?subject=I have a question about Common.ServerInfo.VoiceResourceCount">Email Inventive Labs Support about this Feature</see>
+            </item>
+            <item>
+              <see href="http://support.voiceelements.com/index.php?title=FREE_TELEPHONY_SOFTWARE">Check out our Free Source Code</see>
+            </item>
+          </list>
+          <para></para>
+          Thank you for your continued support of Voice Elements.
+        </remarks>
+        </member>
+        <member name="T:VoiceElements.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:VoiceElements.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

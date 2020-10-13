@@ -1,0 +1,114 @@
+16/04/20 - 17:08:40.202 0001 (no thread name)     Initializing Logging Class
+16/04/20 - 17:08:40.210 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/20 - 17:08:40.211 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/20 - 17:08:40.211 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/20 - 17:08:40.211 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/20 - 17:08:40.211 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/20 - 17:14:40.742 0001 (no thread name)     Initializing Logging Class
+16/04/20 - 17:14:40.749 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/20 - 17:14:40.750 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/20 - 17:14:40.750 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/20 - 17:14:40.750 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/20 - 17:14:40.750 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/20 - 17:17:11.327 0001 (no thread name)     Initializing Logging Class
+16/04/20 - 17:17:11.334 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/20 - 17:17:11.335 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/20 - 17:17:11.335 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/20 - 17:17:11.335 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/20 - 17:17:11.335 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/20 - 17:19:06.012 0001 (no thread name)     Initializing Logging Class
+16/04/20 - 17:19:06.019 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/20 - 17:19:06.020 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/20 - 17:19:06.020 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/20 - 17:19:06.020 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/20 - 17:19:06.020 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/20 - 17:20:40.497 0001 (no thread name)     Initializing Logging Class
+16/04/20 - 17:20:40.504 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/20 - 17:20:40.504 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/20 - 17:20:40.504 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/20 - 17:20:40.504 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/20 - 17:20:40.505 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/20 - 17:24:04.867 0001 (no thread name)     Initializing Logging Class
+16/04/20 - 17:24:04.874 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/20 - 17:24:04.874 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/20 - 17:24:04.874 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/20 - 17:24:04.874 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/20 - 17:24:04.875 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/20 - 17:36:25.995 0001 (no thread name)     Initializing Logging Class
+16/04/20 - 17:36:26.002 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/20 - 17:36:26.002 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/20 - 17:36:26.002 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/20 - 17:36:26.002 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/20 - 17:36:26.003 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/20 - 20:20:58.550 0001 (no thread name)     Initializing Logging Class
+16/04/20 - 20:20:58.557 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/20 - 20:20:58.558 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/20 - 20:20:58.558 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/20 - 20:20:58.558 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/20 - 20:20:58.558 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 14:07:33.315 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 14:07:33.321 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 14:07:33.322 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 14:07:33.322 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 14:07:33.322 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 14:07:33.322 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 14:09:12.362 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 14:09:12.369 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 14:09:12.370 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 14:09:12.370 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 14:09:12.370 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 14:09:12.370 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 14:11:15.586 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 14:11:15.593 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 14:11:15.594 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 14:11:15.594 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 14:11:15.594 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 14:11:15.594 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 14:12:06.218 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 14:12:06.227 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 14:12:06.228 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 14:12:06.228 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 14:12:06.228 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 14:12:06.228 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 14:51:32.310 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 14:51:32.318 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 14:51:32.319 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 14:51:32.319 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 14:51:32.319 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 14:51:32.319 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 14:57:09.689 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 14:57:09.696 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 14:57:09.697 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 14:57:09.697 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 14:57:09.697 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 14:57:09.697 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 15:42:58.158 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 15:42:58.165 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 15:42:58.166 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 15:42:58.166 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 15:42:58.166 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 15:42:58.166 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 15:43:25.630 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 15:43:25.637 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 15:43:25.638 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 15:43:25.638 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 15:43:25.638 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 15:43:25.638 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 15:55:51.752 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 15:55:51.758 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 15:55:51.759 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 15:55:51.759 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 15:55:51.759 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 15:55:51.759 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 17:35:00.603 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 17:35:00.610 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 17:35:00.611 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 17:35:00.611 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 17:35:00.611 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 17:35:00.611 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
+16/04/22 - 18:21:40.277 0001 (no thread name)     Initializing Logging Class
+16/04/22 - 18:21:40.284 0001 (no thread name)     Log Name: TelephonyServer.Static.log
+16/04/22 - 18:21:40.284 0001 (no thread name)     ThreadPool MaxThreads: 1023 - 1000
+16/04/22 - 18:21:40.284 0001 (no thread name)     ThreadPool MinThreads: 12 - 12
+16/04/22 - 18:21:40.284 0001 (no thread name)     ThreadPool MaxThreads Set: 2000 - 1000
+16/04/22 - 18:21:40.284 0001 (no thread name)     ThreadPool MinThreads Set: 1500 - 12
