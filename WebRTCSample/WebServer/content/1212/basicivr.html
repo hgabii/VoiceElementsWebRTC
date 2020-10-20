@@ -38,6 +38,14 @@
         </div>
     </div>
     <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-6">
+                <label>Server Address:</label>
+                <input type="text" id="serverAddress" class="form-control" value="sdudev_ve1.sdudev.local"/>
+            </div>
+        </div>
+
         <div class="row">
 
             <div class="container-fluid" id="content">
@@ -321,7 +329,7 @@
 
                     function btnConnectClick() {
 
-                        var serverAddress = "sdudev_ve1.sdudev.local";
+                        var serverAddress = document.getElementById("serverAddress").value;
 
                         switch (btnConnect.innerText) {
                             case 'Connect':

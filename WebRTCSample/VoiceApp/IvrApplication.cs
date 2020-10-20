@@ -78,6 +78,8 @@ namespace VoiceApp
         /// </summary>
         public static Dictionary<string, BasicIvr> s_WebRtc = new Dictionary<string, BasicIvr>();
 
+        private static Conference s_Conference = null;
+
         public static void NotifyCall(string callId, string phoneNumber)
         {
             List<BasicIvr> webRtcToNotify = new List<BasicIvr>();
@@ -146,9 +148,12 @@ namespace VoiceApp
             try
             {
                 InboundCall call;
+                bool multipleCalls = false;
+
                 lock (IvrApplication.s_SyncVar)
                 {
                     s_InboundCalls.TryGetValue(callId, out call);
+                    multipleCalls = s_InboundCalls.Count > 1;
                 }
 
                 if (call != null)
@@ -158,11 +163,50 @@ namespace VoiceApp
                     call.WaitEvent.Set();
                 }
 
-                webRtcLeg.ChannelResource.RouteFull(call.ChannelResource);
+                if (!multipleCalls)
+                {
+                    webRtcLeg.ChannelResource.RouteFull(call.ChannelResource);
+                }
+                else
+                {
+                    if (s_Conference == null)
+                    {
+                        s_Conference = s_TelephonyServer.GetConference();
+                        s_Conference.ConferenceChanged += S_Conference_ConferenceChanged;
+                        s_Conference.ConferenceNotifyMode = ConferenceNotifyMode.On;
+
+                        //webRtcLeg.ChannelResource.ConferenceAttributes.ConfereeType = ConfereeType.;
+                        webRtcLeg.ChannelResource.VoiceResource.PlayTTS("Connecting monitor");
+                        s_Conference.Add(webRtcLeg.ChannelResource);
+                    }
+
+                    lock (IvrApplication.s_SyncVar)
+                    {
+                        foreach (var c in s_InboundCalls.Values)
+                        {
+                            c.ChannelResource.ConferenceAttributes.ConfereeType = ConfereeType.Normal;
+                            c.ChannelResource.VoiceResource.PlayTTS("Connecting to conference");
+                            s_Conference.Add(c.ChannelResource);
+                        }
+                    }
+                    
+                }
             }
-            catch { }
+            catch(Exception ex)
+            {
+
+            }
 
             //throw new NotImplementedException();
+        }
+
+        private static void S_Conference_ConferenceChanged(ConferenceChangedEventArgs ccea)
+        {
+            if (s_Conference.Participants.Count == 0 && s_Conference.Monitors.Count == 0)
+            {
+                s_Conference.Dispose();
+                s_Conference = null;
+            }
         }
 
         public static void RejectCall(string callId)
@@ -352,8 +396,8 @@ namespace VoiceApp
 
                     // Subscribe to the connection events to allow you to reconnect if something happens to the internet connection.
                     // If you are running your own VE server, this is less likely to happen except when you restart your VE server.
-                    //s_TelephonyServer.ConnectionLost += new ConnectionLost(s_TelephonyServer_ConnectionLost);
-                    //s_TelephonyServer.ConnectionRestored += new ConnectionRestored(s_TelephonyServer_ConnectionRestored);
+                    s_TelephonyServer.ConnectionLost += new ConnectionLost(s_TelephonyServer_ConnectionLost);
+                    s_TelephonyServer.ConnectionRestored += new ConnectionRestored(s_TelephonyServer_ConnectionRestored);
 
 
                 }
@@ -439,7 +483,7 @@ namespace VoiceApp
 
             s_TelephonyServer.CacheMode = VoiceElements.Interface.CacheMode.ClientSession;
             //s_TelephonyServer.CacheMode = VoiceElements.Interface.CacheMode.Server;
-            s_TelephonyServer.RegisterDNIS();
+            s_TelephonyServer.RegisterDNIS(Properties.Settings.Default.RegisterDNIS);
 
             Log.Write("The Connection to the server was successfully restored!");
 
