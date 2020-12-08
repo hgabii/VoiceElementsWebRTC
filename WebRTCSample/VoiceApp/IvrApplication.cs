@@ -165,6 +165,7 @@ namespace VoiceApp
 
                 if (!multipleCalls)
                 {
+                    call.ChannelResource.Answer();
                     webRtcLeg.ChannelResource.RouteFull(call.ChannelResource);
                 }
                 else
@@ -234,7 +235,7 @@ namespace VoiceApp
         {
             try
             {
-                ChannelResource channelResource = s_TelephonyServer.GetChannel();
+                ChannelResource channelResource = s_TelephonyServer.GetChannel(typeof(SipChannel));
                 InboundCall inbound = new InboundCall(channelResource, channelResource.VoiceResource);
                 lock(s_SyncVar)
                 {
@@ -246,6 +247,15 @@ namespace VoiceApp
                 webRtc.ChannelResource.StopListening(); // stop listening to any other routable resources
                 webRtc.ChannelResource.RouteFull(inbound.ChannelResource);
                 webRtc.SendDialStart();
+
+                // !!
+                if (channelResource is SipChannel sipChannel)
+                {
+                    sipChannel.TransportProtocol = VoiceElements.Interface.TransportProtocol.TCP;
+                    sipChannel.OverrideDestination = "pool01.sdudev.local:5069";
+                    //sipChannel.OutgoingSipHeaders = new string[] { "" };
+                }
+
                 System.Threading.Thread dialCall = new Thread(inbound.RunOutboundScript);
                 dialCall.Start();
             }
@@ -510,6 +520,11 @@ namespace VoiceApp
                 WebRtcChannel webRtcChannel = e.ChannelResource as WebRtcChannel;
                 if (webRtcChannel == null)
                 {
+                    if (e.ChannelResource is SipChannel sipChannel)
+                    {
+                        Log.Write($"SIP channel - TransportProtocol: {sipChannel.TransportProtocol}");
+                    }
+
                     Log.Write("Answering...");
 
                     InboundCall inboundCall = new InboundCall(e.ChannelResource, e.ChannelResource.VoiceResource);
